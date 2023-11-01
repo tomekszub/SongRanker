@@ -213,5 +213,35 @@ namespace Immortus.SongRanker
             _cachedRankings.Add(GENRE_SONGS_COUNT_RANKING, sb.ToString());
             _RankingText.text = _cachedRankings[GENRE_SONGS_COUNT_RANKING];
         }
+
+        public void ShowGenreCustomRatingRanking()
+        {
+            _currList = GENRES;
+
+            if (_cachedRankings.TryGetValue(GENRE_CUSTOM_RATING_RANKING, out string cachedData))
+            {
+                _RankingText.text = cachedData;
+                return;
+            }
+
+            RefreshCurrentListIfNeeded();
+
+            var sortedRanking = _genreRanking.OrderByDescending(g => g.avgRating);
+
+            StringBuilder sb = new();
+            int artistNameLength;
+
+            foreach (var item in sortedRanking)
+            {
+                artistNameLength = item.genre.Name.Length;
+                sb.Append($"{item.genre.Name}");
+                for (int i = 0; i < 35 - artistNameLength; i++)
+                    sb.Append(" ");
+                sb.AppendLine($"{item.songCount}\t\t{Math.Round(item.avgRating, 2)}");
+            }
+
+            _cachedRankings.Add(GENRE_CUSTOM_RATING_RANKING, sb.ToString());
+            _RankingText.text = _cachedRankings[GENRE_CUSTOM_RATING_RANKING];
+        }
     }
 }
