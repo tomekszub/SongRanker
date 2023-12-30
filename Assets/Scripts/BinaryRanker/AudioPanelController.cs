@@ -98,7 +98,5 @@ public class AudioPanelController : MonoBehaviour
         _clipRefreshed = true;
 
         Play(_cachedTime);
-        // TODO: settings if we want to keep progress of current song dont set it to -1
-        _cachedTime = -1;
     }
 }
