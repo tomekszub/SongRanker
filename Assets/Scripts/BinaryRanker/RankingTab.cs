@@ -20,7 +20,7 @@ namespace Immortus.SongRanker
         [SerializeField] Test _RankerTab;
 
         Dictionary<string, string> _cachedRankings = new();
-        List<(Artist artist, int songCount, float avgRating)> _artistRanking;
+        List<(Artist artist, int songCount, float avgRating, float customRating)> _artistRanking;
         List<(Genre genre, int songCount, float avgRating)> _genreRanking;
         bool _isRankingEstablished = false;
         HashSet<string> _rankingDirtyLists = new();
@@ -85,7 +85,7 @@ namespace Immortus.SongRanker
                     Debug.LogError($"Artist with id {kvp.Key} deos not exist or is null!");
                     continue;
                 }
-                _artistRanking.Add((artist, ratedSongs, ratingSum / ratedSongs));
+                _artistRanking.Add((artist, ratedSongs, ratingSum / ratedSongs, (ratingSum / ratedSongs) + ((ratedSongs - 1) * 5)));
             }
 
             _rankingDirtyLists.Remove(ARTISTS);
@@ -136,18 +136,18 @@ namespace Immortus.SongRanker
 
             RefreshCurrentListIfNeeded();
 
-            var sortedRanking = _artistRanking.OrderByDescending(s => s.avgRating);
+            var sortedRanking = _artistRanking.OrderByDescending(s => s.customRating);
 
             StringBuilder sb = new();
             int artistNameLength;
 
-            foreach (var item in sortedRanking)
+            foreach (var (artist, songCount, avgRating, customRating) in sortedRanking)
             {
-                artistNameLength = item.artist.Name.Length;
-                sb.Append($"{item.artist.Name}");
+                artistNameLength = artist.Name.Length;
+                sb.Append($"{artist.Name}");
                 for (int i = 0; i < 35 - artistNameLength; i++)
                     sb.Append(" ");
-                sb.AppendLine($"{item.songCount}\t\t{Math.Round(item.avgRating, 2)}");
+                sb.AppendLine($"{songCount}\t\t{Math.Round(avgRating, 2)}\t\t{Math.Round(customRating, 2)}");
             }
 
             _cachedRankings.Add(ARTIST_CUSTOM_RATING_RANKING, sb.ToString());
