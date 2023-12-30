@@ -206,7 +206,7 @@ namespace Immortus.SongRanker
         void ChangeNewSong(Song song)
         {
             _newSong = song;
-            _NewSongAudioPanelController.ChangeSong(song.Path);
+            _NewSongAudioPanelController.ChangeSong(song.Path, true);
             SetNewSongUI(song);
         }
 

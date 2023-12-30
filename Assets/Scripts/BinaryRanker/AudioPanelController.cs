@@ -44,15 +44,16 @@ public class AudioPanelController : MonoBehaviour
             Play();
     }
 
-    public void ChangeSong(string path)
+    public void ChangeSong(string path, bool playFromStart = false)
     {
         if (_path == path)
             return;
 
         _clipRefreshed = false;
         _path = path;
-
-        if(_AudioSource.isPlaying)
+        if (playFromStart)
+            Play(0);
+        else if(_AudioSource.isPlaying)
             Play();
     }
 
