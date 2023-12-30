@@ -23,6 +23,7 @@ namespace Immortus.SongRanker
         [Header("Compared To Element")]
         [SerializeField] TextMeshProUGUI _ComparedToElementText;
         [SerializeField] TextMeshProUGUI _ComparedToElementArtistText;
+        [SerializeField] TextMeshProUGUI _ComparedToElementRankingText;
         [SerializeField] AudioPanelController _ComparedToSongAudioPanelController;
         [Header("New Element")]
         [SerializeField] TextMeshProUGUI _NewElementText;
@@ -222,6 +223,19 @@ namespace Immortus.SongRanker
             _ComparedToElementArtistText.text = string.Join(", ", SM.GetArtistNamesByIDs(song.ArtistIds));
 
             _ComparedToSongAudioPanelController.SetActive(true);
+
+            var ranking = _ranker.Ranking;
+            for (int i = 0; i < _ranker.Ranking.Count; i++)
+            {
+                foreach(var songFromRanking in ranking[i])
+                {
+                    if(songFromRanking.ID == song.ID)
+                    {
+                        _ComparedToElementRankingText.text = i.ToString();
+                        return;
+                    }
+                }
+            }
         }
 
         void SetNewSongUI(Song song)
@@ -235,6 +249,7 @@ namespace Immortus.SongRanker
         {
             _ComparedToElementText.text = "-";
             _ComparedToElementArtistText.text = "";
+            _ComparedToElementRankingText.text = "";
             _ComparedToSongAudioPanelController.SetActive(false);
         }
 
