@@ -231,7 +231,7 @@ namespace Immortus.SongRanker
                 {
                     if(songFromRanking.ID == song.ID)
                     {
-                        _ComparedToElementRankingText.text = i.ToString();
+                        _ComparedToElementRankingText.text = $"{i + 1}";
                         return;
                     }
                 }
