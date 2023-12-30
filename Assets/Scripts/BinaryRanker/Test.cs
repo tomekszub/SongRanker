@@ -23,11 +23,11 @@ namespace Immortus.SongRanker
         [Header("Compared To Element")]
         [SerializeField] TextMeshProUGUI _ComparedToElementText;
         [SerializeField] TextMeshProUGUI _ComparedToElementArtistText;
-        [SerializeField] AudioPanel _ComparedToSongAudioPanel;
+        [SerializeField] AudioPanelController _ComparedToSongAudioPanelController;
         [Header("New Element")]
         [SerializeField] TextMeshProUGUI _NewElementText;
         [SerializeField] TextMeshProUGUI _NewElementArtistText;
-        [SerializeField] AudioPanel _NewSongAudioPanel;
+        [SerializeField] AudioPanelController _NewSongAudioPanelController;
 
         Ranker<Song> _ranker;
         List<Song> _options;
@@ -66,16 +66,6 @@ namespace Immortus.SongRanker
 
             if (Input.GetKey(KeyCode.LeftControl) && Input.GetKeyDown(KeyCode.S))
                 SaveRanking();
-        }
-
-        public void OnPlayNewSongClicked(bool skipIntro)
-        {
-            _NewSongAudioPanel.PlayFromTime(skipIntro ? .35f : 0);
-        }
-
-        public void OnPlayCurrentlyComparedSongClicked(bool skipIntro)
-        {
-            _ComparedToSongAudioPanel.PlayFromTime(skipIntro ? .35f : 0);
         }
 
         public void OnChoiceButtonClicked(int choiceIndex) => SetChoice((ComparisonResult)choiceIndex);
@@ -208,14 +198,14 @@ namespace Immortus.SongRanker
         void OnCurrentlyComparedSongChanged(List<Song> currSongs)
         {
             _currentlyComparedSong = currSongs[0];
-            _ComparedToSongAudioPanel.ChangeSong(currSongs[0].Path);
+            _ComparedToSongAudioPanelController.ChangeSong(currSongs[0].Path);
             SetCurrentlyComparedSongUI(currSongs[0]);
         }
 
         void ChangeNewSong(Song song)
         {
             _newSong = song;
-            _NewSongAudioPanel.ChangeSong(song.Path);
+            _NewSongAudioPanelController.ChangeSong(song.Path);
             SetNewSongUI(song);
         }
 
@@ -231,7 +221,7 @@ namespace Immortus.SongRanker
 
             _ComparedToElementArtistText.text = string.Join(", ", SM.GetArtistNamesByIDs(song.ArtistIds));
 
-            _ComparedToSongAudioPanel.SetActive(true);
+            _ComparedToSongAudioPanelController.SetActive(true);
         }
 
         void SetNewSongUI(Song song)
@@ -245,7 +235,7 @@ namespace Immortus.SongRanker
         {
             _ComparedToElementText.text = "-";
             _ComparedToElementArtistText.text = "";
-            _ComparedToSongAudioPanel.SetActive(false);
+            _ComparedToSongAudioPanelController.SetActive(false);
         }
 
         void Init()
@@ -286,6 +276,9 @@ namespace Immortus.SongRanker
                 NextOption();
                 NextOption();
             }
+
+            _NewSongAudioPanelController.Init(_ComparedToSongAudioPanelController);
+            _ComparedToSongAudioPanelController.Init(_NewSongAudioPanelController);
         }
     }
 }

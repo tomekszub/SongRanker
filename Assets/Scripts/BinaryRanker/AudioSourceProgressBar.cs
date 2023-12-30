@@ -4,7 +4,6 @@ using UnityEngine.UI;
 
 public class AudioSourceProgressBar : MonoBehaviour
 {
-    [SerializeField] AudioPanel _AudioPanel;
     [SerializeField] Slider _SongProgressSlider;
     [SerializeField] Slider _FakeSlider;
 
