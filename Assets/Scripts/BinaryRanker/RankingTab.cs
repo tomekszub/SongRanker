@@ -140,14 +140,25 @@ namespace Immortus.SongRanker
 
             StringBuilder sb = new();
             int artistNameLength;
+            int songCountLength;
+            string avgRatingString;
 
             foreach (var (artist, songCount, avgRating, customRating) in sortedRanking)
             {
                 artistNameLength = artist.Name.Length;
+                songCountLength = songCount.ToString().Length;
                 sb.Append($"{artist.Name}");
                 for (int i = 0; i < 35 - artistNameLength; i++)
                     sb.Append(" ");
-                sb.AppendLine($"{songCount}\t\t{Math.Round(avgRating, 2)}\t\t{Math.Round(customRating, 2)}");
+                sb.Append($"{songCount}");
+                for (int i = 0; i < 6 - songCountLength; i++)
+                    sb.Append(" ");
+                avgRatingString = $"{Math.Round(avgRating, 2)}";
+                sb.Append(avgRatingString);
+                for (int i = 0; i < 10 - avgRatingString.Length; i++)
+                    sb.Append(" ");
+                sb.Append($"{Math.Round(customRating, 2)}");
+                sb.AppendLine();
             }
 
             _cachedRankings.Add(ARTIST_CUSTOM_RATING_RANKING, sb.ToString());
