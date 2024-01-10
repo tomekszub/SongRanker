@@ -1,0 +1,3292 @@
+{
+  "0": {
+    "_name": "Cutting Crew",
+    "_countryId": -1,
+    "_id": 0
+  },
+  "1": {
+    "_name": "Luke Combs",
+    "_countryId": -1,
+    "_id": 1
+  },
+  "2": {
+    "_name": "Amaranthe",
+    "_countryId": -1,
+    "_id": 2
+  },
+  "3": {
+    "_name": "Anne-Marie",
+    "_countryId": -1,
+    "_id": 3
+  },
+  "4": {
+    "_name": "New Rules",
+    "_countryId": -1,
+    "_id": 4
+  },
+  "5": {
+    "_name": "Lukas Graham",
+    "_countryId": -1,
+    "_id": 5
+  },
+  "6": {
+    "_name": "Austin Moon",
+    "_countryId": -1,
+    "_id": 6
+  },
+  "7": {
+    "_name": "Austin",
+    "_countryId": -1,
+    "_id": 7
+  },
+  "8": {
+    "_name": "Feel",
+    "_countryId": -1,
+    "_id": 8
+  },
+  "9": {
+    "_name": "Celine Dion",
+    "_countryId": -1,
+    "_id": 9
+  },
+  "10": {
+    "_name": "Vanessa Carlton",
+    "_countryId": -1,
+    "_id": 10
+  },
+  "11": {
+    "_name": "Paweł Kukiz",
+    "_countryId": -1,
+    "_id": 11
+  },
+  "12": {
+    "_name": "Selena Gomez",
+    "_countryId": -1,
+    "_id": 12
+  },
+  "13": {
+    "_name": "LiSA",
+    "_countryId": -1,
+    "_id": 13
+  },
+  "14": {
+    "_name": "Toto",
+    "_countryId": -1,
+    "_id": 14
+  },
+  "15": {
+    "_name": "Travis Denning",
+    "_countryId": -1,
+    "_id": 15
+  },
+  "16": {
+    "_name": "Hannah Jane Lewis ",
+    "_countryId": -1,
+    "_id": 16
+  },
+  "17": {
+    "_name": "Michel Telo",
+    "_countryId": -1,
+    "_id": 17
+  },
+  "18": {
+    "_name": "Zara Larsson",
+    "_countryId": -1,
+    "_id": 18
+  },
+  "19": {
+    "_name": "Marvin Gaye & Tammi Terrell",
+    "_countryId": -1,
+    "_id": 19
+  },
+  "20": {
+    "_name": "Jerry Goldsmith",
+    "_countryId": -1,
+    "_id": 20
+  },
+  "21": {
+    "_name": "B.o.B",
+    "_countryId": -1,
+    "_id": 21
+  },
+  "22": {
+    "_name": "Anna Karwan",
+    "_countryId": -1,
+    "_id": 22
+  },
+  "23": {
+    "_name": "Lady Gaga",
+    "_countryId": -1,
+    "_id": 23
+  },
+  "24": {
+    "_name": "Fifth Harmony",
+    "_countryId": -1,
+    "_id": 24
+  },
+  "25": {
+    "_name": "A Day To Remember",
+    "_countryId": -1,
+    "_id": 25
+  },
+  "26": {
+    "_name": "Benjamin Ingrosso",
+    "_countryId": -1,
+    "_id": 26
+  },
+  "28": {
+    "_name": "John Legend",
+    "_countryId": -1,
+    "_id": 28
+  },
+  "29": {
+    "_name": "Bryan Adams",
+    "_countryId": -1,
+    "_id": 29
+  },
+  "30": {
+    "_name": "Smash Mouth",
+    "_countryId": -1,
+    "_id": 30
+  },
+  "31": {
+    "_name": "OneRepublic",
+    "_countryId": -1,
+    "_id": 31
+  },
+  "32": {
+    "_name": "Pink",
+    "_countryId": -1,
+    "_id": 32
+  },
+  "33": {
+    "_name": "Ava Max/Alan Walker",
+    "_countryId": -1,
+    "_id": 33
+  },
+  "34": {
+    "_name": "Glee",
+    "_countryId": -1,
+    "_id": 34
+  },
+  "35": {
+    "_name": "Eurovision",
+    "_countryId": -1,
+    "_id": 35
+  },
+  "36": {
+    "_name": "Minus One",
+    "_countryId": -1,
+    "_id": 36
+  },
+  "37": {
+    "_name": "Ay Sel",
+    "_countryId": -1,
+    "_id": 37
+  },
+  "38": {
+    "_name": "Arash",
+    "_countryId": -1,
+    "_id": 38
+  },
+  "39": {
+    "_name": "Saliva",
+    "_countryId": -1,
+    "_id": 39
+  },
+  "40": {
+    "_name": "Nightwish",
+    "_countryId": -1,
+    "_id": 40
+  },
+  "41": {
+    "_name": "Tanja",
+    "_countryId": -1,
+    "_id": 41
+  },
+  "42": {
+    "_name": "Halestorm",
+    "_countryId": -1,
+    "_id": 42
+  },
+  "43": {
+    "_name": "The Swon Brothers;",
+    "_countryId": -1,
+    "_id": 43
+  },
+  "44": {
+    "_name": "The Swon Brothers",
+    "_countryId": -1,
+    "_id": 44
+  },
+  "45": {
+    "_name": "Bonnie McKee",
+    "_countryId": -1,
+    "_id": 45
+  },
+  "46": {
+    "_name": "Kenny Chesney",
+    "_countryId": -1,
+    "_id": 46
+  },
+  "47": {
+    "_name": "Toby Keith",
+    "_countryId": -1,
+    "_id": 47
+  },
+  "48": {
+    "_name": "Within Temptation",
+    "_countryId": -1,
+    "_id": 48
+  },
+  "49": {
+    "_name": "Xzibit",
+    "_countryId": -1,
+    "_id": 49
+  },
+  "50": {
+    "_name": "Álvaro Soler",
+    "_countryId": -1,
+    "_id": 50
+  },
+  "51": {
+    "_name": "Maroon 5",
+    "_countryId": -1,
+    "_id": 51
+  },
+  "52": {
+    "_name": "Phil Collins",
+    "_countryId": -1,
+    "_id": 52
+  },
+  "53": {
+    "_name": "Adam Lambert",
+    "_countryId": -1,
+    "_id": 53
+  },
+  "54": {
+    "_name": "Asking Alexandria",
+    "_countryId": -1,
+    "_id": 54
+  },
+  "55": {
+    "_name": "Rita Ora",
+    "_countryId": -1,
+    "_id": 55
+  },
+  "56": {
+    "_name": "Eva Rivas",
+    "_countryId": -1,
+    "_id": 56
+  },
+  "57": {
+    "_name": "Duncan Laurence",
+    "_countryId": -1,
+    "_id": 57
+  },
+  "58": {
+    "_name": "Olly murs",
+    "_countryId": -1,
+    "_id": 58
+  },
+  "59": {
+    "_name": "Olly Murs",
+    "_countryId": -1,
+    "_id": 59
+  },
+  "60": {
+    "_name": "Las Ketchup",
+    "_countryId": -1,
+    "_id": 60
+  },
+  "61": {
+    "_name": "(K)NoW_NAME",
+    "_countryId": -1,
+    "_id": 61
+  },
+  "62": {
+    "_name": "Anime",
+    "_countryId": -1,
+    "_id": 62
+  },
+  "63": {
+    "_name": "Charlie Puth",
+    "_countryId": -1,
+    "_id": 63
+  },
+  "64": {
+    "_name": "Cellar Darling",
+    "_countryId": -1,
+    "_id": 64
+  },
+  "65": {
+    "_name": "Skillet",
+    "_countryId": -1,
+    "_id": 65
+  },
+  "66": {
+    "_name": "Kombii",
+    "_countryId": -1,
+    "_id": 66
+  },
+  "67": {
+    "_name": "KombII",
+    "_countryId": -1,
+    "_id": 67
+  },
+  "68": {
+    "_name": "Katerine",
+    "_countryId": -1,
+    "_id": 68
+  },
+  "69": {
+    "_name": "Big Mountain",
+    "_countryId": -1,
+    "_id": 69
+  },
+  "70": {
+    "_name": "AC",
+    "_countryId": -1,
+    "_id": 70
+  },
+  "71": {
+    "_name": "DC",
+    "_countryId": -1,
+    "_id": 71
+  },
+  "72": {
+    "_name": "Sergey Lazarev",
+    "_countryId": -1,
+    "_id": 72
+  },
+  "73": {
+    "_name": "Prince Royce",
+    "_countryId": -1,
+    "_id": 73
+  },
+  "74": {
+    "_name": "Jennifer Lopez",
+    "_countryId": -1,
+    "_id": 74
+  },
+  "75": {
+    "_name": "Pitbull",
+    "_countryId": -1,
+    "_id": 75
+  },
+  "76": {
+    "_name": "Michael Jackson",
+    "_countryId": -1,
+    "_id": 76
+  },
+  "77": {
+    "_name": "Zucchero",
+    "_countryId": -1,
+    "_id": 77
+  },
+  "78": {
+    "_name": "Zucchero/Mana",
+    "_countryId": -1,
+    "_id": 78
+  },
+  "79": {
+    "_name": "Enrique Iglesias",
+    "_countryId": -1,
+    "_id": 79
+  },
+  "80": {
+    "_name": "Fineas i Ferb",
+    "_countryId": -1,
+    "_id": 80
+  },
+  "81": {
+    "_name": "Ariana Grande",
+    "_countryId": -1,
+    "_id": 81
+  },
+  "82": {
+    "_name": "Jessie J",
+    "_countryId": -1,
+    "_id": 82
+  },
+  "83": {
+    "_name": "Eleni Foureira",
+    "_countryId": -1,
+    "_id": 83
+  },
+  "84": {
+    "_name": "Lady Antabellum",
+    "_countryId": -1,
+    "_id": 84
+  },
+  "85": {
+    "_name": "Avenged Sevenfold",
+    "_countryId": -1,
+    "_id": 85
+  },
+  "86": {
+    "_name": "Piersi",
+    "_countryId": -1,
+    "_id": 86
+  },
+  "87": {
+    "_name": "Wilki",
+    "_countryId": -1,
+    "_id": 87
+  },
+  "88": {
+    "_name": "WILKI",
+    "_countryId": -1,
+    "_id": 88
+  },
+  "89": {
+    "_name": "U2",
+    "_countryId": -1,
+    "_id": 89
+  },
+  "90": {
+    "_name": "Kristian Kostov",
+    "_countryId": -1,
+    "_id": 90
+  },
+  "91": {
+    "_name": "Zedd",
+    "_countryId": -1,
+    "_id": 91
+  },
+  "92": {
+    "_name": "Jon Bellion",
+    "_countryId": -1,
+    "_id": 92
+  },
+  "93": {
+    "_name": "Bojana Stamenov",
+    "_countryId": -1,
+    "_id": 93
+  },
+  "94": {
+    "_name": "Kelly Clarkson",
+    "_countryId": -1,
+    "_id": 94
+  },
+  "95": {
+    "_name": "Limp Bizkit",
+    "_countryId": -1,
+    "_id": 95
+  },
+  "96": {
+    "_name": "Brinck",
+    "_countryId": -1,
+    "_id": 96
+  },
+  "97": {
+    "_name": "Cher",
+    "_countryId": -1,
+    "_id": 97
+  },
+  "98": {
+    "_name": "Elton John",
+    "_countryId": -1,
+    "_id": 98
+  },
+  "99": {
+    "_name": "Billie Eilish",
+    "_countryId": -1,
+    "_id": 99
+  },
+  "100": {
+    "_name": "Louisa Johnson",
+    "_countryId": -1,
+    "_id": 100
+  },
+  "101": {
+    "_name": "Miley Cyrus",
+    "_countryId": -1,
+    "_id": 101
+  },
+  "102": {
+    "_name": "One Direction",
+    "_countryId": -1,
+    "_id": 102
+  },
+  "103": {
+    "_name": "Cherie",
+    "_countryId": -1,
+    "_id": 103
+  },
+  "104": {
+    "_name": "Soundtrack",
+    "_countryId": -1,
+    "_id": 104
+  },
+  "105": {
+    "_name": "Harold Faltermeyer",
+    "_countryId": -1,
+    "_id": 105
+  },
+  "106": {
+    "_name": "Ewa Farna",
+    "_countryId": -1,
+    "_id": 106
+  },
+  "107": {
+    "_name": "Bajm",
+    "_countryId": -1,
+    "_id": 107
+  },
+  "108": {
+    "_name": "Fergie",
+    "_countryId": -1,
+    "_id": 108
+  },
+  "109": {
+    "_name": "Ram jam",
+    "_countryId": -1,
+    "_id": 109
+  },
+  "110": {
+    "_name": "Ram Jam",
+    "_countryId": -1,
+    "_id": 110
+  },
+  "111": {
+    "_name": "Jessica Jean",
+    "_countryId": -1,
+    "_id": 111
+  },
+  "112": {
+    "_name": "Keiino",
+    "_countryId": -1,
+    "_id": 112
+  },
+  "113": {
+    "_name": "Little Mix",
+    "_countryId": -1,
+    "_id": 113
+  },
+  "114": {
+    "_name": "Alannah Myles",
+    "_countryId": -1,
+    "_id": 114
+  },
+  "115": {
+    "_name": "John Newman",
+    "_countryId": -1,
+    "_id": 115
+  },
+  "116": {
+    "_name": "Calvin Harris",
+    "_countryId": -1,
+    "_id": 116
+  },
+  "117": {
+    "_name": "Taylor Swift",
+    "_countryId": -1,
+    "_id": 117
+  },
+  "118": {
+    "_name": "Beast in Black",
+    "_countryId": -1,
+    "_id": 118
+  },
+  "119": {
+    "_name": "Cascada",
+    "_countryId": -1,
+    "_id": 119
+  },
+  "120": {
+    "_name": "Ava Max",
+    "_countryId": -1,
+    "_id": 120
+  },
+  "121": {
+    "_name": "Carrie Underwood",
+    "_countryId": -1,
+    "_id": 121
+  },
+  "122": {
+    "_name": "Keith Urban",
+    "_countryId": -1,
+    "_id": 122
+  },
+  "123": {
+    "_name": "Chris Isaak",
+    "_countryId": -1,
+    "_id": 123
+  },
+  "124": {
+    "_name": "Krzysztof Krawczyk",
+    "_countryId": -1,
+    "_id": 124
+  },
+  "125": {
+    "_name": "Chris Brown",
+    "_countryId": -1,
+    "_id": 125
+  },
+  "126": {
+    "_name": "Little Big Town",
+    "_countryId": -1,
+    "_id": 126
+  },
+  "127": {
+    "_name": "Green Day",
+    "_countryId": -1,
+    "_id": 127
+  },
+  "129": {
+    "_name": "Kase&Wrethov",
+    "_countryId": -1,
+    "_id": 129
+  },
+  "130": {
+    "_name": "Matthew Wilder",
+    "_countryId": -1,
+    "_id": 130
+  },
+  "131": {
+    "_name": "Sam Hunt",
+    "_countryId": -1,
+    "_id": 131
+  },
+  "132": {
+    "_name": "Lemonade Mouth",
+    "_countryId": -1,
+    "_id": 132
+  },
+  "133": {
+    "_name": "Breaking Benjamin",
+    "_countryId": -1,
+    "_id": 133
+  },
+  "134": {
+    "_name": "Cassadee Pope",
+    "_countryId": -1,
+    "_id": 134
+  },
+  "135": {
+    "_name": "Evanescence",
+    "_countryId": -1,
+    "_id": 135
+  },
+  "136": {
+    "_name": "Seether",
+    "_countryId": -1,
+    "_id": 136
+  },
+  "137": {
+    "_name": "Amy Lee",
+    "_countryId": -1,
+    "_id": 137
+  },
+  "138": {
+    "_name": "Tritional",
+    "_countryId": -1,
+    "_id": 138
+  },
+  "139": {
+    "_name": "Jenaux",
+    "_countryId": -1,
+    "_id": 139
+  },
+  "140": {
+    "_name": "Linkin Park",
+    "_countryId": -1,
+    "_id": 140
+  },
+  "141": {
+    "_name": "Nickelback",
+    "_countryId": -1,
+    "_id": 141
+  },
+  "142": {
+    "_name": "Lea Michele",
+    "_countryId": -1,
+    "_id": 142
+  },
+  "143": {
+    "_name": "Ellie Goulding",
+    "_countryId": -1,
+    "_id": 143
+  },
+  "144": {
+    "_name": "Jonas Brothers",
+    "_countryId": -1,
+    "_id": 144
+  },
+  "145": {
+    "_name": "Jonas Brothers/Big Rob",
+    "_countryId": -1,
+    "_id": 145
+  },
+  "146": {
+    "_name": "Ace Wilder",
+    "_countryId": -1,
+    "_id": 146
+  },
+  "147": {
+    "_name": "Red Hot Chili Peppers",
+    "_countryId": -1,
+    "_id": 147
+  },
+  "148": {
+    "_name": "DNCE",
+    "_countryId": -1,
+    "_id": 148
+  },
+  "149": {
+    "_name": "The Common Linnets",
+    "_countryId": -1,
+    "_id": 149
+  },
+  "150": {
+    "_name": "LeAnn Rimes",
+    "_countryId": -1,
+    "_id": 150
+  },
+  "151": {
+    "_name": "Becky G",
+    "_countryId": -1,
+    "_id": 151
+  },
+  "152": {
+    "_name": "Camp Rock 2: The Final Jam Cast",
+    "_countryId": -1,
+    "_id": 152
+  },
+  "153": {
+    "_name": "Hailee Steinfeld",
+    "_countryId": -1,
+    "_id": 153
+  },
+  "154": {
+    "_name": "Hailee Steinfeld/BloodPop",
+    "_countryId": -1,
+    "_id": 154
+  },
+  "155": {
+    "_name": "George Michael",
+    "_countryId": -1,
+    "_id": 155
+  },
+  "156": {
+    "_name": "Kansas",
+    "_countryId": -1,
+    "_id": 156
+  },
+  "157": {
+    "_name": "Freya Ridings",
+    "_countryId": -1,
+    "_id": 157
+  },
+  "158": {
+    "_name": "Miki Núnez",
+    "_countryId": -1,
+    "_id": 158
+  },
+  "159": {
+    "_name": "Fall Out Boy",
+    "_countryId": -1,
+    "_id": 159
+  },
+  "160": {
+    "_name": "Nick Jonas",
+    "_countryId": -1,
+    "_id": 160
+  },
+  "161": {
+    "_name": "Tiesto",
+    "_countryId": -1,
+    "_id": 161
+  },
+  "162": {
+    "_name": "The Wanted",
+    "_countryId": -1,
+    "_id": 162
+  },
+  "163": {
+    "_name": "Sia",
+    "_countryId": -1,
+    "_id": 163
+  },
+  "164": {
+    "_name": "Modern Talking",
+    "_countryId": -1,
+    "_id": 164
+  },
+  "165": {
+    "_name": "Warrant",
+    "_countryId": -1,
+    "_id": 165
+  },
+  "166": {
+    "_name": "Jason Derulo",
+    "_countryId": -1,
+    "_id": 166
+  },
+  "167": {
+    "_name": "Andrzej Piaseczny",
+    "_countryId": -1,
+    "_id": 167
+  },
+  "168": {
+    "_name": "Belinda Carlisle",
+    "_countryId": -1,
+    "_id": 168
+  },
+  "169": {
+    "_name": "Zedd/Foxes",
+    "_countryId": -1,
+    "_id": 169
+  },
+  "170": {
+    "_name": "Joan as Police Woman",
+    "_countryId": -1,
+    "_id": 170
+  },
+  "171": {
+    "_name": "MKTO",
+    "_countryId": -1,
+    "_id": 171
+  },
+  "172": {
+    "_name": "Tegan and Sara",
+    "_countryId": -1,
+    "_id": 172
+  },
+  "173": {
+    "_name": "Unknown",
+    "_countryId": -1,
+    "_id": 173
+  },
+  "174": {
+    "_name": "Teddybear STHLM",
+    "_countryId": -1,
+    "_id": 174
+  },
+  "175": {
+    "_name": "The Supremes",
+    "_countryId": -1,
+    "_id": 175
+  },
+  "176": {
+    "_name": "Sigma",
+    "_countryId": -1,
+    "_id": 176
+  },
+  "177": {
+    "_name": "Kelly Rowland",
+    "_countryId": -1,
+    "_id": 177
+  },
+  "178": {
+    "_name": "David Guetta/Kelly Rowland",
+    "_countryId": -1,
+    "_id": 178
+  },
+  "179": {
+    "_name": "Avril Lavigne",
+    "_countryId": -1,
+    "_id": 179
+  },
+  "180": {
+    "_name": "Demi Lovato",
+    "_countryId": -1,
+    "_id": 180
+  },
+  "181": {
+    "_name": "Eros Ramazzotti",
+    "_countryId": -1,
+    "_id": 181
+  },
+  "182": {
+    "_name": "Tina Turner",
+    "_countryId": -1,
+    "_id": 182
+  },
+  "183": {
+    "_name": "Thomas Rhett",
+    "_countryId": -1,
+    "_id": 183
+  },
+  "184": {
+    "_name": "Beyoncé",
+    "_countryId": -1,
+    "_id": 184
+  },
+  "185": {
+    "_name": "Beyonce Knowles feat Jay-Z",
+    "_countryId": -1,
+    "_id": 185
+  },
+  "186": {
+    "_name": "Florida Georgia Line",
+    "_countryId": -1,
+    "_id": 186
+  },
+  "187": {
+    "_name": "Camila Cabello",
+    "_countryId": -1,
+    "_id": 187
+  },
+  "188": {
+    "_name": "September",
+    "_countryId": -1,
+    "_id": 188
+  },
+  "189": {
+    "_name": "Justin Timberlake",
+    "_countryId": -1,
+    "_id": 189
+  },
+  "190": {
+    "_name": "Aerosmith",
+    "_countryId": -1,
+    "_id": 190
+  },
+  "191": {
+    "_name": "Blue Cafe",
+    "_countryId": -1,
+    "_id": 191
+  },
+  "192": {
+    "_name": "Sound’n’Grace",
+    "_countryId": -1,
+    "_id": 192
+  },
+  "193": {
+    "_name": "Bold&Beautiful",
+    "_countryId": -1,
+    "_id": 193
+  },
+  "194": {
+    "_name": "Jack Wagner",
+    "_countryId": -1,
+    "_id": 194
+  },
+  "195": {
+    "_name": "Girls' Generation",
+    "_countryId": -1,
+    "_id": 195
+  },
+  "196": {
+    "_name": "Abba",
+    "_countryId": -1,
+    "_id": 196
+  },
+  "197": {
+    "_name": "Kenny Loggins",
+    "_countryId": -1,
+    "_id": 197
+  },
+  "198": {
+    "_name": "H.E.A.T",
+    "_countryId": -1,
+    "_id": 198
+  },
+  "199": {
+    "_name": "Stan Bush",
+    "_countryId": -1,
+    "_id": 199
+  },
+  "200": {
+    "_name": "Granrodeo",
+    "_countryId": -1,
+    "_id": 200
+  },
+  "201": {
+    "_name": "Alan Walker",
+    "_countryId": -1,
+    "_id": 201
+  },
+  "202": {
+    "_name": "Dave Rogers",
+    "_countryId": -1,
+    "_id": 202
+  },
+  "203": {
+    "_name": "Luis Fonsi",
+    "_countryId": -1,
+    "_id": 203
+  },
+  "204": {
+    "_name": "Luis Fonsi/Daddy Yankee",
+    "_countryId": -1,
+    "_id": 204
+  },
+  "205": {
+    "_name": "Isaac 2187",
+    "_countryId": -1,
+    "_id": 205
+  },
+  "206": {
+    "_name": "Rihanna",
+    "_countryId": -1,
+    "_id": 206
+  },
+  "207": {
+    "_name": "Kelsea Ballerini",
+    "_countryId": -1,
+    "_id": 207
+  },
+  "208": {
+    "_name": "Ke$ha",
+    "_countryId": -1,
+    "_id": 208
+  },
+  "209": {
+    "_name": "Neha Kakkar",
+    "_countryId": -1,
+    "_id": 209
+  },
+  "210": {
+    "_name": "Usher",
+    "_countryId": -1,
+    "_id": 210
+  },
+  "211": {
+    "_name": "Ira",
+    "_countryId": -1,
+    "_id": 211
+  },
+  "212": {
+    "_name": "Marek Grechuta",
+    "_countryId": -1,
+    "_id": 212
+  },
+  "213": {
+    "_name": "Cleo",
+    "_countryId": -1,
+    "_id": 213
+  },
+  "214": {
+    "_name": "Imany",
+    "_countryId": -1,
+    "_id": 214
+  },
+  "215": {
+    "_name": "Mabel",
+    "_countryId": -1,
+    "_id": 215
+  },
+  "216": {
+    "_name": "Raon Lee",
+    "_countryId": -1,
+    "_id": 216
+  },
+  "217": {
+    "_name": "Martin Garrix",
+    "_countryId": -1,
+    "_id": 217
+  },
+  "218": {
+    "_name": "Dua Lipa",
+    "_countryId": -1,
+    "_id": 218
+  },
+  "219": {
+    "_name": "Queen",
+    "_countryId": -1,
+    "_id": 219
+  },
+  "220": {
+    "_name": "Madcon ft. Ray Dalton",
+    "_countryId": -1,
+    "_id": 220
+  },
+  "221": {
+    "_name": "Madcon",
+    "_countryId": -1,
+    "_id": 221
+  },
+  "222": {
+    "_name": "Ray Dalton",
+    "_countryId": -1,
+    "_id": 222
+  },
+  "223": {
+    "_name": "Jason Aldean",
+    "_countryId": -1,
+    "_id": 223
+  },
+  "225": {
+    "_name": "Backstreet Boys",
+    "_countryId": -1,
+    "_id": 225
+  },
+  "226": {
+    "_name": "Beck",
+    "_countryId": -1,
+    "_id": 226
+  },
+  "227": {
+    "_name": "Train",
+    "_countryId": -1,
+    "_id": 227
+  },
+  "228": {
+    "_name": "Kovic",
+    "_countryId": -1,
+    "_id": 228
+  },
+  "229": {
+    "_name": "Hadise",
+    "_countryId": -1,
+    "_id": 229
+  },
+  "230": {
+    "_name": "Myslovitz",
+    "_countryId": -1,
+    "_id": 230
+  },
+  "231": {
+    "_name": "5 Seconds of Summer",
+    "_countryId": -1,
+    "_id": 231
+  },
+  "232": {
+    "_name": "Wrethov",
+    "_countryId": -1,
+    "_id": 232
+  },
+  "233": {
+    "_name": "Demi Lovato/Luis Fonsi",
+    "_countryId": -1,
+    "_id": 233
+  },
+  "234": {
+    "_name": "Jesse & Joy",
+    "_countryId": -1,
+    "_id": 234
+  },
+  "235": {
+    "_name": "Nicky Jam",
+    "_countryId": -1,
+    "_id": 235
+  },
+  "236": {
+    "_name": "Kate Ryan",
+    "_countryId": -1,
+    "_id": 236
+  },
+  "237": {
+    "_name": "Oceana",
+    "_countryId": -1,
+    "_id": 237
+  },
+  "238": {
+    "_name": "Depeche Mode",
+    "_countryId": -1,
+    "_id": 238
+  },
+  "239": {
+    "_name": "Loreen",
+    "_countryId": -1,
+    "_id": 239
+  },
+  "240": {
+    "_name": "Maggie Reilly",
+    "_countryId": -1,
+    "_id": 240
+  },
+  "241": {
+    "_name": "Britney Spears",
+    "_countryId": -1,
+    "_id": 241
+  },
+  "242": {
+    "_name": "Sertab Erener",
+    "_countryId": -1,
+    "_id": 242
+  },
+  "243": {
+    "_name": "Survivor",
+    "_countryId": -1,
+    "_id": 243
+  },
+  "244": {
+    "_name": "The Nearly Deads",
+    "_countryId": -1,
+    "_id": 244
+  },
+  "245": {
+    "_name": "Roxette",
+    "_countryId": -1,
+    "_id": 245
+  },
+  "246": {
+    "_name": "will.i.am",
+    "_countryId": -1,
+    "_id": 246
+  },
+  "247": {
+    "_name": "Black Veil Brides",
+    "_countryId": -1,
+    "_id": 247
+  },
+  "248": {
+    "_name": "Egoist",
+    "_countryId": -1,
+    "_id": 248
+  },
+  "249": {
+    "_name": "Alicia keys",
+    "_countryId": -1,
+    "_id": 249
+  },
+  "250": {
+    "_name": "Alicia Keys",
+    "_countryId": -1,
+    "_id": 250
+  },
+  "251": {
+    "_name": "Papa Roach",
+    "_countryId": -1,
+    "_id": 251
+  },
+  "252": {
+    "_name": "Lidia Isaac",
+    "_countryId": -1,
+    "_id": 252
+  },
+  "253": {
+    "_name": "Caylee Hammack",
+    "_countryId": -1,
+    "_id": 253
+  },
+  "254": {
+    "_name": "Ladies' Code",
+    "_countryId": -1,
+    "_id": 254
+  },
+  "255": {
+    "_name": "Robbie Williams",
+    "_countryId": -1,
+    "_id": 255
+  },
+  "256": {
+    "_name": "Sting",
+    "_countryId": -1,
+    "_id": 256
+  },
+  "257": {
+    "_name": "Christina Aguilera",
+    "_countryId": -1,
+    "_id": 257
+  },
+  "258": {
+    "_name": "Jun Hyoseong",
+    "_countryId": -1,
+    "_id": 258
+  },
+  "259": {
+    "_name": "Mans Zelmerlöw",
+    "_countryId": -1,
+    "_id": 259
+  },
+  "260": {
+    "_name": "Bea Miller",
+    "_countryId": -1,
+    "_id": 260
+  },
+  "261": {
+    "_name": "John Ryan",
+    "_countryId": -1,
+    "_id": 261
+  },
+  "262": {
+    "_name": "Katy Perry",
+    "_countryId": -1,
+    "_id": 262
+  },
+  "263": {
+    "_name": "Chris Lane",
+    "_countryId": -1,
+    "_id": 263
+  },
+  "264": {
+    "_name": "David Guetta",
+    "_countryId": -1,
+    "_id": 264
+  },
+  "265": {
+    "_name": "Sia/David Guetta",
+    "_countryId": -1,
+    "_id": 265
+  },
+  "266": {
+    "_name": "Sylwia Grzeszczak",
+    "_countryId": -1,
+    "_id": 266
+  },
+  "267": {
+    "_name": "Lenny Kravitz",
+    "_countryId": -1,
+    "_id": 267
+  },
+  "268": {
+    "_name": "Olsen Brothers",
+    "_countryId": -1,
+    "_id": 268
+  },
+  "269": {
+    "_name": "Vote Quimby",
+    "_countryId": -1,
+    "_id": 269
+  },
+  "270": {
+    "_name": "Blake Shelton",
+    "_countryId": -1,
+    "_id": 270
+  },
+  "271": {
+    "_name": "John de Sohn",
+    "_countryId": -1,
+    "_id": 271
+  },
+  "272": {
+    "_name": "Kygo/Avici/Sandro Cavazza",
+    "_countryId": -1,
+    "_id": 272
+  },
+  "273": {
+    "_name": "Tom Grennan",
+    "_countryId": -1,
+    "_id": 273
+  },
+  "274": {
+    "_name": "Paul McCartney",
+    "_countryId": -1,
+    "_id": 274
+  },
+  "275": {
+    "_name": "Kanye West",
+    "_countryId": -1,
+    "_id": 275
+  },
+  "276": {
+    "_name": "Lake Malawi",
+    "_countryId": -1,
+    "_id": 276
+  },
+  "277": {
+    "_name": "Against the Current",
+    "_countryId": -1,
+    "_id": 277
+  },
+  "278": {
+    "_name": "Dan + Shay",
+    "_countryId": -1,
+    "_id": 278
+  },
+  "279": {
+    "_name": "Madonna",
+    "_countryId": -1,
+    "_id": 279
+  },
+  "280": {
+    "_name": "Psy",
+    "_countryId": -1,
+    "_id": 280
+  },
+  "281": {
+    "_name": "Coolio",
+    "_countryId": -1,
+    "_id": 281
+  },
+  "282": {
+    "_name": "Garou",
+    "_countryId": -1,
+    "_id": 282
+  },
+  "283": {
+    "_name": "Manuel",
+    "_countryId": -1,
+    "_id": 283
+  },
+  "284": {
+    "_name": "Juri Aikawa",
+    "_countryId": -1,
+    "_id": 284
+  },
+  "285": {
+    "_name": "Sheppard",
+    "_countryId": -1,
+    "_id": 285
+  },
+  "286": {
+    "_name": "Shepard",
+    "_countryId": -1,
+    "_id": 286
+  },
+  "287": {
+    "_name": "Daft Punk",
+    "_countryId": -1,
+    "_id": 287
+  },
+  "288": {
+    "_name": "Pharrell Williams",
+    "_countryId": -1,
+    "_id": 288
+  },
+  "289": {
+    "_name": "Icon for Hire",
+    "_countryId": -1,
+    "_id": 289
+  },
+  "290": {
+    "_name": "Ella Henderson",
+    "_countryId": -1,
+    "_id": 290
+  },
+  "291": {
+    "_name": "Maddie & Tae",
+    "_countryId": -1,
+    "_id": 291
+  },
+  "292": {
+    "_name": "9Muses",
+    "_countryId": -1,
+    "_id": 292
+  },
+  "293": {
+    "_name": "Lissie",
+    "_countryId": -1,
+    "_id": 293
+  },
+  "294": {
+    "_name": "Nadav Guedj",
+    "_countryId": -1,
+    "_id": 294
+  },
+  "295": {
+    "_name": "Charli XCX",
+    "_countryId": -1,
+    "_id": 295
+  },
+  "296": {
+    "_name": "Niko Moon",
+    "_countryId": -1,
+    "_id": 296
+  },
+  "297": {
+    "_name": "Elina Born & Stig Rästa",
+    "_countryId": -1,
+    "_id": 297
+  },
+  "298": {
+    "_name": "Il Volo",
+    "_countryId": -1,
+    "_id": 298
+  },
+  "299": {
+    "_name": "Hovig",
+    "_countryId": -1,
+    "_id": 299
+  },
+  "300": {
+    "_name": "Shakira",
+    "_countryId": -1,
+    "_id": 300
+  },
+  "301": {
+    "_name": "The Script",
+    "_countryId": -1,
+    "_id": 301
+  },
+  "302": {
+    "_name": "Will.I.Am",
+    "_countryId": -1,
+    "_id": 302
+  },
+  "303": {
+    "_name": "Various Artists",
+    "_countryId": -1,
+    "_id": 303
+  },
+  "304": {
+    "_name": "Espen Lind",
+    "_countryId": -1,
+    "_id": 304
+  },
+  "305": {
+    "_name": "Beyonce",
+    "_countryId": -1,
+    "_id": 305
+  },
+  "306": {
+    "_name": "Hey Monday",
+    "_countryId": -1,
+    "_id": 306
+  },
+  "307": {
+    "_name": "Lordi",
+    "_countryId": -1,
+    "_id": 307
+  },
+  "308": {
+    "_name": "Elksdotter",
+    "_countryId": -1,
+    "_id": 308
+  },
+  "309": {
+    "_name": "Blue",
+    "_countryId": -1,
+    "_id": 309
+  },
+  "310": {
+    "_name": "Can-linn",
+    "_countryId": -1,
+    "_id": 310
+  },
+  "311": {
+    "_name": "The Pretty Reckless",
+    "_countryId": -1,
+    "_id": 311
+  },
+  "312": {
+    "_name": "Pat Banatar",
+    "_countryId": -1,
+    "_id": 312
+  },
+  "313": {
+    "_name": "Rev Theory",
+    "_countryId": -1,
+    "_id": 313
+  },
+  "314": {
+    "_name": "Alesso",
+    "_countryId": -1,
+    "_id": 314
+  },
+  "315": {
+    "_name": "Tove Lo",
+    "_countryId": -1,
+    "_id": 315
+  },
+  "316": {
+    "_name": "Avicii",
+    "_countryId": -1,
+    "_id": 316
+  },
+  "317": {
+    "_name": "Billy Currington",
+    "_countryId": -1,
+    "_id": 317
+  },
+  "318": {
+    "_name": "Outkast",
+    "_countryId": -1,
+    "_id": 318
+  },
+  "319": {
+    "_name": "Panic! at the Disco",
+    "_countryId": -1,
+    "_id": 319
+  },
+  "320": {
+    "_name": "Rasmussen ",
+    "_countryId": -1,
+    "_id": 320
+  },
+  "321": {
+    "_name": "Whitney Houston/Kygo",
+    "_countryId": -1,
+    "_id": 321
+  },
+  "322": {
+    "_name": "Bonnie Tyler",
+    "_countryId": -1,
+    "_id": 322
+  },
+  "323": {
+    "_name": "Aimer",
+    "_countryId": -1,
+    "_id": 323
+  },
+  "324": {
+    "_name": "Donna Summer",
+    "_countryId": -1,
+    "_id": 324
+  },
+  "325": {
+    "_name": "DJ Antoinne",
+    "_countryId": -1,
+    "_id": 325
+  },
+  "326": {
+    "_name": "Sam hunt",
+    "_countryId": -1,
+    "_id": 326
+  },
+  "327": {
+    "_name": "Whitney Houston",
+    "_countryId": -1,
+    "_id": 327
+  },
+  "328": {
+    "_name": "Eric Carmen",
+    "_countryId": -1,
+    "_id": 328
+  },
+  "329": {
+    "_name": "Sebalter",
+    "_countryId": -1,
+    "_id": 329
+  },
+  "330": {
+    "_name": "Luke Bryan",
+    "_countryId": -1,
+    "_id": 330
+  },
+  "331": {
+    "_name": "Thirty Seconds to Mars",
+    "_countryId": -1,
+    "_id": 331
+  },
+  "332": {
+    "_name": "Robin Bengtsson",
+    "_countryId": -1,
+    "_id": 332
+  },
+  "333": {
+    "_name": "Brink",
+    "_countryId": -1,
+    "_id": 333
+  },
+  "334": {
+    "_name": "Zayn",
+    "_countryId": -1,
+    "_id": 334
+  },
+  "335": {
+    "_name": "The Vamps",
+    "_countryId": -1,
+    "_id": 335
+  },
+  "336": {
+    "_name": "Hunter S. Thompson",
+    "_countryId": -1,
+    "_id": 336
+  },
+  "337": {
+    "_name": "Carly Pearce",
+    "_countryId": -1,
+    "_id": 337
+  },
+  "338": {
+    "_name": "Gabby Barrett",
+    "_countryId": -1,
+    "_id": 338
+  },
+  "339": {
+    "_name": "Shawn Mendes",
+    "_countryId": -1,
+    "_id": 339
+  },
+  "340": {
+    "_name": "Joan Jett & the Blackhearts",
+    "_countryId": -1,
+    "_id": 340
+  },
+  "341": {
+    "_name": "Carly Rae Jepsen",
+    "_countryId": -1,
+    "_id": 341
+  },
+  "342": {
+    "_name": "Leona Lewis",
+    "_countryId": -1,
+    "_id": 342
+  },
+  "343": {
+    "_name": "Kiss",
+    "_countryId": -1,
+    "_id": 343
+  },
+  "344": {
+    "_name": "Puff Daddy & The Family",
+    "_countryId": -1,
+    "_id": 344
+  },
+  "345": {
+    "_name": "The Rembrandts",
+    "_countryId": -1,
+    "_id": 345
+  },
+  "346": {
+    "_name": "Alanis Morisette",
+    "_countryId": -1,
+    "_id": 346
+  },
+  "347": {
+    "_name": "Bebe Rexha",
+    "_countryId": -1,
+    "_id": 347
+  },
+  "348": {
+    "_name": "Becca",
+    "_countryId": -1,
+    "_id": 348
+  },
+  "349": {
+    "_name": "Jay Sean ft Pitbull",
+    "_countryId": -1,
+    "_id": 349
+  },
+  "350": {
+    "_name": "Anastacia",
+    "_countryId": -1,
+    "_id": 350
+  },
+  "351": {
+    "_name": "Camp Rock Cast ",
+    "_countryId": -1,
+    "_id": 351
+  },
+  "352": {
+    "_name": "Agnete",
+    "_countryId": -1,
+    "_id": 352
+  },
+  "353": {
+    "_name": "Poli Genova",
+    "_countryId": -1,
+    "_id": 353
+  },
+  "354": {
+    "_name": "Dirty Money",
+    "_countryId": -1,
+    "_id": 354
+  },
+  "355": {
+    "_name": "The Pointer Sisters",
+    "_countryId": -1,
+    "_id": 355
+  },
+  "356": {
+    "_name": "James Arthur",
+    "_countryId": -1,
+    "_id": 356
+  },
+  "357": {
+    "_name": "Leonard Cohen",
+    "_countryId": -1,
+    "_id": 357
+  },
+  "358": {
+    "_name": "Sabaton",
+    "_countryId": -1,
+    "_id": 358
+  },
+  "359": {
+    "_name": "Monika Kuszewska",
+    "_countryId": -1,
+    "_id": 359
+  },
+  "360": {
+    "_name": "The Rasmus",
+    "_countryId": -1,
+    "_id": 360
+  },
+  "361": {
+    "_name": "Robin Schulz",
+    "_countryId": -1,
+    "_id": 361
+  },
+  "362": {
+    "_name": "Disturbed",
+    "_countryId": -1,
+    "_id": 362
+  },
+  "363": {
+    "_name": "Paolo Belli",
+    "_countryId": -1,
+    "_id": 363
+  },
+  "364": {
+    "_name": "Jennel Garcia",
+    "_countryId": -1,
+    "_id": 364
+  },
+  "365": {
+    "_name": "Kygo",
+    "_countryId": -1,
+    "_id": 365
+  },
+  "366": {
+    "_name": "Selena Gomez/Kygo",
+    "_countryId": -1,
+    "_id": 366
+  },
+  "367": {
+    "_name": "Juliana Pasha",
+    "_countryId": -1,
+    "_id": 367
+  },
+  "368": {
+    "_name": "Eric Clapton",
+    "_countryId": -1,
+    "_id": 368
+  },
+  "369": {
+    "_name": "No Doubt;",
+    "_countryId": -1,
+    "_id": 369
+  },
+  "370": {
+    "_name": "No Doubt",
+    "_countryId": -1,
+    "_id": 370
+  },
+  "371": {
+    "_name": "Bon Jovi",
+    "_countryId": -1,
+    "_id": 371
+  },
+  "372": {
+    "_name": "Antonia",
+    "_countryId": -1,
+    "_id": 372
+  },
+  "373": {
+    "_name": "Ivan i Delfin",
+    "_countryId": -1,
+    "_id": 373
+  },
+  "374": {
+    "_name": "Budka Suflera",
+    "_countryId": -1,
+    "_id": 374
+  },
+  "375": {
+    "_name": "Dolly Parton",
+    "_countryId": -1,
+    "_id": 375
+  },
+  "376": {
+    "_name": "Pink/Nate Ruess",
+    "_countryId": -1,
+    "_id": 376
+  },
+  "377": {
+    "_name": "Bruno Mars",
+    "_countryId": -1,
+    "_id": 377
+  },
+  "378": {
+    "_name": "Kylie Minogue",
+    "_countryId": -1,
+    "_id": 378
+  },
+  "379": {
+    "_name": "O.N.A.",
+    "_countryId": -1,
+    "_id": 379
+  },
+  "380": {
+    "_name": "Foxy Shazam",
+    "_countryId": -1,
+    "_id": 380
+  },
+  "381": {
+    "_name": "Anna Bergendahl",
+    "_countryId": -1,
+    "_id": 381
+  },
+  "382": {
+    "_name": "SEAL",
+    "_countryId": -1,
+    "_id": 382
+  },
+  "383": {
+    "_name": "Bingo Players",
+    "_countryId": -1,
+    "_id": 383
+  },
+  "384": {
+    "_name": "Nevena Božović",
+    "_countryId": -1,
+    "_id": 384
+  },
+  "385": {
+    "_name": "Lady Pank",
+    "_countryId": -1,
+    "_id": 385
+  },
+  "386": {
+    "_name": "Akcent",
+    "_countryId": -1,
+    "_id": 386
+  },
+  "387": {
+    "_name": "Juanes",
+    "_countryId": -1,
+    "_id": 387
+  },
+  "388": {
+    "_name": "Ivi Adamou",
+    "_countryId": -1,
+    "_id": 388
+  },
+  "389": {
+    "_name": "The Miracle Of Sound",
+    "_countryId": -1,
+    "_id": 389
+  },
+  "390": {
+    "_name": "Sami",
+    "_countryId": -1,
+    "_id": 390
+  },
+  "391": {
+    "_name": "Louise",
+    "_countryId": -1,
+    "_id": 391
+  },
+  "392": {
+    "_name": "JoJo",
+    "_countryId": -1,
+    "_id": 392
+  },
+  "393": {
+    "_name": "Hanna Pakarinen",
+    "_countryId": -1,
+    "_id": 393
+  },
+  "394": {
+    "_name": "Marcin Mroziński",
+    "_countryId": -1,
+    "_id": 394
+  },
+  "395": {
+    "_name": "Chad Kruger",
+    "_countryId": -1,
+    "_id": 395
+  },
+  "396": {
+    "_name": "Hailee Steinfeld & Alesso (ft. Florida Georgia Line & watt)",
+    "_countryId": -1,
+    "_id": 396
+  },
+  "397": {
+    "_name": "DJ Snake",
+    "_countryId": -1,
+    "_id": 397
+  },
+  "398": {
+    "_name": "Justin Bieber",
+    "_countryId": -1,
+    "_id": 398
+  },
+  "399": {
+    "_name": "Thousand Foot Krutch",
+    "_countryId": -1,
+    "_id": 399
+  },
+  "400": {
+    "_name": "Cheryl",
+    "_countryId": -1,
+    "_id": 400
+  },
+  "401": {
+    "_name": "Mikolas Josef",
+    "_countryId": -1,
+    "_id": 401
+  },
+  "402": {
+    "_name": "A-ha",
+    "_countryId": -1,
+    "_id": 402
+  },
+  "403": {
+    "_name": "Gromee",
+    "_countryId": -1,
+    "_id": 403
+  },
+  "404": {
+    "_name": "David A. Stewart/Candy Duffer",
+    "_countryId": -1,
+    "_id": 404
+  },
+  "405": {
+    "_name": "Scott Matthew",
+    "_countryId": -1,
+    "_id": 405
+  },
+  "406": {
+    "_name": "Fleetwood Mac",
+    "_countryId": -1,
+    "_id": 406
+  },
+  "407": {
+    "_name": "Portugal. The Man;",
+    "_countryId": -1,
+    "_id": 407
+  },
+  "408": {
+    "_name": "Portugal. The Man",
+    "_countryId": -1,
+    "_id": 408
+  },
+  "409": {
+    "_name": "Mitchel Musso",
+    "_countryId": -1,
+    "_id": 409
+  },
+  "410": {
+    "_name": "Ricky Martin",
+    "_countryId": -1,
+    "_id": 410
+  },
+  "411": {
+    "_name": "Rock City",
+    "_countryId": -1,
+    "_id": 411
+  },
+  "412": {
+    "_name": "Adam Levine",
+    "_countryId": -1,
+    "_id": 412
+  },
+  "413": {
+    "_name": "Chris Young",
+    "_countryId": -1,
+    "_id": 413
+  },
+  "414": {
+    "_name": "Tonight Alive",
+    "_countryId": -1,
+    "_id": 414
+  },
+  "415": {
+    "_name": "Chase Rice",
+    "_countryId": -1,
+    "_id": 415
+  },
+  "416": {
+    "_name": "Billy Squier",
+    "_countryId": -1,
+    "_id": 416
+  },
+  "417": {
+    "_name": "Rob Thomas",
+    "_countryId": -1,
+    "_id": 417
+  },
+  "418": {
+    "_name": "Joel Corry/Harlee",
+    "_countryId": -1,
+    "_id": 418
+  },
+  "419": {
+    "_name": "Brett Eldredge",
+    "_countryId": -1,
+    "_id": 419
+  },
+  "420": {
+    "_name": "R.E.M.",
+    "_countryId": -1,
+    "_id": 420
+  },
+  "421": {
+    "_name": "Eye Cue",
+    "_countryId": -1,
+    "_id": 421
+  },
+  "422": {
+    "_name": "Andrew McMahon in the Wilderness",
+    "_countryId": -1,
+    "_id": 422
+  },
+  "423": {
+    "_name": "John Mamann",
+    "_countryId": -1,
+    "_id": 423
+  },
+  "424": {
+    "_name": "John Mamann/Kika",
+    "_countryId": -1,
+    "_id": 424
+  },
+  "425": {
+    "_name": "The Weeknd",
+    "_countryId": -1,
+    "_id": 425
+  },
+  "426": {
+    "_name": "Eminem",
+    "_countryId": -1,
+    "_id": 426
+  },
+  "427": {
+    "_name": "Cole Swindell",
+    "_countryId": -1,
+    "_id": 427
+  },
+  "428": {
+    "_name": "Alice Cooper",
+    "_countryId": -1,
+    "_id": 428
+  },
+  "429": {
+    "_name": "Lou Bega",
+    "_countryId": -1,
+    "_id": 429
+  },
+  "430": {
+    "_name": "Blondie",
+    "_countryId": -1,
+    "_id": 430
+  },
+  "431": {
+    "_name": "Brainstorm",
+    "_countryId": -1,
+    "_id": 431
+  },
+  "432": {
+    "_name": "Rixton",
+    "_countryId": -1,
+    "_id": 432
+  },
+  "433": {
+    "_name": "Tom Dice",
+    "_countryId": -1,
+    "_id": 433
+  },
+  "434": {
+    "_name": "Danielle Bradberry",
+    "_countryId": -1,
+    "_id": 434
+  },
+  "435": {
+    "_name": "Bebe Rexha/Florida Georgia Line",
+    "_countryId": -1,
+    "_id": 435
+  },
+  "436": {
+    "_name": "Vance Joy",
+    "_countryId": -1,
+    "_id": 436
+  },
+  "437": {
+    "_name": "Monika Brodka",
+    "_countryId": -1,
+    "_id": 437
+  },
+  "438": {
+    "_name": "Łona",
+    "_countryId": -1,
+    "_id": 438
+  },
+  "439": {
+    "_name": "OVI & Selia",
+    "_countryId": -1,
+    "_id": 439
+  },
+  "440": {
+    "_name": "Terasbetoni",
+    "_countryId": -1,
+    "_id": 440
+  },
+  "441": {
+    "_name": "Aitsuki Nakuru",
+    "_countryId": -1,
+    "_id": 441
+  },
+  "442": {
+    "_name": "Saara Aalto",
+    "_countryId": -1,
+    "_id": 442
+  },
+  "443": {
+    "_name": "Inna",
+    "_countryId": -1,
+    "_id": 443
+  },
+  "444": {
+    "_name": "Dope",
+    "_countryId": -1,
+    "_id": 444
+  },
+  "445": {
+    "_name": "Elena Paparizou",
+    "_countryId": -1,
+    "_id": 445
+  },
+  "446": {
+    "_name": "Kasia Cerekwicka",
+    "_countryId": -1,
+    "_id": 446
+  },
+  "447": {
+    "_name": "MNEK",
+    "_countryId": -1,
+    "_id": 447
+  },
+  "448": {
+    "_name": "Rick Astley",
+    "_countryId": -1,
+    "_id": 448
+  },
+  "449": {
+    "_name": "Gin Wigmore",
+    "_countryId": -1,
+    "_id": 449
+  },
+  "450": {
+    "_name": "Emeli Sande",
+    "_countryId": -1,
+    "_id": 450
+  },
+  "451": {
+    "_name": "Niall Horan",
+    "_countryId": -1,
+    "_id": 451
+  },
+  "452": {
+    "_name": "Ewelina Flinta; Łukasz Zagrobelny;",
+    "_countryId": -1,
+    "_id": 452
+  },
+  "453": {
+    "_name": "Patty",
+    "_countryId": -1,
+    "_id": 453
+  },
+  "454": {
+    "_name": "T.Love",
+    "_countryId": -1,
+    "_id": 454
+  },
+  "455": {
+    "_name": "Rubik",
+    "_countryId": -1,
+    "_id": 455
+  },
+  "456": {
+    "_name": "Jula",
+    "_countryId": -1,
+    "_id": 456
+  },
+  "457": {
+    "_name": "Kreuzberg",
+    "_countryId": -1,
+    "_id": 457
+  },
+  "458": {
+    "_name": "Girls Aloud",
+    "_countryId": -1,
+    "_id": 458
+  },
+  "459": {
+    "_name": "Ally Brooke",
+    "_countryId": -1,
+    "_id": 459
+  },
+  "460": {
+    "_name": "Galantis",
+    "_countryId": -1,
+    "_id": 460
+  },
+  "461": {
+    "_name": "Scorpions",
+    "_countryId": -1,
+    "_id": 461
+  },
+  "462": {
+    "_name": "Cesar Sampson ",
+    "_countryId": -1,
+    "_id": 462
+  },
+  "463": {
+    "_name": "Metallica",
+    "_countryId": -1,
+    "_id": 463
+  },
+  "464": {
+    "_name": "Starship",
+    "_countryId": -1,
+    "_id": 464
+  },
+  "465": {
+    "_name": "Jasmin V",
+    "_countryId": -1,
+    "_id": 465
+  },
+  "466": {
+    "_name": "Jakob Karlberg",
+    "_countryId": -1,
+    "_id": 466
+  },
+  "467": {
+    "_name": "Agnes",
+    "_countryId": -1,
+    "_id": 467
+  },
+  "468": {
+    "_name": "Nail Horan",
+    "_countryId": -1,
+    "_id": 468
+  },
+  "469": {
+    "_name": "Imagine Dragons",
+    "_countryId": -1,
+    "_id": 469
+  },
+  "470": {
+    "_name": "Artur Gadowski",
+    "_countryId": -1,
+    "_id": 470
+  },
+  "471": {
+    "_name": "Selena Gomez/Demi Lovato",
+    "_countryId": -1,
+    "_id": 471
+  },
+  "472": {
+    "_name": "Hersi",
+    "_countryId": -1,
+    "_id": 472
+  },
+  "473": {
+    "_name": "Fade",
+    "_countryId": -1,
+    "_id": 473
+  },
+  "474": {
+    "_name": "Emmelie De Forest",
+    "_countryId": -1,
+    "_id": 474
+  },
+  "475": {
+    "_name": "Varius Manx",
+    "_countryId": -1,
+    "_id": 475
+  },
+  "476": {
+    "_name": "Waylon ",
+    "_countryId": -1,
+    "_id": 476
+  },
+  "477": {
+    "_name": "Miranda Lambert",
+    "_countryId": -1,
+    "_id": 477
+  },
+  "478": {
+    "_name": "Chris Stapleton",
+    "_countryId": -1,
+    "_id": 478
+  },
+  "479": {
+    "_name": "Guns N' Roses",
+    "_countryId": -1,
+    "_id": 479
+  },
+  "480": {
+    "_name": "Wiz Khalifa",
+    "_countryId": -1,
+    "_id": 480
+  },
+  "481": {
+    "_name": "Boston",
+    "_countryId": -1,
+    "_id": 481
+  },
+  "482": {
+    "_name": "Freddie",
+    "_countryId": -1,
+    "_id": 482
+  },
+  "483": {
+    "_name": "Brooks & Dunn",
+    "_countryId": -1,
+    "_id": 483
+  },
+  "484": {
+    "_name": "Nicole Sherzinger",
+    "_countryId": -1,
+    "_id": 484
+  },
+  "485": {
+    "_name": "Bastille",
+    "_countryId": -1,
+    "_id": 485
+  },
+  "486": {
+    "_name": "KDA",
+    "_countryId": -1,
+    "_id": 486
+  },
+  "487": {
+    "_name": "Major Lazer",
+    "_countryId": -1,
+    "_id": 487
+  },
+  "488": {
+    "_name": "Tarrus Riley",
+    "_countryId": -1,
+    "_id": 488
+  },
+  "489": {
+    "_name": "Sirusho",
+    "_countryId": -1,
+    "_id": 489
+  },
+  "490": {
+    "_name": "David Bisbal",
+    "_countryId": -1,
+    "_id": 490
+  },
+  "491": {
+    "_name": "Pentatonix",
+    "_countryId": -1,
+    "_id": 491
+  },
+  "492": {
+    "_name": "Pentatonix/Lindsey Sterling",
+    "_countryId": -1,
+    "_id": 492
+  },
+  "493": {
+    "_name": "Marc Anthony",
+    "_countryId": -1,
+    "_id": 493
+  },
+  "494": {
+    "_name": "La Quinta Estación",
+    "_countryId": -1,
+    "_id": 494
+  },
+  "495": {
+    "_name": "La Quinta Estación/Marc Anthony",
+    "_countryId": -1,
+    "_id": 495
+  },
+  "496": {
+    "_name": "CNCO",
+    "_countryId": -1,
+    "_id": 496
+  },
+  "497": {
+    "_name": "CNCO/Little Mix",
+    "_countryId": -1,
+    "_id": 497
+  },
+  "498": {
+    "_name": "Agnes Carlsson",
+    "_countryId": -1,
+    "_id": 498
+  },
+  "499": {
+    "_name": "Escape The Fate",
+    "_countryId": -1,
+    "_id": 499
+  },
+  "500": {
+    "_name": "Skin",
+    "_countryId": -1,
+    "_id": 500
+  },
+  "501": {
+    "_name": "Loic Nottet",
+    "_countryId": -1,
+    "_id": 501
+  },
+  "502": {
+    "_name": "Rita Ora/Tiesto/Jonas Blue",
+    "_countryId": -1,
+    "_id": 502
+  },
+  "503": {
+    "_name": "Hailee Steinfeld/DNCE",
+    "_countryId": -1,
+    "_id": 503
+  },
+  "504": {
+    "_name": "Clean bandit",
+    "_countryId": -1,
+    "_id": 504
+  },
+  "505": {
+    "_name": "Clean Bandit/Anne-Marie/Sean Paul",
+    "_countryId": -1,
+    "_id": 505
+  },
+  "506": {
+    "_name": "Bilal Hassani",
+    "_countryId": -1,
+    "_id": 506
+  },
+  "507": {
+    "_name": "Adam Lambert/Nile Rogers",
+    "_countryId": -1,
+    "_id": 507
+  },
+  "508": {
+    "_name": "Tinkara Kovač",
+    "_countryId": -1,
+    "_id": 508
+  },
+  "509": {
+    "_name": "MAGIC!",
+    "_countryId": -1,
+    "_id": 509
+  },
+  "510": {
+    "_name": "Adam Lambert/Tove Lo",
+    "_countryId": -1,
+    "_id": 510
+  },
+  "511": {
+    "_name": "Naughty Boy",
+    "_countryId": -1,
+    "_id": 511
+  },
+  "512": {
+    "_name": "Placebo",
+    "_countryId": -1,
+    "_id": 512
+  },
+  "513": {
+    "_name": "András Kállay-Saunders",
+    "_countryId": -1,
+    "_id": 513
+  },
+  "514": {
+    "_name": "Anders Nilsen",
+    "_countryId": -1,
+    "_id": 514
+  },
+  "515": {
+    "_name": "Lena",
+    "_countryId": -1,
+    "_id": 515
+  },
+  "516": {
+    "_name": "Nelly Furtado",
+    "_countryId": -1,
+    "_id": 516
+  },
+  "517": {
+    "_name": "Paul McCartney/Michael Jackson",
+    "_countryId": -1,
+    "_id": 517
+  },
+  "518": {
+    "_name": "Spice Girls",
+    "_countryId": -1,
+    "_id": 518
+  },
+  "519": {
+    "_name": "Alessia Cara",
+    "_countryId": -1,
+    "_id": 519
+  },
+  "520": {
+    "_name": "Golec uOrkeistra",
+    "_countryId": -1,
+    "_id": 520
+  },
+  "521": {
+    "_name": "Golec uOrkiestra",
+    "_countryId": -1,
+    "_id": 521
+  },
+  "522": {
+    "_name": "Will.I.Am ft Britney Spears",
+    "_countryId": -1,
+    "_id": 522
+  },
+  "523": {
+    "_name": "Flyleaf",
+    "_countryId": -1,
+    "_id": 523
+  },
+  "524": {
+    "_name": "Lady Gaga and Bradley Cooper",
+    "_countryId": -1,
+    "_id": 524
+  },
+  "525": {
+    "_name": "Bradley Cooper/Lady Gaga",
+    "_countryId": -1,
+    "_id": 525
+  },
+  "526": {
+    "_name": "Ed Sheeran",
+    "_countryId": -1,
+    "_id": 526
+  },
+  "527": {
+    "_name": "Tal Bachman",
+    "_countryId": -1,
+    "_id": 527
+  },
+  "528": {
+    "_name": "Mr. Big",
+    "_countryId": -1,
+    "_id": 528
+  },
+  "529": {
+    "_name": "Walk the Moon",
+    "_countryId": -1,
+    "_id": 529
+  },
+  "530": {
+    "_name": "Walk The Moon",
+    "_countryId": -1,
+    "_id": 530
+  },
+  "531": {
+    "_name": "The Chainsmokers",
+    "_countryId": -1,
+    "_id": 531
+  },
+  "532": {
+    "_name": "Queensryche",
+    "_countryId": -1,
+    "_id": 532
+  },
+  "533": {
+    "_name": "Carl Espen",
+    "_countryId": -1,
+    "_id": 533
+  },
+  "534": {
+    "_name": "Maryla Rodowicz",
+    "_countryId": -1,
+    "_id": 534
+  },
+  "535": {
+    "_name": "S!isters",
+    "_countryId": -1,
+    "_id": 535
+  },
+  "536": {
+    "_name": "Enej",
+    "_countryId": -1,
+    "_id": 536
+  },
+  "537": {
+    "_name": "Brantley Gilbert",
+    "_countryId": -1,
+    "_id": 537
+  },
+  "538": {
+    "_name": "Lighthouse X",
+    "_countryId": -1,
+    "_id": 538
+  },
+  "539": {
+    "_name": "Delta Goodrem",
+    "_countryId": -1,
+    "_id": 539
+  },
+  "540": {
+    "_name": "Clean Bandit",
+    "_countryId": -1,
+    "_id": 540
+  },
+  "541": {
+    "_name": "Demi Lovato/Clean Bandit",
+    "_countryId": -1,
+    "_id": 541
+  },
+  "542": {
+    "_name": "Nea",
+    "_countryId": -1,
+    "_id": 542
+  },
+  "543": {
+    "_name": "Tenille Arts",
+    "_countryId": -1,
+    "_id": 543
+  },
+  "544": {
+    "_name": "Tenille Arts ",
+    "_countryId": -1,
+    "_id": 544
+  },
+  "545": {
+    "_name": "Gotye",
+    "_countryId": -1,
+    "_id": 545
+  },
+  "546": {
+    "_name": "Kimbra",
+    "_countryId": -1,
+    "_id": 546
+  },
+  "547": {
+    "_name": "Demi Lovato/The Vamps",
+    "_countryId": -1,
+    "_id": 547
+  },
+  "548": {
+    "_name": "Luna Haruna",
+    "_countryId": -1,
+    "_id": 548
+  },
+  "549": {
+    "_name": "Garou:Celine dion",
+    "_countryId": -1,
+    "_id": 549
+  },
+  "550": {
+    "_name": "Ed Sheeran/Camila Cabello",
+    "_countryId": -1,
+    "_id": 550
+  },
+  "551": {
+    "_name": "Ghost",
+    "_countryId": -1,
+    "_id": 551
+  },
+  "552": {
+    "_name": "Rachel Platten",
+    "_countryId": -1,
+    "_id": 552
+  },
+  "553": {
+    "_name": "OG3NE",
+    "_countryId": -1,
+    "_id": 553
+  },
+  "554": {
+    "_name": "Og3NE",
+    "_countryId": -1,
+    "_id": 554
+  },
+  "555": {
+    "_name": "Shinedown",
+    "_countryId": -1,
+    "_id": 555
+  },
+  "556": {
+    "_name": "Mikky Ekko",
+    "_countryId": -1,
+    "_id": 556
+  },
+  "557": {
+    "_name": "Stereo Skyline!",
+    "_countryId": -1,
+    "_id": 557
+  },
+  "558": {
+    "_name": "Cyrus",
+    "_countryId": -1,
+    "_id": 558
+  },
+  "559": {
+    "_name": "Zibbz",
+    "_countryId": -1,
+    "_id": 559
+  },
+  "560": {
+    "_name": "Victor Crone",
+    "_countryId": -1,
+    "_id": 560
+  },
+  "561": {
+    "_name": "Nightiwsh",
+    "_countryId": -1,
+    "_id": 561
+  },
+  "562": {
+    "_name": "Battle Beast",
+    "_countryId": -1,
+    "_id": 562
+  },
+  "563": {
+    "_name": "Calvis Harris",
+    "_countryId": -1,
+    "_id": 563
+  },
+  "564": {
+    "_name": "Frankie Bailard",
+    "_countryId": -1,
+    "_id": 564
+  },
+  "565": {
+    "_name": "Jamelia",
+    "_countryId": -1,
+    "_id": 565
+  },
+  "566": {
+    "_name": "Eurythmics",
+    "_countryId": -1,
+    "_id": 566
+  },
+  "567": {
+    "_name": "Lynyrd Skynyrd",
+    "_countryId": -1,
+    "_id": 567
+  },
+  "568": {
+    "_name": "Kombi",
+    "_countryId": -1,
+    "_id": 568
+  },
+  "569": {
+    "_name": "John Denver",
+    "_countryId": -1,
+    "_id": 569
+  },
+  "570": {
+    "_name": "Taylor Dayne",
+    "_countryId": -1,
+    "_id": 570
+  },
+  "571": {
+    "_name": "Jill Andrews",
+    "_countryId": -1,
+    "_id": 571
+  },
+  "572": {
+    "_name": "Tenacious D",
+    "_countryId": -1,
+    "_id": 572
+  },
+  "573": {
+    "_name": "Carousel",
+    "_countryId": -1,
+    "_id": 573
+  },
+  "574": {
+    "_name": "Afro-dite",
+    "_countryId": -1,
+    "_id": 574
+  },
+  "575": {
+    "_name": "Sody",
+    "_countryId": -1,
+    "_id": 575
+  },
+  "576": {
+    "_name": "Carrie Underwood ",
+    "_countryId": -1,
+    "_id": 576
+  },
+  "577": {
+    "_name": "Roko Blažević",
+    "_countryId": -1,
+    "_id": 577
+  },
+  "578": {
+    "_name": "Keith Urban/Carrie Underwood",
+    "_countryId": -1,
+    "_id": 578
+  },
+  "579": {
+    "_name": "Europe",
+    "_countryId": -1,
+    "_id": 579
+  },
+  "580": {
+    "_name": "Danielle Bradbery",
+    "_countryId": -1,
+    "_id": 580
+  },
+  "581": {
+    "_name": "Jake Owen",
+    "_countryId": -1,
+    "_id": 581
+  },
+  "582": {
+    "_name": "Justin Moore",
+    "_countryId": -1,
+    "_id": 582
+  },
+  "583": {
+    "_name": "The National",
+    "_countryId": -1,
+    "_id": 583
+  },
+  "584": {
+    "_name": "James Blunt",
+    "_countryId": -1,
+    "_id": 584
+  },
+  "585": {
+    "_name": "Camp Rock Cast",
+    "_countryId": -1,
+    "_id": 585
+  },
+  "586": {
+    "_name": "Amy Macdonald",
+    "_countryId": -1,
+    "_id": 586
+  },
+  "587": {
+    "_name": "Marilyn Manson",
+    "_countryId": -1,
+    "_id": 587
+  },
+  "588": {
+    "_name": "Moniki Linkytė",
+    "_countryId": -1,
+    "_id": 588
+  },
+  "589": {
+    "_name": "Vaidasa Baumili",
+    "_countryId": -1,
+    "_id": 589
+  },
+  "590": {
+    "_name": "Mariya Yaremchuk",
+    "_countryId": -1,
+    "_id": 590
+  },
+  "591": {
+    "_name": "Ne-Yo",
+    "_countryId": -1,
+    "_id": 591
+  },
+  "592": {
+    "_name": "Uzari & Maimuna",
+    "_countryId": -1,
+    "_id": 592
+  },
+  "593": {
+    "_name": "David Guetta feat. Sia",
+    "_countryId": -1,
+    "_id": 593
+  },
+  "594": {
+    "_name": "Elektryczne Gitary",
+    "_countryId": -1,
+    "_id": 594
+  },
+  "595": {
+    "_name": "Savage Garden",
+    "_countryId": -1,
+    "_id": 595
+  },
+  "596": {
+    "_name": "Guy Sebastian",
+    "_countryId": -1,
+    "_id": 596
+  },
+  "597": {
+    "_name": "Natalie Imbruglia",
+    "_countryId": -1,
+    "_id": 597
+  },
+  "598": {
+    "_name": "Joey Batey",
+    "_countryId": -1,
+    "_id": 598
+  },
+  "599": {
+    "_name": "Samantha Fox",
+    "_countryId": -1,
+    "_id": 599
+  },
+  "600": {
+    "_name": "Chingiz",
+    "_countryId": -1,
+    "_id": 600
+  },
+  "601": {
+    "_name": "Amaia & Alfred",
+    "_countryId": -1,
+    "_id": 601
+  },
+  "602": {
+    "_name": "David Guetta/Nicki Minaj",
+    "_countryId": -1,
+    "_id": 602
+  },
+  "603": {
+    "_name": "G.R.L.",
+    "_countryId": -1,
+    "_id": 603
+  },
+  "604": {
+    "_name": "Toni Braxton",
+    "_countryId": -1,
+    "_id": 604
+  },
+  "605": {
+    "_name": "Maria Olafs",
+    "_countryId": -1,
+    "_id": 605
+  },
+  "606": {
+    "_name": "A.C.E",
+    "_countryId": -1,
+    "_id": 606
+  },
+  "607": {
+    "_name": "MELOVIN ",
+    "_countryId": -1,
+    "_id": 607
+  },
+  "608": {
+    "_name": "Sanna Nielsen",
+    "_countryId": -1,
+    "_id": 608
+  },
+  "609": {
+    "_name": "Olly Murs/Louisa Johnson",
+    "_countryId": -1,
+    "_id": 609
+  },
+  "610": {
+    "_name": "Trivium",
+    "_countryId": -1,
+    "_id": 610
+  },
+  "611": {
+    "_name": "Ruelle",
+    "_countryId": -1,
+    "_id": 611
+  },
+  "612": {
+    "_name": "Against The Current",
+    "_countryId": -1,
+    "_id": 612
+  },
+  "613": {
+    "_name": "Kings of Leon",
+    "_countryId": -1,
+    "_id": 613
+  },
+  "614": {
+    "_name": "Mendez/Alvaro Estrella",
+    "_countryId": -1,
+    "_id": 614
+  },
+  "615": {
+    "_name": "Murat Boz",
+    "_countryId": -1,
+    "_id": 615
+  },
+  "616": {
+    "_name": "Kamelot",
+    "_countryId": -1,
+    "_id": 616
+  },
+  "617": {
+    "_name": "Eclipse",
+    "_countryId": -1,
+    "_id": 617
+  },
+  "618": {
+    "_name": "4Minute",
+    "_countryId": -1,
+    "_id": 618
+  },
+  "619": {
+    "_name": "Myth & Roid",
+    "_countryId": -1,
+    "_id": 619
+  },
+  "620": {
+    "_name": "Ewelina Lisowska",
+    "_countryId": -1,
+    "_id": 620
+  },
+  "621": {
+    "_name": "Victor Crome",
+    "_countryId": -1,
+    "_id": 621
+  },
+  "622": {
+    "_name": "Wham!",
+    "_countryId": -1,
+    "_id": 622
+  },
+  "623": {
+    "_name": "!Wham",
+    "_countryId": -1,
+    "_id": 623
+  },
+  "624": {
+    "_name": "Mans Zelmerlöw/Dotter",
+    "_countryId": -1,
+    "_id": 624
+  },
+  "625": {
+    "_name": "Kwabs",
+    "_countryId": -1,
+    "_id": 625
+  },
+  "626": {
+    "_name": "Katrina & The Waves",
+    "_countryId": -1,
+    "_id": 626
+  },
+  "627": {
+    "_name": "Edwin Starr",
+    "_countryId": -1,
+    "_id": 627
+  },
+  "628": {
+    "_name": "Five Finger Death Punch",
+    "_countryId": -1,
+    "_id": 628
+  },
+  "629": {
+    "_name": "Harry Styles",
+    "_countryId": -1,
+    "_id": 629
+  },
+  "630": {
+    "_name": "Aranda",
+    "_countryId": -1,
+    "_id": 630
+  },
+  "631": {
+    "_name": "Charlie Puth/Selena Gomez",
+    "_countryId": -1,
+    "_id": 631
+  },
+  "632": {
+    "_name": "Jessica Mauboy ",
+    "_countryId": -1,
+    "_id": 632
+  },
+  "633": {
+    "_name": "Randy Houser",
+    "_countryId": -1,
+    "_id": 633
+  },
+  "634": {
+    "_name": "Austin Mahone",
+    "_countryId": -1,
+    "_id": 634
+  },
+  "635": {
+    "_name": "Brantley Gilbert/Lindsay Ell",
+    "_countryId": -1,
+    "_id": 635
+  },
+  "636": {
+    "_name": "Haddaway",
+    "_countryId": -1,
+    "_id": 636
+  },
+  "637": {
+    "_name": "No mercy",
+    "_countryId": -1,
+    "_id": 637
+  },
+  "638": {
+    "_name": "The Calling",
+    "_countryId": -1,
+    "_id": 638
+  },
+  "639": {
+    "_name": "Dido",
+    "_countryId": -1,
+    "_id": 639
+  },
+  "640": {
+    "_name": "Natalia Kukulska",
+    "_countryId": -1,
+    "_id": 640
+  },
+  "641": {
+    "_name": "Antonia,",
+    "_countryId": -1,
+    "_id": 641
+  },
+  "642": {
+    "_name": "Jay Sean",
+    "_countryId": -1,
+    "_id": 642
+  },
+  "643": {
+    "_name": "Mohombi",
+    "_countryId": -1,
+    "_id": 643
+  },
+  "644": {
+    "_name": "Selena Gomez/Marshmello",
+    "_countryId": -1,
+    "_id": 644
+  },
+  "645": {
+    "_name": "Lindita Halimi",
+    "_countryId": -1,
+    "_id": 645
+  },
+  "646": {
+    "_name": "John Gibbons",
+    "_countryId": -1,
+    "_id": 646
+  },
+  "647": {
+    "_name": "Travie McCoy",
+    "_countryId": -1,
+    "_id": 647
+  },
+  "648": {
+    "_name": "Aisel",
+    "_countryId": -1,
+    "_id": 648
+  },
+  "649": {
+    "_name": "Joe Nichols",
+    "_countryId": -1,
+    "_id": 649
+  },
+  "650": {
+    "_name": "John Travolta & Olivia Newton",
+    "_countryId": -1,
+    "_id": 650
+  },
+  "651": {
+    "_name": "Grace",
+    "_countryId": -1,
+    "_id": 651
+  },
+  "652": {
+    "_name": "Des'ree",
+    "_countryId": -1,
+    "_id": 652
+  },
+  "653": {
+    "_name": "Kim Wilde",
+    "_countryId": -1,
+    "_id": 653
+  },
+  "654": {
+    "_name": "Rod Stewart",
+    "_countryId": -1,
+    "_id": 654
+  },
+  "655": {
+    "_name": "Kate Miller-Heidke",
+    "_countryId": -1,
+    "_id": 655
+  },
+  "656": {
+    "_name": "Ryszard Rynkowsk",
+    "_countryId": -1,
+    "_id": 656
+  },
+  "657": {
+    "_name": "Ewelina Flinta",
+    "_countryId": -1,
+    "_id": 657
+  },
+  "658": {
+    "_name": "Szymon Wydra & Carpe Diem;",
+    "_countryId": -1,
+    "_id": 658
+  },
+  "659": {
+    "_name": "Szymon Wydra & Carpe Diem",
+    "_countryId": -1,
+    "_id": 659
+  },
+  "660": {
+    "_name": "Łukasz Zagrobelny",
+    "_countryId": -1,
+    "_id": 660
+  }
+}

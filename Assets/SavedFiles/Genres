@@ -1,0 +1,318 @@
+{
+  "0": {
+    "_name": "Rock",
+    "_id": 0
+  },
+  "1": {
+    "_name": "Country",
+    "_id": 1
+  },
+  "2": {
+    "_name": "Power Metal",
+    "_id": 2
+  },
+  "3": {
+    "_name": "Pop",
+    "_id": 3
+  },
+  "4": {
+    "_name": "Dance",
+    "_id": 4
+  },
+  "5": {
+    "_name": "Rock/Pop",
+    "_id": 5
+  },
+  "6": {
+    "_name": "Soul and R&B",
+    "_id": 6
+  },
+  "7": {
+    "_name": "Orchestra",
+    "_id": 7
+  },
+  "8": {
+    "_name": "Hip Hop",
+    "_id": 8
+  },
+  "9": {
+    "_name": "Other",
+    "_id": 9
+  },
+  "10": {
+    "_name": "Hip-Hop",
+    "_id": 10
+  },
+  "11": {
+    "_name": "Sound Track",
+    "_id": 11
+  },
+  "12": {
+    "_name": "R&B",
+    "_id": 12
+  },
+  "13": {
+    "_name": "Alternative Metal",
+    "_id": 13
+  },
+  "14": {
+    "_name": "Symphonic Metal",
+    "_id": 14
+  },
+  "15": {
+    "_name": "Hard Rock",
+    "_id": 15
+  },
+  "16": {
+    "_name": "Rap Metal",
+    "_id": 16
+  },
+  "17": {
+    "_name": "Latin",
+    "_id": 17
+  },
+  "18": {
+    "_name": "Electropop",
+    "_id": 18
+  },
+  "19": {
+    "_name": "J-pop",
+    "_id": 19
+  },
+  "20": {
+    "_name": "Folk Metal",
+    "_id": 20
+  },
+  "21": {
+    "_name": "Religious",
+    "_id": 21
+  },
+  "22": {
+    "_name": "World",
+    "_id": 22
+  },
+  "23": {
+    "_name": "Reggae",
+    "_id": 23
+  },
+  "24": {
+    "_name": "Heavy Metal",
+    "_id": 24
+  },
+  "25": {
+    "_name": "Dance-pop",
+    "_id": 25
+  },
+  "26": {
+    "_name": "Electro house",
+    "_id": 26
+  },
+  "27": {
+    "_name": "Alternative Rock",
+    "_id": 27
+  },
+  "28": {
+    "_name": "Soundtrack",
+    "_id": 28
+  },
+  "29": {
+    "_name": "Pop Rap",
+    "_id": 29
+  },
+  "30": {
+    "_name": "Alternative Musik",
+    "_id": 30
+  },
+  "31": {
+    "_name": "House",
+    "_id": 31
+  },
+  "32": {
+    "_name": "Country/Pop",
+    "_id": 32
+  },
+  "33": {
+    "_name": "Rockabilly",
+    "_id": 33
+  },
+  "34": {
+    "_name": "Pop punk",
+    "_id": 34
+  },
+  "35": {
+    "_name": "Metal",
+    "_id": 35
+  },
+  "36": {
+    "_name": "Progressive Rock",
+    "_id": 36
+  },
+  "37": {
+    "_name": "Progressive house",
+    "_id": 37
+  },
+  "38": {
+    "_name": "Glam metal",
+    "_id": 38
+  },
+  "39": {
+    "_name": "EDM",
+    "_id": 39
+  },
+  "40": {
+    "_name": "Synthpop",
+    "_id": 40
+  },
+  "41": {
+    "_name": "Blues Rock",
+    "_id": 41
+  },
+  "42": {
+    "_name": "Techno",
+    "_id": 42
+  },
+  "43": {
+    "_name": "Inne",
+    "_id": 43
+  },
+  "44": {
+    "_name": "Power metal",
+    "_id": 44
+  },
+  "45": {
+    "_name": "Classic Rock",
+    "_id": 45
+  },
+  "46": {
+    "_name": "Funk rock",
+    "_id": 46
+  },
+  "47": {
+    "_name": "Trance",
+    "_id": 47
+  },
+  "48": {
+    "_name": "Soul",
+    "_id": 48
+  },
+  "49": {
+    "_name": "K-pop",
+    "_id": 49
+  },
+  "50": {
+    "_name": "Rap",
+    "_id": 50
+  },
+  "51": {
+    "_name": "Samba",
+    "_id": 51
+  },
+  "52": {
+    "_name": "Euro Pop",
+    "_id": 52
+  },
+  "53": {
+    "_name": "Country/Rock",
+    "_id": 53
+  },
+  "54": {
+    "_name": "Î´Öª",
+    "_id": 54
+  },
+  "55": {
+    "_name": "Alternative",
+    "_id": 55
+  },
+  "56": {
+    "_name": "Metalcore",
+    "_id": 56
+  },
+  "57": {
+    "_name": "Disco",
+    "_id": 57
+  },
+  "58": {
+    "_name": "Electronic rock",
+    "_id": 58
+  },
+  "59": {
+    "_name": "Blues",
+    "_id": 59
+  },
+  "60": {
+    "_name": "Folk Pop",
+    "_id": 60
+  },
+  "61": {
+    "_name": "Teen Pop",
+    "_id": 61
+  },
+  "62": {
+    "_name": "Punk",
+    "_id": 62
+  },
+  "63": {
+    "_name": "Alternatywna",
+    "_id": 63
+  },
+  "64": {
+    "_name": "Anime",
+    "_id": 64
+  },
+  "65": {
+    "_name": "Folk rock",
+    "_id": 65
+  },
+  "66": {
+    "_name": "Funk",
+    "_id": 66
+  },
+  "67": {
+    "_name": "Indie",
+    "_id": 67
+  },
+  "68": {
+    "_name": "Pop rock",
+    "_id": 68
+  },
+  "69": {
+    "_name": "Dubstep",
+    "_id": 69
+  },
+  "70": {
+    "_name": "Alternative Country",
+    "_id": 70
+  },
+  "71": {
+    "_name": "Oratorium",
+    "_id": 71
+  },
+  "72": {
+    "_name": "Art pop",
+    "_id": 72
+  },
+  "73": {
+    "_name": "Bro-country",
+    "_id": 73
+  },
+  "74": {
+    "_name": "Deep House",
+    "_id": 74
+  },
+  "75": {
+    "_name": "Dance pop",
+    "_id": 75
+  },
+  "76": {
+    "_name": "Afro-Fusion",
+    "_id": 76
+  },
+  "77": {
+    "_name": "Power House",
+    "_id": 77
+  },
+  "78": {
+    "_name": "Pop-opera",
+    "_id": 78
+  }
+}
