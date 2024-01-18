@@ -85,7 +85,7 @@ namespace Immortus.SongRanker
                     Debug.LogError($"Artist with id {kvp.Key} deos not exist or is null!");
                     continue;
                 }
-                _artistRanking.Add((artist, ratedSongs, ratingSum / ratedSongs, (ratingSum / ratedSongs) + ((ratedSongs - 1) * 5)));
+                _artistRanking.Add((artist, ratedSongs, ratingSum / ratedSongs, (ratingSum / ratedSongs) + ((ratedSongs - 1) * 4)));
             }
 
             _rankingDirtyLists.Remove(ARTISTS);
