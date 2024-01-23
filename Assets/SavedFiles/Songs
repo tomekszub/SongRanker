@@ -954,8 +954,7 @@
     "_albumId": 60,
     "_albumSongNumber": 6,
     "_artistIds": [
-      70,
-      71
+      70
     ],
     "_year": 1980,
     "_genreId": 15,
@@ -5921,7 +5920,8 @@
     "_albumId": -1,
     "_albumSongNumber": 0,
     "_artistIds": [
-      321
+      327,
+	  365
     ],
     "_year": 2019,
     "_genreId": -1,
@@ -5934,8 +5934,7 @@
     "_albumId": 320,
     "_albumSongNumber": 1,
     "_artistIds": [
-      70,
-      71
+      70
     ],
     "_year": 1979,
     "_genreId": 0,
@@ -6505,8 +6504,7 @@
     "_albumId": 352,
     "_albumSongNumber": 5,
     "_artistIds": [
-      70,
-      71
+      70
     ],
     "_year": 1997,
     "_genreId": 0,
@@ -7454,7 +7452,8 @@
     "_albumId": 397,
     "_albumSongNumber": 1,
     "_artistIds": [
-      366
+	  12,
+      365
     ],
     "_year": 2017,
     "_genreId": 3,
@@ -7893,7 +7892,7 @@
   },
   "606": {
     "_id": 606,
-    "_name": null,
+    "_name": "Knajpa Portowa",
     "_albumId": -1,
     "_albumSongNumber": 0,
     "_artistIds": [],
