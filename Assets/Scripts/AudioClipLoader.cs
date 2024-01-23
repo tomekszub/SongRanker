@@ -38,9 +38,11 @@ public class AudioClipLoader : MonoBehaviour
 
                 if (dlHandler.isDone)
                 {
-                    AudioClip audioClip = dlHandler.audioClip;
+                    AudioClip audioClip = null;
 
-                    if (audioClip != null)
+                    audioClip = dlHandler.audioClip;
+
+                    if (audioClip != null && audioClip.length > 0)
                     {
                         if (_cachedClips.Count < CLIP_CACHE_SIZE && !_cachedClips.ContainsKey(songPath))
                             _cachedClips.Add(songPath, audioClip);
@@ -50,7 +52,7 @@ public class AudioClipLoader : MonoBehaviour
                     }
                     else
                     {
-                        Debug.Log("Couldn't find a valid AudioClip :(");
+                        Debug.Log("Couldn't extract a valid AudioClip :(");
                     }
                 }
                 else

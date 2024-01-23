@@ -9,6 +9,7 @@ public class AudioPanelController : MonoBehaviour
     [SerializeField] AudioClipLoader _AudioClipLoader;
     [SerializeField] AudioSourceProgressBar _AudioProgressBar;
     [Header("UI References")]
+    [SerializeField] CanvasGroup _CanvasGroup;
     [SerializeField] GameObject _PlayIcon;
     [SerializeField] GameObject _PauseIcon;
     [SerializeField] GameObject _UIPanel;
@@ -51,6 +52,9 @@ public class AudioPanelController : MonoBehaviour
 
         _clipRefreshed = false;
         _path = path;
+
+        SetPanelState(true);
+
         if (playFromStart)
             Play(0);
         else if(_AudioSource.isPlaying)
@@ -91,13 +95,26 @@ public class AudioPanelController : MonoBehaviour
 
     void LoadAndPlaySong(AudioClip audioClip)
     {
-        if (audioClip == null)
-            Debug.LogError("Something went wrong, audio clip should not be null.");
-
-        _AudioSource.clip = audioClip;
         _clipLoading = false;
         _clipRefreshed = true;
 
+        if (audioClip == null)
+        {
+            SetPanelState(false);
+            Debug.LogError("Something went wrong, audio clip should not be null.");
+            return;
+        }
+
+        SetPanelState(true);
+
+        _AudioSource.clip = audioClip;
+
         Play(_cachedTime);
+    }
+
+    void SetPanelState(bool enabled)
+    {
+        _CanvasGroup.interactable = enabled;
+        _CanvasGroup.alpha = enabled ? 1f : 0.3f;
     }
 }

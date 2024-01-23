@@ -3984,6 +3984,7 @@ GameObject:
   m_Component:
   - component: {fileID: 856508781}
   - component: {fileID: 856508782}
+  - component: {fileID: 856508783}
   m_Layer: 5
   m_Name: PlayPanel
   m_TagString: Untagged
@@ -4028,9 +4029,22 @@ MonoBehaviour:
   _AudioSource: {fileID: 1527634555}
   _AudioClipLoader: {fileID: 2020203288}
   _AudioProgressBar: {fileID: 421479242}
+  _CanvasGroup: {fileID: 856508783}
   _PlayIcon: {fileID: 348539723}
   _PauseIcon: {fileID: 594510397}
   _UIPanel: {fileID: 856508780}
+--- !u!225 &856508783
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 856508780}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &870335115
 GameObject:
   m_ObjectHideFlags: 0
@@ -7225,6 +7239,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1809964825}
   - component: {fileID: 1809964826}
+  - component: {fileID: 1809964827}
   m_Layer: 5
   m_Name: PlayPanel
   m_TagString: Untagged
@@ -7269,9 +7284,22 @@ MonoBehaviour:
   _AudioSource: {fileID: 930166969}
   _AudioClipLoader: {fileID: 2020203288}
   _AudioProgressBar: {fileID: 1290064822}
+  _CanvasGroup: {fileID: 1809964827}
   _PlayIcon: {fileID: 1993690626}
   _PauseIcon: {fileID: 1074520644}
   _UIPanel: {fileID: 1809964824}
+--- !u!225 &1809964827
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809964824}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1811465849
 GameObject:
   m_ObjectHideFlags: 0
