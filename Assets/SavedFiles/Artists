@@ -710,7 +710,7 @@
     "_id": 144
   },
   "145": {
-    "_name": "Jonas Brothers/Big Rob",
+    "_name": "Big Rob",
     "_countryId": -1,
     "_id": 145
   },
@@ -2324,11 +2324,6 @@
     "_countryId": -1,
     "_id": 470
   },
-  "471": {
-    "_name": "Selena Gomez/Demi Lovato",
-    "_countryId": -1,
-    "_id": 471
-  },
   "472": {
     "_name": "Hersi",
     "_countryId": -1,
@@ -2454,11 +2449,6 @@
     "_countryId": -1,
     "_id": 496
   },
-  "497": {
-    "_name": "CNCO/Little Mix",
-    "_countryId": -1,
-    "_id": 497
-  },
   "498": {
     "_name": "Agnes Carlsson",
     "_countryId": -1,
@@ -2505,7 +2495,7 @@
     "_id": 506
   },
   "507": {
-    "_name": "Adam Lambert/Nile Rogers",
+    "_name": "Nile Rogers",
     "_countryId": -1,
     "_id": 507
   },
@@ -2518,11 +2508,6 @@
     "_name": "MAGIC!",
     "_countryId": -1,
     "_id": 509
-  },
-  "510": {
-    "_name": "Adam Lambert/Tove Lo",
-    "_countryId": -1,
-    "_id": 510
   },
   "511": {
     "_name": "Naughty Boy",
@@ -2553,11 +2538,6 @@
     "_name": "Nelly Furtado",
     "_countryId": -1,
     "_id": 516
-  },
-  "517": {
-    "_name": "Paul McCartney/Michael Jackson",
-    "_countryId": -1,
-    "_id": 517
   },
   "518": {
     "_name": "Spice Girls",
@@ -2595,7 +2575,7 @@
     "_id": 524
   },
   "525": {
-    "_name": "Bradley Cooper/Lady Gaga",
+    "_name": "Bradley Cooper",
     "_countryId": -1,
     "_id": 525
   },
@@ -2713,11 +2693,6 @@
     "_name": "Luna Haruna",
     "_countryId": -1,
     "_id": 548
-  },
-  "549": {
-    "_name": "Garou:Celine dion",
-    "_countryId": -1,
-    "_id": 549
   },
   "550": {
     "_name": "Ed Sheeran/Camila Cabello",
@@ -2980,7 +2955,7 @@
     "_id": 601
   },
   "602": {
-    "_name": "David Guetta/Nicki Minaj",
+    "_name": "Nicki Minaj",
     "_countryId": -1,
     "_id": 602
   },
@@ -3084,11 +3059,6 @@
     "_countryId": -1,
     "_id": 622
   },
-  "623": {
-    "_name": "!Wham",
-    "_countryId": -1,
-    "_id": 623
-  },
   "624": {
     "_name": "Mans Zelmerlöw/Dotter",
     "_countryId": -1,
@@ -3173,11 +3143,6 @@
     "_name": "Natalia Kukulska",
     "_countryId": -1,
     "_id": 640
-  },
-  "641": {
-    "_name": "Antonia,",
-    "_countryId": -1,
-    "_id": 641
   },
   "642": {
     "_name": "Jay Sean",
@@ -3273,5 +3238,15 @@
     "_name": "Łukasz Zagrobelny",
     "_countryId": -1,
     "_id": 660
+  },
+  "661": {
+    "_name": "Snoop Dog",
+    "_countryId": -1,
+    "_id": 661
+  },
+  "662": {
+    "_name": "Nicole Kidman",
+    "_countryId": -1,
+    "_id": 662
   }
 }

@@ -2128,6 +2128,7 @@
     "_albumId": 127,
     "_albumSongNumber": 2,
     "_artistIds": [
+	  144,
       145
     ],
     "_year": 2008,
@@ -5061,7 +5062,9 @@
     "_name": "Get Me Some Of That",
     "_albumId": -1,
     "_albumSongNumber": 0,
-    "_artistIds": [],
+    "_artistIds": [
+	  183
+	],
     "_year": 0,
     "_genreId": -1,
     "_duration": "00:03:08.9640000",
@@ -8910,7 +8913,9 @@
     "_name": "Love Her",
     "_albumId": 466,
     "_albumSongNumber": 8,
-    "_artistIds": [],
+    "_artistIds": [
+	  144
+	],
     "_year": 2019,
     "_genreId": 3,
     "_duration": "00:03:14.2430000",
@@ -9036,11 +9041,12 @@
   },
   "694": {
     "_id": 694,
-    "_name": "Love The Way Lie - Eminem feat. Rihanna",
+    "_name": "Love The Way You Lie",
     "_albumId": 472,
     "_albumSongNumber": 15,
     "_artistIds": [
-      426
+      426,
+	  206
     ],
     "_year": 2010,
     "_genreId": 59,
@@ -9649,7 +9655,8 @@
     "_albumId": 496,
     "_albumSongNumber": 0,
     "_artistIds": [
-      51
+      51,
+	  257
     ],
     "_year": 2011,
     "_genreId": 0,
@@ -9662,7 +9669,8 @@
     "_albumId": 497,
     "_albumSongNumber": 1,
     "_artistIds": [
-      59
+      59,
+	  661
     ],
     "_year": 2018,
     "_genreId": 3,
@@ -9851,7 +9859,7 @@
   },
   "757": {
     "_id": 757,
-    "_name": "Na co komu dzi",
+    "_name": "Na co komu dziś",
     "_albumId": 506,
     "_albumSongNumber": 0,
     "_artistIds": [
@@ -10711,7 +10719,8 @@
     "_albumId": -1,
     "_albumSongNumber": 0,
     "_artistIds": [
-      471
+      12,
+	  180
     ],
     "_year": 2009,
     "_genreId": 5,
@@ -11059,7 +11068,7 @@
   },
   "850": {
     "_id": 850,
-    "_name": null,
+    "_name": "Overlord Theme",
     "_albumId": -1,
     "_albumSongNumber": 0,
     "_artistIds": [],
@@ -11711,7 +11720,8 @@
     "_albumId": 576,
     "_albumSongNumber": 14,
     "_artistIds": [
-      497
+      496,
+	  113
     ],
     "_year": 2017,
     "_genreId": 17,
@@ -11994,7 +12004,7 @@
   },
   "922": {
     "_id": 922,
-    "_name": null,
+    "_name": "Rolling in the Deep",
     "_albumId": 29,
     "_albumSongNumber": 0,
     "_artistIds": [
@@ -12011,6 +12021,7 @@
     "_albumId": 251,
     "_albumSongNumber": 5,
     "_artistIds": [
+	  53,
       507
     ],
     "_year": 2020,
@@ -12063,7 +12074,8 @@
     "_albumId": 45,
     "_albumSongNumber": 6,
     "_artistIds": [
-      510
+	  53,
+      315
     ],
     "_year": 2015,
     "_genreId": 3,
@@ -12298,7 +12310,8 @@
     "_albumId": 597,
     "_albumSongNumber": 2,
     "_artistIds": [
-      517
+      274,
+	  76
     ],
     "_year": 1983,
     "_genreId": 3,
@@ -12511,7 +12524,8 @@
     "_albumId": 379,
     "_albumSongNumber": 7,
     "_artistIds": [
-      339
+      339,
+	  187
     ],
     "_year": 2018,
     "_genreId": 3,
@@ -12537,7 +12551,8 @@
     "_albumId": 607,
     "_albumSongNumber": 12,
     "_artistIds": [
-      525
+      525,
+	  23
     ],
     "_year": 2018,
     "_genreId": 3,
@@ -12706,7 +12721,8 @@
     "_albumId": 185,
     "_albumSongNumber": 5,
     "_artistIds": [
-      81
+      81,
+	  602
     ],
     "_year": 2016,
     "_genreId": 3,
@@ -12875,7 +12891,9 @@
     "_albumId": 621,
     "_albumSongNumber": 9,
     "_artistIds": [
-      537
+      537,
+	  183,
+	  582
     ],
     "_year": 2014,
     "_genreId": 1,
@@ -12898,10 +12916,10 @@
   "991": {
     "_id": 991,
     "_name": "Smooth Criminal",
-    "_albumId": 29,
+    "_albumId": -1,
     "_albumSongNumber": 0,
     "_artistIds": [
-      34
+      76
     ],
     "_year": 0,
     "_genreId": -1,
@@ -13065,11 +13083,12 @@
   },
   "1004": {
     "_id": 1004,
-    "_name": null,
+    "_name": "Somethin' Stupid",
     "_albumId": 628,
     "_albumSongNumber": 3,
     "_artistIds": [
-      255
+      255,
+	  662
     ],
     "_year": 2001,
     "_genreId": -1,
@@ -13173,7 +13192,8 @@
     "_albumId": 278,
     "_albumSongNumber": 5,
     "_artistIds": [
-      549
+      282,
+	  9
     ],
     "_year": 2005,
     "_genreId": -1,
@@ -13939,7 +13959,8 @@
     "_albumId": 661,
     "_albumSongNumber": 14,
     "_artistIds": [
-      490
+      490,
+	  121
     ],
     "_year": 2020,
     "_genreId": -1,
@@ -15210,7 +15231,8 @@
     "_albumId": 691,
     "_albumSongNumber": 3,
     "_artistIds": [
-      602
+      602,
+	  264
     ],
     "_year": 2011,
     "_genreId": 39,
@@ -15809,7 +15831,7 @@
     "_albumId": 722,
     "_albumSongNumber": 1,
     "_artistIds": [
-      623
+      622
     ],
     "_year": 1984,
     "_genreId": 25,
@@ -16613,7 +16635,7 @@
     "_albumId": -1,
     "_albumSongNumber": 0,
     "_artistIds": [
-      641,
+      372,
       642
     ],
     "_year": 2014,
