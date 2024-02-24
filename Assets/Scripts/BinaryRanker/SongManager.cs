@@ -96,6 +96,12 @@ namespace Immortus.SongRanker
             return genre;
         }
 
+        public static Album GetAlbumByID(int id)
+        {
+            _albums.TryGetValue(id, out Album album);
+            return album;
+        }
+
         public static string[] GetArtistNamesByIDs(int[] ids)
         {
             string[] names = new string[ids.Length];

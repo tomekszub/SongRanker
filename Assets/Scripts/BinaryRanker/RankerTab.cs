@@ -10,16 +10,16 @@ using System;
 
 namespace Immortus.SongRanker
 {
-    public class Test : MonoBehaviour
+    public class RankerTab : MonoBehaviour
     {
         public event Action OnRankingChangedEvent;
 
+        [SerializeField] RankerController _RankerController;
         [SerializeField] AudioClipLoader _AudioClipLoader;
         [SerializeField] TextMeshProUGUI _RankingText;
         [SerializeField] TextMeshProUGUI _DebugText;
         [SerializeField] GameObject _RatingPanel;
         [SerializeField] GameObject _RatingHint;
-        [SerializeField] RectTransform _SaveInfoPanel;
         [Header("Compared To Element")]
         [SerializeField] TextMeshProUGUI _ComparedToElementText;
         [SerializeField] TextMeshProUGUI _ComparedToElementArtistText;
@@ -38,7 +38,6 @@ namespace Immortus.SongRanker
 
         void Start()
         {
-            SM.Init();
 
             Init();
 
@@ -64,9 +63,6 @@ namespace Immortus.SongRanker
 
             if(Input.GetKeyUp(KeyCode.Backspace))
                 _ranker.Undo();
-
-            if (Input.GetKey(KeyCode.LeftControl) && Input.GetKeyDown(KeyCode.S))
-                SaveRanking();
         }
 
         public void OnChoiceButtonClicked(int choiceIndex) => SetChoice((ComparisonResult)choiceIndex);
@@ -83,53 +79,9 @@ namespace Immortus.SongRanker
             {
                 float rating = 100.0f - (i * interval);
                 foreach(var song in songs)
-                    song.SetRating(rating);
+                    song.Rating = rating;
                 i++;
             }
-        }
-
-        void SaveRanking(bool autoSave = false)
-        {
-            List<List<int>> save = new();
-
-            foreach(var rank in _ranker.Ranking)
-            {
-                var ids = new List<int>();
-                foreach (var song in rank)
-                    ids.Add(song.ID);
-                save.Add(ids);
-            }
-
-            FileSaver.SaveCollection(autoSave ? "Ranking_auto" : "Ranking", save);
-
-            if (autoSave)
-                return;
-
-            var seq = Sequence.Create();
-            seq.Chain(Tween.UIAnchoredPositionY(_SaveInfoPanel, endValue: -100, duration: 0.5f, ease: Ease.InQuad));
-            seq.ChainDelay(0.3f);
-            seq.Chain(Tween.UIAnchoredPositionY(_SaveInfoPanel, endValue: 20, duration: 0.5f, ease: Ease.InQuad));
-        }
-
-        void LoadRanking()
-        {
-            var loadedData = FileSaver.LoadCollection<List<int>>("Ranking");
-
-            List<List<Song>> ranking = new();
-
-            foreach (var rank in loadedData)
-            {
-                var songs = new List<Song>();
-                foreach (var id in rank)
-                {
-                    var song = SM.GetSongWithID(id);
-                    if(song != null)
-                        songs.Add(song);
-                }
-                ranking.Add(songs);
-            }
-
-            _ranker = new(ranking);
         }
 
         void SetChoice(ComparisonResult result) => _ranker.SetComparisonResult(result);
@@ -143,7 +95,7 @@ namespace Immortus.SongRanker
         void OnRankingChanged()
         {
             _options.RemoveAt(0);
-            SaveRanking(true);
+            _RankerController.SaveRanking(true);
             RefreshUI();
             OnRankingChangedEvent?.Invoke();
         }
@@ -255,23 +207,7 @@ namespace Immortus.SongRanker
 
         void Init()
         {
-            if (!SM.LoadData())
-            {
-                string path = @"D:\Muzyka\Sample Music";
-                string[] files = Directory.GetFiles(path, "*.mp3");
-
-                foreach (string file in files)
-                {
-                    Debug.Log($"Processing {file}");
-                    var ret = SM.LoadSong(file);
-                    if (ret.Item1 == null)
-                        Debug.LogError($"{ret.Item2}");
-                }
-
-                SM.SaveDataToFiles();
-            }
-
-            LoadRanking();
+            _ranker = _RankerController.Ranker;
 
             _options = SM.GetAllSongs().ToList();
 

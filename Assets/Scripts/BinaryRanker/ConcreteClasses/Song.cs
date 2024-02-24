@@ -20,8 +20,12 @@ namespace Immortus.SongRanker
         [JsonIgnore] public string Name => _name;
         [JsonIgnore] public int[] ArtistIds => _artistIds;
         [JsonIgnore] public string Path => _filePath;
-        [JsonIgnore] public float Rating { get; private set; }
+        [JsonIgnore] public float Rating { get; set; }
         [JsonIgnore] public int GenreID => _genreId;
+        [JsonIgnore] public int Year => _year;
+        [JsonIgnore] public int AlbumID => _albumId;
+        [JsonIgnore] public int AlbumSongNumber => _albumSongNumber;
+        [JsonIgnore] public TimeSpan Duration => _duration;
 
         public Song(int id, string name, int albumId, int albumSongNumber, int[] artistIds, int year, int genreId, TimeSpan duration, string filePath)
         {
@@ -35,7 +39,5 @@ namespace Immortus.SongRanker
             _duration = duration;
             _filePath = filePath;
         }
-
-        public void SetRating(float val) => Rating = val;
     }
 }

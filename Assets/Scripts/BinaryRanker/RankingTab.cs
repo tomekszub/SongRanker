@@ -17,7 +17,7 @@ namespace Immortus.SongRanker
         const string GENRE_CUSTOM_RATING_RANKING = "GenreCustomRatingRanking";
 
         [SerializeField] TextMeshProUGUI _RankingText;
-        [SerializeField] Test _RankerTab;
+        [SerializeField] RankerTab _RankerTab;
 
         Dictionary<string, string> _cachedRankings = new();
         List<(Artist artist, int songCount, float avgRating, float customRating)> _artistRanking;
