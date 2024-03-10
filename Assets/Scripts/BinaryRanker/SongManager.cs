@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using TagLib;
 
 namespace Immortus.SongRanker
@@ -18,6 +19,8 @@ namespace Immortus.SongRanker
 
         public static Dictionary<int, List<Song>> ArtistToSongs => _artistToSongsLUT;
         public static Dictionary<int, List<Song>> GenreToSongs => _genreToSongsLUT;
+
+        public static IEnumerable<string> AllGenreNames => _genres.GetAllValues().Select(g => g.Name);
 
         public static void Init()
         {
@@ -74,6 +77,19 @@ namespace Immortus.SongRanker
             _loadedPaths.Add(song.Path);
 
             return (song, string.Empty);
+
+            static int GetNextSongID()
+            {
+                for (int i = 0; i < int.MaxValue; i++)
+                {
+                    if (_songs.ContainsKey(i))
+                        continue;
+
+                    return i;
+                }
+
+                return -1;
+            }
         }
 
         public static IEnumerable<Song> GetAllSongs() => _songs.Values;
@@ -94,6 +110,17 @@ namespace Immortus.SongRanker
         {
             _genres.TryGetValue(id, out Genre genre);
             return genre;
+        }
+
+        public static int GetGenreIDByName(string name)
+        {
+            foreach(var genreKVP in _genres.All)
+            {
+                if (genreKVP.Value.Name == name)
+                    return genreKVP.Key;
+            }
+
+            return -1;
         }
 
         public static Album GetAlbumByID(int id)
@@ -151,26 +178,13 @@ namespace Immortus.SongRanker
             _albums = new(albums);
             _artists = new(artists);
 
-            FillArtistsLUT();
-            FillGenresLUT();
+            RefreshArtistsLUT();
+            RefreshGenresLUT();
 
             return true;
         }
 
-        static int GetNextSongID()
-        {
-            for (int i = 0; i < int.MaxValue; i++)
-            {
-                if (_songs.ContainsKey(i))
-                    continue;
-
-                return i;
-            }
-
-            return -1;
-        }
-
-        static void FillArtistsLUT()
+        public static void RefreshArtistsLUT()
         {
             _artistToSongsLUT = new();
 
@@ -186,7 +200,7 @@ namespace Immortus.SongRanker
             }
         }
 
-        static void FillGenresLUT()
+        public static void RefreshGenresLUT()
         {
             _genreToSongsLUT = new();
 
@@ -200,5 +214,6 @@ namespace Immortus.SongRanker
                     _genreToSongsLUT.Add(genreID, new List<Song> { song.Value });
             }
         }
+
     }
 }

@@ -18,6 +18,7 @@ namespace Immortus.SongRanker
 
         [SerializeField] TextMeshProUGUI _RankingText;
         [SerializeField] RankerTab _RankerTab;
+        [SerializeField] EditingTab _EditingTab;
 
         Dictionary<string, string> _cachedRankings = new();
         List<(Artist artist, int songCount, float avgRating, float customRating)> _artistRanking;
@@ -29,7 +30,9 @@ namespace Immortus.SongRanker
 
         void Awake()
         {
+            // TODO: in no universe ranker tab should know about other tabs, move this events to some other place
             _RankerTab.OnRankingChangedEvent += SetDirty;
+            _EditingTab.OnChangeDone += SetDirty;
             _listToRefreshFunction.Add(ARTISTS, RefreshArtistList);
             _listToRefreshFunction.Add(GENRES, RefreshGenreList);
             ResetDirtyLists();

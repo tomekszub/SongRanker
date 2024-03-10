@@ -35,6 +35,8 @@ public class UniqueIDContainer<T> where T : UniqueIDProperty<T>
         return id;
     }
 
+    public IEnumerable<T> GetAllValues() => _container.Values;
+
     int GetNextAvailableID()
     {
         for (int i = 0; i < int.MaxValue; i++)

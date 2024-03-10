@@ -1,5 +1,6 @@
 using Newtonsoft.Json;
 using System;
+using UnityEngine;
 
 namespace Immortus.SongRanker
 {
@@ -21,7 +22,15 @@ namespace Immortus.SongRanker
         [JsonIgnore] public int[] ArtistIds => _artistIds;
         [JsonIgnore] public string Path => _filePath;
         [JsonIgnore] public float Rating { get; set; }
-        [JsonIgnore] public int GenreID => _genreId;
+
+        [JsonIgnore]
+        public int GenreID
+        {
+            get => _genreId;
+
+            set => _genreId = Mathf.Max(-1, value);
+        }
+
         [JsonIgnore] public int Year => _year;
         [JsonIgnore] public int AlbumID => _albumId;
         [JsonIgnore] public int AlbumSongNumber => _albumSongNumber;
@@ -35,7 +44,7 @@ namespace Immortus.SongRanker
             _albumSongNumber = albumSongNumber;
             _artistIds = artistIds;
             _year = year;
-            _genreId = genreId;
+            GenreID = genreId;
             _duration = duration;
             _filePath = filePath;
         }

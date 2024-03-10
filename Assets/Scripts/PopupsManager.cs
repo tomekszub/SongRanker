@@ -4,8 +4,10 @@ using UnityEngine;
 public class PopupsManager : MonoBehaviour
 {
     public static PopupsManager Instance;
-    [SerializeField] List<Popup> _Popups = new List<Popup>(); 
-    private void Awake()
+
+    [SerializeField] List<Popup> _Popups = new(); 
+
+    void Awake()
     {
         if (Instance == null)
             Instance = this;
