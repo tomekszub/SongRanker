@@ -2845,8 +2845,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Immortus.SongRanker.Test, Assembly-CSharp
+      - m_Target: {fileID: 909578027}
+        m_TargetAssemblyTypeName: Immortus.SongRanker.RankerTab, Assembly-CSharp
         m_MethodName: OnChoiceButtonClicked
         m_Mode: 3
         m_Arguments:
@@ -3169,8 +3169,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Immortus.SongRanker.Test, Assembly-CSharp
+      - m_Target: {fileID: 909578027}
+        m_TargetAssemblyTypeName: Immortus.SongRanker.RankerTab, Assembly-CSharp
         m_MethodName: OnChoiceButtonClicked
         m_Mode: 3
         m_Arguments:
@@ -4385,8 +4385,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Immortus.SongRanker.Test, Assembly-CSharp
+      - m_Target: {fileID: 909578027}
+        m_TargetAssemblyTypeName: Immortus.SongRanker.RankerTab, Assembly-CSharp
         m_MethodName: NextOption
         m_Mode: 1
         m_Arguments:
@@ -11310,7 +11310,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1587577357
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11865,8 +11865,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Immortus.SongRanker.Test, Assembly-CSharp
+      - m_Target: {fileID: 909578027}
+        m_TargetAssemblyTypeName: Immortus.SongRanker.RankerTab, Assembly-CSharp
         m_MethodName: OnChoiceButtonClicked
         m_Mode: 3
         m_Arguments:
@@ -13618,7 +13618,7 @@ MonoBehaviour:
   - {fileID: 909578025}
   - {fileID: 1129606997}
   - {fileID: 1587577356}
-  _SavePanel: {fileID: 0}
+  _SavePanel: {fileID: 2039102126}
 --- !u!114 &1966211413
 MonoBehaviour:
   m_ObjectHideFlags: 0
