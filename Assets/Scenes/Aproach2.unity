@@ -915,8 +915,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1107195480}
-  - {fileID: 1288127538}
   - {fileID: 480200817}
+  - {fileID: 1288127538}
   m_Father: {fileID: 1587577357}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4849,7 +4849,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 77945669}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -10307,9 +10307,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb81bae611731684fb0660f9ed97780b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _InputField: {fileID: 642800795}
   _TitleText: {fileID: 1187934143}
   _CurrentValueText: {fileID: 897409911}
-  _InputField: {fileID: 642800795}
   _SaveButton: {fileID: 1318296752}
   _ReccomendedValuesText:
   - {fileID: 949778353}
@@ -10924,7 +10924,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 77945669}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -13424,9 +13424,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6336d436376a40c479f6f4ea8bf4a748, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _InputField: {fileID: 1817703474}
   _TitleText: {fileID: 581049563}
   _CurrentValueText: {fileID: 467184045}
-  _InputField: {fileID: 1817703474}
   _SaveButton: {fileID: 1633051434}
 --- !u!114 &1685728019 stripped
 MonoBehaviour:
