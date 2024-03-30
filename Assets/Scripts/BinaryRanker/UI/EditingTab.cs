@@ -24,7 +24,8 @@ namespace Immortus.SongRanker
         [SerializeField] PropertyField _AlbumTrackNumberField;
         [SerializeField] PropertyField _DurationField;
         [SerializeField] PropertyField _PathField;
-        [SerializeField] EditPopup _EditPopup;
+        [SerializeField] SimpleHintEditPopup _SimpleHintEditPopup;
+        [SerializeField] SimpleEditPopup _SimpleEditPopup;
 
         List<Song> _context;
         Song _song;
@@ -79,7 +80,7 @@ namespace Immortus.SongRanker
             _RankingPositionField.text = position.ToString();
 
             bool propertyIsValid = PropertiesValidator.ValidateName(_song.Name);
-            _TitleField.SetContent(_song.Name, !propertyIsValid);
+            _TitleField.SetContent(_song.Name, !propertyIsValid, OpenTitleEditPopup);
 
             var artists = SongManager.GetArtistNamesByIDs(_song.ArtistIds);
             propertyIsValid = PropertiesValidator.ValidateArtists(artists);
@@ -114,9 +115,9 @@ namespace Immortus.SongRanker
 
         void OpenGenreEditPopup()
         {
-            _EditPopup.gameObject.SetActive(true);
+            _SimpleHintEditPopup.gameObject.SetActive(true);
             var genre = SongManager.GetGenreByID(_song.GenreID);
-            _EditPopup.SetContent("Genre", genre != null ? genre.Name : TEXT_MISSING_PROPERTY, Save, SongManager.AllGenreNames.ToList());
+            _SimpleHintEditPopup.SetContent("Genre", genre != null ? genre.Name : TEXT_MISSING_PROPERTY, Save, SongManager.AllGenreNames.ToList());
 
             void Save(string value)
             {
@@ -125,7 +126,22 @@ namespace Immortus.SongRanker
                 SongManager.RefreshGenresLUT();
                 OnChangeDone?.Invoke();
                 RefreshUI();
-                _EditPopup.gameObject.SetActive(false);
+                _SimpleHintEditPopup.gameObject.SetActive(false);
+            }
+        }
+
+        void OpenTitleEditPopup()
+        {
+            _SimpleEditPopup.gameObject.SetActive(true);
+            var songName = _song.Name;
+            _SimpleEditPopup.SetContent("Genre", songName, Save);
+
+            void Save(string value)
+            {
+                _song.Name = value;
+                OnChangeDone?.Invoke();
+                RefreshUI();
+                _SimpleEditPopup.gameObject.SetActive(false);
             }
         }
     }

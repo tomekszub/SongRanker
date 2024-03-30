@@ -21,7 +21,7 @@ namespace Immortus.SongRanker
         float _rating;
 
         [JsonIgnore] public int ID => _id;
-        [JsonIgnore] public string Name => _name;
+        [JsonIgnore] public string Name { get => _name; set => _name = value; }
         [JsonIgnore] public int[] ArtistIds => _artistIds;
         [JsonIgnore] public string Path => _filePath;
         [JsonIgnore] public float Rating { get => _rating; set => _rating = value; }
