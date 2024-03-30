@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,6 +12,7 @@ public class EditPopup : MonoBehaviour
     [SerializeField] TMP_InputField _InputField;
     [SerializeField] Button _SaveButton;
     [SerializeField] List<TextMeshProUGUI> _ReccomendedValuesText;
+    [SerializeField] GameObject _NewValueIndicator;
 
     List<string> _recommendedValues;
 
@@ -20,6 +22,7 @@ public class EditPopup : MonoBehaviour
         _CurrentValueText.text = currentValue;
 
         _recommendedValues = recommendedValues;
+        _NewValueIndicator.SetActive(false);
 
         _SaveButton.onClick.RemoveAllListeners();
         _SaveButton.onClick.AddListener(() => onSave.Invoke(_InputField.text));
@@ -39,6 +42,8 @@ public class EditPopup : MonoBehaviour
 
     void UpdateRecommendedValuesUI(string sourceText)
     {
+        _NewValueIndicator.SetActive(string.IsNullOrEmpty(sourceText) ? false : !_recommendedValues.Any(val => val.Equals(sourceText)));
+
         _ReccomendedValuesText.ForEach(t => t.text = "");
 
         var potentialValueIndices = new HashSet<int>();

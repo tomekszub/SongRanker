@@ -29,6 +29,11 @@ public class UniqueIDContainer<T> where T : UniqueIDProperty<T>
         if(!addIfNotExist)
             return -1;
 
+        return AddNewItem(val);
+    }
+
+    public int AddNewItem(T val)
+    {
         var id = GetNextAvailableID();
         _container.Add(id, val);
         val.SetId(id);

@@ -109,10 +109,11 @@ namespace Immortus.SongRanker
         public static Genre GetGenreByID(int id)
         {
             _genres.TryGetValue(id, out Genre genre);
+
             return genre;
         }
 
-        public static int GetGenreIDByName(string name)
+        public static int GetGenreIDByName(string name, bool createIfNeeded)
         {
             foreach(var genreKVP in _genres.All)
             {
@@ -120,7 +121,7 @@ namespace Immortus.SongRanker
                     return genreKVP.Key;
             }
 
-            return -1;
+            return createIfNeeded ? _genres.AddNewItem(new Genre(name)) : -1;
         }
 
         public static Album GetAlbumByID(int id)
