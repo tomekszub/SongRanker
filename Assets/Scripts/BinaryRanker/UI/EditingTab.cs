@@ -43,6 +43,15 @@ namespace Immortus.SongRanker
             RefreshUI();
         }
 
+        void Update()
+        {
+            if (Input.GetKey(KeyCode.LeftControl) && Input.GetKeyDown(KeyCode.S))
+            {
+                SongManager.SaveSongs();
+                TabController.ShowSavePanel();
+            }
+        }
+
         public void Next()
         {
             if (_currSongIndex >= _context.Count - 1)
@@ -112,7 +121,7 @@ namespace Immortus.SongRanker
             void Save(string value)
             {
                 _song.GenreID = SongManager.GetGenreIDByName(value);
-                // TODO: ideally should be here, changing genre should be inside song manager which would handle refreshing luts
+                // TODO: ideally should not be here, changing genre should be inside song manager which would handle refreshing luts
                 SongManager.RefreshGenresLUT();
                 OnChangeDone?.Invoke();
                 RefreshUI();

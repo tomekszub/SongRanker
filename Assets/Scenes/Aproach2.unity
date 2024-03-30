@@ -7633,6 +7633,7 @@ GameObject:
   m_Component:
   - component: {fileID: 909578026}
   - component: {fileID: 909578027}
+  - component: {fileID: 909578028}
   m_Layer: 5
   m_Name: RankerTab
   m_TagString: Untagged
@@ -7654,7 +7655,6 @@ RectTransform:
   m_Children:
   - {fileID: 137856771}
   - {fileID: 1712675031}
-  - {fileID: 2039102126}
   m_Father: {fileID: 1966211410}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7675,7 +7675,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4639adf741e22ff46b6500af217dffbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _RankerController: {fileID: 1966211413}
+  _RankerController: {fileID: 909578028}
   _AudioClipLoader: {fileID: 2020203288}
   _RankingText: {fileID: 99709031}
   _DebugText: {fileID: 630732324}
@@ -7688,6 +7688,19 @@ MonoBehaviour:
   _NewElementText: {fileID: 1751742464}
   _NewElementArtistText: {fileID: 831587011}
   _NewSongAudioPanelController: {fileID: 856508782}
+--- !u!114 &909578028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909578025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e22ddd719d3ffe48a461d900544fa8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _MusicPath: D:\Muzyka\Sample Music
 --- !u!1 &920235181
 GameObject:
   m_ObjectHideFlags: 0
@@ -11349,7 +11362,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eb83b2d4f68b204084177e0ebb11162, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _RankerController: {fileID: 1966211413}
+  _RankerController: {fileID: 909578028}
   _RankingPositionField: {fileID: 1454655481}
   _TitleField: {fileID: 77945668}
   _ArtistsField: {fileID: 950273044}
@@ -13497,7 +13510,6 @@ GameObject:
   - component: {fileID: 1966211407}
   - component: {fileID: 1966211411}
   - component: {fileID: 1966211412}
-  - component: {fileID: 1966211413}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -13582,6 +13594,7 @@ RectTransform:
   - {fileID: 1129606999}
   - {fileID: 1587577357}
   - {fileID: 1159567067}
+  - {fileID: 2039102126}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -13619,20 +13632,6 @@ MonoBehaviour:
   - {fileID: 1129606997}
   - {fileID: 1587577356}
   _SavePanel: {fileID: 2039102126}
---- !u!114 &1966211413
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1966211405}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e22ddd719d3ffe48a461d900544fa8d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _MusicPath: D:\Muzyka\Sample Music
-  _TabController: {fileID: 1966211412}
 --- !u!1 &1978092525
 GameObject:
   m_ObjectHideFlags: 0
@@ -14212,8 +14211,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 648706334}
-  m_Father: {fileID: 909578026}
-  m_RootOrder: 2
+  m_Father: {fileID: 1966211410}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}

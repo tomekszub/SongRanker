@@ -142,9 +142,12 @@ namespace Immortus.SongRanker
             return names;
         }
 
+            
+        public static void SaveSongs() => FileSaver.SaveDictionary("Songs", _songs);
+
         public static void SaveDataToFiles()
         {
-            FileSaver.SaveDictionary("Songs", _songs);
+            SaveSongs();
             FileSaver.SaveDictionary("Genres", _genres.All);
             FileSaver.SaveDictionary("Albums", _albums.All);
             FileSaver.SaveDictionary("Artists", _artists.All);

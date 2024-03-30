@@ -8,7 +8,6 @@ namespace Immortus.SongRanker
     public class RankerController : MonoBehaviour
     {
         [SerializeField] string _MusicPath = @"D:\Muzyka\Sample Music";
-        [SerializeField] TabController _TabController;
 
         Ranker<Song> _ranker;
 
@@ -45,7 +44,7 @@ namespace Immortus.SongRanker
             if (autoSave)
                 return;
 
-            _TabController.ShowSavePanel();
+            TabController.ShowSavePanel();
         }
 
         void Init()

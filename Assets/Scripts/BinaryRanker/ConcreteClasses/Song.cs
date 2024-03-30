@@ -17,11 +17,14 @@ namespace Immortus.SongRanker
         TimeSpan _duration;
         string _filePath;
 
+        [JsonIgnore]
+        float _rating;
+
         [JsonIgnore] public int ID => _id;
         [JsonIgnore] public string Name => _name;
         [JsonIgnore] public int[] ArtistIds => _artistIds;
         [JsonIgnore] public string Path => _filePath;
-        [JsonIgnore] public float Rating { get; set; }
+        [JsonIgnore] public float Rating { get => _rating; set => _rating = value; }
 
         [JsonIgnore]
         public int GenreID
