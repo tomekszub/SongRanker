@@ -154,7 +154,6 @@ namespace Immortus.SongRanker
             _albums.TryGetValue(id, out Album album);
             return album;
         }
-
         public static int GetAlbumIDByNameAndAuthor(string name, int artistID, bool createIfNeeded)
         {
             foreach (var albumKVP in _albums.All)
@@ -191,7 +190,13 @@ namespace Immortus.SongRanker
                     ret.Add(artistKVP.Key);
 
                 if (namesCopy.Count == 0)
-                    break;
+                    return ret;
+            }
+
+            foreach (var item in namesCopy)
+            {
+                var id = _artists.AddNewItem(new Artist(item, -1));
+                ret.Add(id);
             }
 
             return ret;

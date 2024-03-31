@@ -27,6 +27,7 @@ namespace Immortus.SongRanker
         [SerializeField] SimpleHintEditPopup _SimpleHintEditPopup;
         [SerializeField] SimpleEditPopup _SimpleEditPopup;
         [SerializeField] MultiHintEditPopup _MultiHintEditPopup;
+        [SerializeField] CreateAlbumPopup _CreateAlbumPopup;
 
         List<Song> _context;
         Song _song;
@@ -218,14 +219,22 @@ namespace Immortus.SongRanker
             var albumName = album != null ? album.Name : "";
             _SimpleHintEditPopup.SetContent("Album", albumName, Save, null, SongManager.AllAlbumNames.ToList());
 
-            void Save(string value)
+            void Save(string albumName)
             {
                 var album = SongManager.GetAlbumByID(_song.AlbumID);
                 var albumArtistID = album != null ? album.ArtistID : _song.ArtistIds.Length != 0 ? _song.ArtistIds[0] : -1;
-                _song.AlbumID = SongManager.GetAlbumIDByNameAndAuthor(value, albumArtistID, true);
-                OnChangeDone?.Invoke();
-                RefreshUI();
-                _SimpleHintEditPopup.gameObject.SetActive(false);
+
+                _CreateAlbumPopup.SetData(albumName, OnSuccess, OnCancel);
+
+                void OnSuccess(int albumArtistID)
+                {
+                    _song.AlbumID = SongManager.GetAlbumIDByNameAndAuthor(albumName, albumArtistID, true);
+                    OnChangeDone?.Invoke();
+                    RefreshUI();
+                    _SimpleHintEditPopup.gameObject.SetActive(false);
+                }
+
+                void OnCancel() => _SimpleHintEditPopup.gameObject.SetActive(false);
             }
         }
 

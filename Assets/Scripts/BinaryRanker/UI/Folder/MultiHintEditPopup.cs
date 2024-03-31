@@ -58,30 +58,7 @@ public class MultiHintEditPopup : BaseEditPopup<List<string>>
 
     protected override void Validate(List<string> currentValues)
     {
-        bool valid = false;
-
-        if (currentValues.Count != 0)
-        {
-            valid = false;
-
-            var currentValuesOrdered = currentValues.OrderBy(s => s).ToArray();
-            var currentOrdered = _oldValue.OrderBy(s => s).ToArray();
-
-            for (int i = 0; i < currentValues.Count; i++)
-            {
-                if (i == _oldValue.Count)
-                {
-                    valid = true;
-                    break;
-                }
-
-                if (currentValuesOrdered[i] != currentOrdered[i] && !string.IsNullOrEmpty(currentValuesOrdered[i]))
-                {
-                    valid = true;
-                    break;
-                }
-            }
-        }
+        bool valid = HelperExtensions.IsNewListValid(currentValues, _oldValue);
 
         if (valid && _validationFunction != null)
             valid = _validationFunction(currentValues);
