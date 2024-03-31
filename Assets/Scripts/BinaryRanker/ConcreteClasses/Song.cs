@@ -13,6 +13,7 @@ namespace Immortus.SongRanker
         int _albumSongNumber;
         int[] _artistIds;
         int _year;
+        int _languageId;
         int _genreId;
         TimeSpan _duration;
         string _filePath;
@@ -22,7 +23,7 @@ namespace Immortus.SongRanker
 
         [JsonIgnore] public int ID => _id;
         [JsonIgnore] public string Name { get => _name; set => _name = value; }
-        [JsonIgnore] public int[] ArtistIds => _artistIds;
+        [JsonIgnore] public int[] ArtistIds { get => _artistIds; set => _artistIds = value; }
         [JsonIgnore] public string Path => _filePath;
         [JsonIgnore] public float Rating { get => _rating; set => _rating = value; }
 
@@ -34,9 +35,10 @@ namespace Immortus.SongRanker
             set => _genreId = Mathf.Max(-1, value);
         }
 
-        [JsonIgnore] public int Year => _year;
-        [JsonIgnore] public int AlbumID => _albumId;
-        [JsonIgnore] public int AlbumSongNumber => _albumSongNumber;
+        [JsonIgnore] public int Year { get => _year; set => _year = value; }
+        [JsonIgnore] public int LanguageID { get => _languageId; set => _languageId = value; }
+        [JsonIgnore] public int AlbumID { get => _albumId; set => _albumId = value; }
+        [JsonIgnore] public int AlbumSongNumber { get => _albumSongNumber; set => _albumSongNumber = value; }
         [JsonIgnore] public TimeSpan Duration => _duration;
 
         public Song(int id, string name, int albumId, int albumSongNumber, int[] artistIds, int year, int genreId, TimeSpan duration, string filePath)

@@ -34,6 +34,14 @@ namespace Immortus.SongRanker
             return year > 0 && year <= System.DateTime.Now.Year;
         }
 
+        public static bool ValidateLanguage(Language language)
+        {
+            if (language == null)
+                return false;
+
+            return !string.IsNullOrEmpty(language.Name);
+        }
+
         public static bool ValidateAlbum(Album album)
         {
             if (album == null)

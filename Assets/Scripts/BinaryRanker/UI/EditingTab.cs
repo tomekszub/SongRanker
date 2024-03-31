@@ -26,6 +26,7 @@ namespace Immortus.SongRanker
         [SerializeField] PropertyField _PathField;
         [SerializeField] SimpleHintEditPopup _SimpleHintEditPopup;
         [SerializeField] SimpleEditPopup _SimpleEditPopup;
+        [SerializeField] MultiHintEditPopup _MultiHintEditPopup;
 
         List<Song> _context;
         Song _song;
@@ -84,29 +85,33 @@ namespace Immortus.SongRanker
 
             var artists = SongManager.GetArtistNamesByIDs(_song.ArtistIds);
             propertyIsValid = PropertiesValidator.ValidateArtists(artists);
-            _ArtistsField.SetContent(string.Join(", ", artists), !propertyIsValid);
+            _ArtistsField.SetContent(string.Join(", ", artists), !propertyIsValid, OpenArtistsEditPopup);
 
             var genre = SongManager.GetGenreByID(_song.GenreID);
             propertyIsValid = PropertiesValidator.ValidateGenre(genre);
-            _GenreField.SetContent(genre == null ? TEXT_MISSING_PROPERTY : genre.Name, !propertyIsValid, OpenGenreEditPopup);
+            _GenreField.SetContent(!propertyIsValid ? TEXT_MISSING_PROPERTY : genre.Name, !propertyIsValid, OpenGenreEditPopup);
 
             propertyIsValid = PropertiesValidator.ValidateYear(_song.Year);
-            _YearField.SetContent(_song.Year.ToString(), !propertyIsValid);
+            _YearField.SetContent(!propertyIsValid ? TEXT_MISSING_PROPERTY : _song.Year.ToString(), !propertyIsValid, OpenYearEditPopup);
+
+            var language = SongManager.GetLanguageByID(_song.LanguageID);
+            propertyIsValid = PropertiesValidator.ValidateLanguage(language);
+            _LanguageField.SetContent(!propertyIsValid ? TEXT_MISSING_PROPERTY : language.Name, !propertyIsValid, OpenLanguageEditPopup);
 
             var album = SongManager.GetAlbumByID(_song.AlbumID);
             propertyIsValid = PropertiesValidator.ValidateAlbum(album);
             var trackNumber = _song.AlbumSongNumber;
             if (album != null)
             {
-                _AlbumNameField.SetContent(album.Name, !propertyIsValid);
+                _AlbumNameField.SetContent(album.Name, !propertyIsValid, OpenAlbumEditPopup);
                 propertyIsValid = PropertiesValidator.ValidateAlbumTrackNumber(trackNumber);
-                _AlbumTrackNumberField.SetContent(trackNumber == 0 ? TEXT_MISSING_PROPERTY : trackNumber.ToString(), !propertyIsValid);
+                _AlbumTrackNumberField.SetContent(!propertyIsValid ? TEXT_MISSING_PROPERTY : trackNumber.ToString(), !propertyIsValid, OpenTrackNumberEditPopup);
             }
             else
             {
-                _AlbumNameField.SetContent(TEXT_MISSING_PROPERTY, true);
+                _AlbumNameField.SetContent(TEXT_MISSING_PROPERTY, false, OpenAlbumEditPopup);
                 propertyIsValid = PropertiesValidator.ValidateAlbumTrackNumber(trackNumber);
-                _AlbumTrackNumberField.SetContent(trackNumber == 0 ? TEXT_MISSING_PROPERTY : trackNumber.ToString(), !propertyIsValid);
+                _AlbumTrackNumberField.SetContent(!propertyIsValid ? TEXT_MISSING_PROPERTY : trackNumber.ToString(), propertyIsValid, OpenTrackNumberEditPopup);
             }
 
             _DurationField.SetContent(_song.Duration.ToString("mm':'ss"));
@@ -117,7 +122,7 @@ namespace Immortus.SongRanker
         {
             _SimpleHintEditPopup.gameObject.SetActive(true);
             var genre = SongManager.GetGenreByID(_song.GenreID);
-            _SimpleHintEditPopup.SetContent("Genre", genre != null ? genre.Name : TEXT_MISSING_PROPERTY, Save, SongManager.AllGenreNames.ToList());
+            _SimpleHintEditPopup.SetContent("Genre", genre != null ? genre.Name : TEXT_MISSING_PROPERTY, Save, null, SongManager.AllGenreNames.ToList());
 
             void Save(string value)
             {
@@ -134,7 +139,7 @@ namespace Immortus.SongRanker
         {
             _SimpleEditPopup.gameObject.SetActive(true);
             var songName = _song.Name;
-            _SimpleEditPopup.SetContent("Genre", songName, Save);
+            _SimpleEditPopup.SetContent("Title", songName, Save, null);
 
             void Save(string value)
             {
@@ -142,6 +147,103 @@ namespace Immortus.SongRanker
                 OnChangeDone?.Invoke();
                 RefreshUI();
                 _SimpleEditPopup.gameObject.SetActive(false);
+            }
+        }
+
+        void OpenYearEditPopup()
+        {
+            _SimpleEditPopup.gameObject.SetActive(true);
+            var year = _song.Year.ToString();
+            _SimpleEditPopup.SetContent("Year", year, Save, Validate);
+
+            bool Validate(string value)
+            {
+                if(!int.TryParse(value, out int parsedYear))
+                    return false;
+
+                return PropertiesValidator.ValidateYear(parsedYear);
+            }
+
+            void Save(string value)
+            {
+                _song.Year = int.Parse(value);
+                OnChangeDone?.Invoke();
+                RefreshUI();
+                _SimpleEditPopup.gameObject.SetActive(false);
+            }
+        }
+
+        void OpenLanguageEditPopup()
+        {
+            _SimpleHintEditPopup.gameObject.SetActive(true);
+            var language = SongManager.GetLanguageByID(_song.LanguageID);
+            _SimpleHintEditPopup.SetContent("Language", language != null ? language.Name : TEXT_MISSING_PROPERTY, Save, null, SongManager.AllLanguageNames.ToList());
+
+            void Save(string value)
+            {
+                _song.LanguageID = SongManager.GetLanguageIDByName(value, true);
+                OnChangeDone?.Invoke();
+                RefreshUI();
+                _SimpleHintEditPopup.gameObject.SetActive(false);
+            }
+        }
+
+        void OpenTrackNumberEditPopup()
+        {
+            _SimpleEditPopup.gameObject.SetActive(true);
+            var trackNumber = _song.AlbumSongNumber.ToString();
+            _SimpleEditPopup.SetContent("Track number", trackNumber, Save, Validate);
+
+            bool Validate(string value)
+            {
+                if (!int.TryParse(value, out int parsedNumber))
+                    return false;
+
+                return PropertiesValidator.ValidateAlbumTrackNumber(parsedNumber);
+            }
+
+            void Save(string value)
+            {
+                _song.AlbumSongNumber = int.Parse(value);
+                OnChangeDone?.Invoke();
+                RefreshUI();
+                _SimpleEditPopup.gameObject.SetActive(false);
+            }
+        }
+
+        void OpenAlbumEditPopup()
+        {
+            _SimpleHintEditPopup.gameObject.SetActive(true);
+            var album = SongManager.GetAlbumByID(_song.AlbumID);
+            var albumName = album != null ? album.Name : "";
+            _SimpleHintEditPopup.SetContent("Album", albumName, Save, null, SongManager.AllAlbumNames.ToList());
+
+            void Save(string value)
+            {
+                var album = SongManager.GetAlbumByID(_song.AlbumID);
+                var albumArtistID = album != null ? album.ArtistID : _song.ArtistIds.Length != 0 ? _song.ArtistIds[0] : -1;
+                _song.AlbumID = SongManager.GetAlbumIDByNameAndAuthor(value, albumArtistID, true);
+                OnChangeDone?.Invoke();
+                RefreshUI();
+                _SimpleHintEditPopup.gameObject.SetActive(false);
+            }
+        }
+
+        void OpenArtistsEditPopup()
+        {
+            _MultiHintEditPopup.gameObject.SetActive(true);
+            List<string> artistNames = SongManager.GetArtistNamesByIDs(_song.ArtistIds).ToList();
+            _MultiHintEditPopup.SetContent("Artists", artistNames, Save, null, SongManager.AllArtistNames.ToList());
+
+            void Save(List<string> values)
+            {
+                var artistIds = SongManager.GetArtistIDsByNames(values);
+                _song.ArtistIds = artistIds.ToArray();
+                // TODO: ideally should not be here, changing genre should be inside song manager which would handle refreshing luts
+                SongManager.RefreshArtistsLUT();
+                OnChangeDone?.Invoke();
+                RefreshUI();
+                _MultiHintEditPopup.gameObject.SetActive(false);
             }
         }
     }

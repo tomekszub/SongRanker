@@ -9,6 +9,7 @@ namespace Immortus.SongRanker
         int _artistId;
 
         [JsonIgnore] public string Name => _name;
+        [JsonIgnore] public int ArtistID => _artistId;
 
         public Album(string name, int artistId)
         {

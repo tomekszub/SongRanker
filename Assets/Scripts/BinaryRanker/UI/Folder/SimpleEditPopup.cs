@@ -1,40 +1,35 @@
 using System;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class SimpleEditPopup : MonoBehaviour
+public class SimpleEditPopup : BaseEditPopup<string>
 {
     [SerializeField] protected TMP_InputField _InputField;
-    [SerializeField] TextMeshProUGUI _TitleText;
-    [SerializeField] TextMeshProUGUI _CurrentValueText;
-    [SerializeField] Button _SaveButton;
+    [SerializeField] TextMeshProUGUI _OldValueText;
 
-    protected string _currentValue;
-
-    public void SetContent(string title, string currentValue, Action<string> onSave)
+    public override void SetContent(string title, string oldValue, Action<string> onSave, Func<string, bool> onValidate)
     {
-        _TitleText.text = title;
-        _CurrentValueText.text = currentValue;
-
-        _currentValue = currentValue;
-
-        _SaveButton.onClick.RemoveAllListeners();
-        _SaveButton.onClick.AddListener(() => onSave.Invoke(_InputField.text));
+        _OldValueText.text = oldValue;
 
         _InputField.onValueChanged.RemoveAllListeners();
         _InputField.onValueChanged.AddListener(InputValueChanged);
 
-        UpdateRecommendedValuesUI(_InputField.text);
+        base.SetContent(title, oldValue, onSave, onValidate);
     }
 
-    void InputValueChanged(string value)
+    void InputValueChanged(string value) => Validate(value);
+
+    protected override void Validate(string sourceText)
     {
-        UpdateRecommendedValuesUI(value);
+        bool validated = !string.IsNullOrEmpty(sourceText) && !sourceText.Equals(_oldValue);
+
+        if (validated && _validationFunction != null)
+            validated = _validationFunction(sourceText);
+
+        _SaveButton.gameObject.SetActive(validated);
     }
 
-    protected virtual void UpdateRecommendedValuesUI(string sourceText)
-    {
-        _SaveButton.gameObject.SetActive(!string.IsNullOrEmpty(sourceText) && !sourceText.Equals(_currentValue));
-    }
+    protected override string GetCurrentData() => _InputField.text;
+
+    protected override void RefreshCurrentUIData() => _InputField.text = _currentValue;
 }
