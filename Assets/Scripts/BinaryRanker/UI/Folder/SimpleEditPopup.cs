@@ -15,6 +15,8 @@ public class SimpleEditPopup : BaseEditPopup<string>
         _InputField.onValueChanged.AddListener(InputValueChanged);
 
         base.SetContent(title, oldValue, onSave, onValidate);
+
+        _InputField.ActivateInputField();
     }
 
     void InputValueChanged(string value) => Validate(value);

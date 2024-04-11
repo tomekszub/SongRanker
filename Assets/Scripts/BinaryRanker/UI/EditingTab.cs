@@ -77,6 +77,7 @@ namespace Immortus.SongRanker
         {
             _song = _context[_currSongIndex];
             RefreshUI();
+            _Player.Init(_song);
         }
 
         void RefreshUI()
@@ -121,8 +122,6 @@ namespace Immortus.SongRanker
 
             _DurationField.SetContent(_song.Duration.ToString("mm':'ss"));
             _PathField.SetContent(_song.Path.ToString());
-
-            _Player.Init(_song);
         }
 
         void OpenGenreEditPopup()
