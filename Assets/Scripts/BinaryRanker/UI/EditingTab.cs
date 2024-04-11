@@ -14,6 +14,7 @@ namespace Immortus.SongRanker
 
         [SerializeField] RankerController _RankerController;
         [Header("UI References")]
+        [SerializeField] SongPlayer _Player;
         [SerializeField] TextMeshProUGUI _RankingPositionField;
         [SerializeField] PropertyField _TitleField;
         [SerializeField] PropertyField _ArtistsField;
@@ -42,8 +43,7 @@ namespace Immortus.SongRanker
             _context = new List<Song>();
             _RankerController.Ranker.Ranking.ForEach(r => _context.AddRange(r));
             _currSongIndex = 0;
-            _song = _context[_currSongIndex];
-            RefreshUI();
+            ChangeSong();
         }
 
         void Update()
@@ -61,8 +61,7 @@ namespace Immortus.SongRanker
                 return;
 
             _currSongIndex++;
-            _song = _context[_currSongIndex];
-            RefreshUI();
+            ChangeSong();
         }
 
         public void Previous()
@@ -71,6 +70,11 @@ namespace Immortus.SongRanker
                 return;
 
             _currSongIndex--;
+            ChangeSong();
+        }
+
+        void ChangeSong()
+        {
             _song = _context[_currSongIndex];
             RefreshUI();
         }
@@ -117,6 +121,8 @@ namespace Immortus.SongRanker
 
             _DurationField.SetContent(_song.Duration.ToString("mm':'ss"));
             _PathField.SetContent(_song.Path.ToString());
+
+            _Player.Init(_song);
         }
 
         void OpenGenreEditPopup()

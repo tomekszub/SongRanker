@@ -72,8 +72,8 @@
   "5": {
     "_id": 5,
     "_name": "24 Hours",
-    "_albumId": -1,
-    "_albumSongNumber": 0,
+    "_albumId": 785,
+    "_albumSongNumber": 1,
     "_artistIds": [
       4
     ],
@@ -492,15 +492,15 @@
   "35": {
     "_id": 35,
     "_name": "Alone, Pt. II",
-    "_albumId": -1,
-    "_albumSongNumber": 0,
+    "_albumId": 784,
+    "_albumSongNumber": 3,
     "_artistIds": [
       120,
       201
     ],
     "_year": 2019,
     "_languageId": 0,
-    "_genreId": -1,
+    "_genreId": 39,
     "_duration": "00:02:57.9670000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Alone Pt. II.mp3"
   },
@@ -2041,7 +2041,7 @@
     ],
     "_year": 2020,
     "_languageId": 0,
-    "_genreId": -1,
+    "_genreId": 40,
     "_duration": "00:03:20.4770000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Break Up Song.mp3"
   },
