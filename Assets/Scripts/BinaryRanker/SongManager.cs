@@ -79,6 +79,8 @@ namespace Immortus.SongRanker
 
             Song song = new(id, tagLibFile.Tag.Title, albumId, (int)tagLibFile.Tag.Track, artistIds.ToArray(), (int)tagLibFile.Tag.Year, genreId, tagLibFile.Properties.Duration, path);
 
+            tagLibFile.Dispose();
+
             _songs.Add(id, song);
 
             _loadedPaths.Add(song.Path);
@@ -97,6 +99,56 @@ namespace Immortus.SongRanker
 
                 return -1;
             }
+        }
+
+        public static void SaveTag(string path, Song data)
+        {
+            File tagLibFile;
+
+            try
+            {
+                tagLibFile = File.Create(path);
+            }
+            catch
+            {
+                return;
+            }
+
+            if (tagLibFile == null)
+                return;
+
+            tagLibFile.Tag.Title = data.Name;
+
+            var album = SongManager.GetAlbumByID(data.AlbumID);
+            if (album != null)
+            {
+                tagLibFile.Tag.Album = album.Name;
+
+                var artistAlbumID = SongManager.GetArtistByID(album.ArtistID);
+                if(artistAlbumID != null)
+                    tagLibFile.Tag.AlbumArtists = new string[] { artistAlbumID.Name };
+            }
+
+            List<string> performers = new();
+            foreach (var artistID in data.ArtistIds)
+            {
+                Artist artist = SongManager.GetArtistByID(artistID);
+                if (artist != null)
+                    performers.Add(artist.Name);
+            }
+            tagLibFile.Tag.Performers = performers.ToArray();
+
+            var genre = SongManager.GetGenreByID(data.GenreID);
+            if (genre != null)
+            {
+                tagLibFile.Tag.Genres = new string[] { genre.Name };
+            }
+
+            tagLibFile.Tag.Track = (uint)data.AlbumSongNumber;
+            tagLibFile.Tag.Year = (uint)data.Year;
+
+            tagLibFile.Save();
+            tagLibFile.Dispose();
         }
 
         public static IEnumerable<Song> GetAllSongs() => _songs.Values;

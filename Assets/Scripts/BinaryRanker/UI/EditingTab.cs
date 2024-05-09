@@ -29,6 +29,8 @@ namespace Immortus.SongRanker
         [SerializeField] SimpleEditPopup _SimpleEditPopup;
         [SerializeField] MultiHintEditPopup _MultiHintEditPopup;
         [SerializeField] CreateAlbumPopup _CreateAlbumPopup;
+        [SerializeField] ConfirmationPopup _ConfirmationPopup;
+        [SerializeField] ProgressPopup _ProgressPopup;
 
         List<Song> _context;
         Song _song;
@@ -71,6 +73,25 @@ namespace Immortus.SongRanker
 
             _currSongIndex--;
             ChangeSong();
+        }
+
+        public void SaveTags()
+        {
+            _ConfirmationPopup.Show("Are you sure you want to save mp3 tags? This action will override existing tags!", SaveTags);
+
+            void SaveTags()
+            {
+                _ProgressPopup.Show();
+
+                for (int i = 0; i < _context.Count; i++)
+                {
+                    Song song = _context[i];
+                    SongManager.SaveTag(song.Path, song);
+                    _ProgressPopup.SetProgress((i + 1) / _context.Count, song.Name);
+                }
+
+                _ProgressPopup.Hide();
+            }
         }
 
         void ChangeSong()
