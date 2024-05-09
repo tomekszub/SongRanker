@@ -62,7 +62,11 @@ namespace Immortus.SongRanker
             if (_currSongIndex >= _context.Count - 1)
                 return;
 
-            _currSongIndex++;
+            if (!Input.GetKey(KeyCode.LeftControl))
+                _currSongIndex++;
+            else
+                _currSongIndex = Mathf.Min(_currSongIndex + 5, _context.Count - 1);
+
             ChangeSong();
         }
 
@@ -71,7 +75,11 @@ namespace Immortus.SongRanker
             if (_currSongIndex <= 0)
                 return;
 
-            _currSongIndex--;
+            if (!Input.GetKey(KeyCode.LeftControl))
+                _currSongIndex--;
+            else
+                _currSongIndex = Mathf.Max(_currSongIndex - 5, 0);
+
             ChangeSong();
         }
 
