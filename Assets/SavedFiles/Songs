@@ -163,7 +163,7 @@
     ],
     "_year": 2002,
     "_languageId": 0,
-    "_genreId": 4,
+    "_genreId": 3,
     "_duration": "00:04:19.2440000",
     "_filePath": "D:\\Muzyka\\Sample Music\\A New Day Has Come.mp3"
   },
@@ -205,15 +205,15 @@
     ],
     "_year": 2010,
     "_languageId": 0,
-    "_genreId": 4,
+    "_genreId": 25,
     "_duration": "00:03:55.5790000",
     "_filePath": "D:\\Muzyka\\Sample Music\\A Year Without Rain.mp3"
   },
   "15": {
     "_id": 15,
     "_name": "Adamas",
-    "_albumId": -1,
-    "_albumSongNumber": 0,
+    "_albumId": 786,
+    "_albumSongNumber": 10,
     "_artistIds": [
       13
     ],
@@ -443,7 +443,7 @@
     ],
     "_year": 2019,
     "_languageId": 0,
-    "_genreId": -1,
+    "_genreId": 0,
     "_duration": "00:03:03.5520000",
     "_filePath": "D:\\Muzyka\\Sample Music\\All Or Nothing.mp3"
   },
@@ -500,7 +500,7 @@
     ],
     "_year": 2019,
     "_languageId": 0,
-    "_genreId": 39,
+    "_genreId": 26,
     "_duration": "00:02:57.9670000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Alone Pt. II.mp3"
   },
@@ -655,7 +655,7 @@
     ],
     "_year": 2013,
     "_languageId": 0,
-    "_genreId": 3,
+    "_genreId": 18,
     "_duration": "00:03:43.4040000",
     "_filePath": "D:\\Muzyka\\Sample Music\\American Girl_.mp3"
   },
@@ -901,12 +901,14 @@
   "64": {
     "_id": 64,
     "_name": "Attack On Titan",
-    "_albumId": -1,
-    "_albumSongNumber": 0,
-    "_artistIds": [],
-    "_year": 0,
-    "_languageId": 0,
-    "_genreId": -1,
+    "_albumId": 787,
+    "_albumSongNumber": 1,
+    "_artistIds": [
+      27
+    ],
+    "_year": 2013,
+    "_languageId": 1,
+    "_genreId": 14,
     "_duration": "00:01:32.0030000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Attack On Titan.mp3"
   },
@@ -961,8 +963,8 @@
       67
     ],
     "_year": 2007,
-    "_languageId": 0,
-    "_genreId": 22,
+    "_languageId": 4,
+    "_genreId": 3,
     "_duration": "00:04:08.4540000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Awinion.mp3"
   },
@@ -1236,14 +1238,14 @@
   "88": {
     "_id": 88,
     "_name": "Baka",
-    "_albumId": 72,
+    "_albumId": 789,
     "_albumSongNumber": 1,
     "_artistIds": [
       88
     ],
-    "_year": 0,
-    "_languageId": 0,
-    "_genreId": 0,
+    "_year": 2002,
+    "_languageId": 4,
+    "_genreId": 5,
     "_duration": "00:03:36.1620000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Baśka.mp3"
   },
@@ -1398,7 +1400,7 @@
     ],
     "_year": 2004,
     "_languageId": 0,
-    "_genreId": 3,
+    "_genreId": 5,
     "_duration": "00:03:19.0130000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Behind These Hazel Eyes.mp3"
   },
@@ -1412,7 +1414,7 @@
     ],
     "_year": 2009,
     "_languageId": 0,
-    "_genreId": 0,
+    "_genreId": 5,
     "_duration": "00:03:02.3690000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Believe Again.mp3"
   },
@@ -1579,7 +1581,7 @@
       107
     ],
     "_year": 1990,
-    "_languageId": 0,
+    "_languageId": 4,
     "_genreId": 0,
     "_duration": "00:04:26.0570000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Biala armia.mp3"
@@ -1664,7 +1666,7 @@
     ],
     "_year": 2020,
     "_languageId": 0,
-    "_genreId": -1,
+    "_genreId": 25,
     "_duration": "00:03:30.1800000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Black Leather.mp3"
   },
@@ -1692,7 +1694,7 @@
     ],
     "_year": 2009,
     "_languageId": 0,
-    "_genreId": 0,
+    "_genreId": 3,
     "_duration": "00:02:59.9310000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Black or White.mp3"
   },
@@ -1836,14 +1838,14 @@
   },
   "131": {
     "_id": 131,
-    "_name": "Bo Jestes Ty",
+    "_name": "Bo Jesteś Ty",
     "_albumId": 107,
     "_albumSongNumber": 1,
     "_artistIds": [
       124
     ],
     "_year": 2002,
-    "_languageId": 0,
+    "_languageId": 4,
     "_genreId": 3,
     "_duration": "00:03:28.3280000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Bo Jestes Ty.mp3"
@@ -1936,14 +1938,14 @@
   "138": {
     "_id": 138,
     "_name": "Brave Freak Out",
-    "_albumId": 111,
-    "_albumSongNumber": 0,
+    "_albumId": 788,
+    "_albumSongNumber": 11,
     "_artistIds": [
       13
     ],
     "_year": 2016,
     "_languageId": 0,
-    "_genreId": -1,
+    "_genreId": 19,
     "_duration": "00:04:15.1210000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Brave Freak Out.mp3"
   },
@@ -1991,15 +1993,16 @@
   },
   "142": {
     "_id": 142,
-    "_name": "Break Free (feat. Zedd)",
+    "_name": "Break Free",
     "_albumId": 67,
     "_albumSongNumber": 5,
     "_artistIds": [
-      81
+      81,
+      91
     ],
     "_year": 2014,
     "_languageId": 0,
-    "_genreId": 3,
+    "_genreId": 26,
     "_duration": "00:03:34.9070000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Break Free.mp3"
   },
@@ -2041,7 +2044,7 @@
     ],
     "_year": 2020,
     "_languageId": 0,
-    "_genreId": 40,
+    "_genreId": 25,
     "_duration": "00:03:20.4770000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Break Up Song.mp3"
   },
@@ -2097,7 +2100,7 @@
     ],
     "_year": 2011,
     "_languageId": 0,
-    "_genreId": -1,
+    "_genreId": 25,
     "_duration": "00:03:27.5970000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Breakthrough.mp3"
   },
@@ -2153,7 +2156,7 @@
     ],
     "_year": 2003,
     "_languageId": 0,
-    "_genreId": 35,
+    "_genreId": 79,
     "_duration": "00:03:57.3580000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Bring Me To Life.mp3"
   },
@@ -2610,14 +2613,14 @@
   "186": {
     "_id": 186,
     "_name": "Chasing The Sun",
-    "_albumId": 143,
-    "_albumSongNumber": 0,
+    "_albumId": 790,
+    "_albumSongNumber": 14,
     "_artistIds": [
       162
     ],
     "_year": 2012,
     "_languageId": 0,
-    "_genreId": 9,
+    "_genreId": 18,
     "_duration": "00:03:18.9600000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Chasing the Sun.mp3"
   },
@@ -2700,7 +2703,7 @@
       167
     ],
     "_year": 2009,
-    "_languageId": 0,
+    "_languageId": 4,
     "_genreId": 3,
     "_duration": "00:04:46.1860000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Chodź, przytul, przebacz.mp3"
@@ -3024,7 +3027,7 @@
       181
     ],
     "_year": 1993,
-    "_languageId": 0,
+    "_languageId": 2,
     "_genreId": 3,
     "_duration": "00:04:50.5340000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Cose Della Vita.mp3"
@@ -3151,7 +3154,7 @@
     ],
     "_year": 2005,
     "_languageId": 0,
-    "_genreId": 25,
+    "_genreId": 52,
     "_duration": "00:03:36.2310000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Cry For You.mp3"
   },
@@ -3297,15 +3300,15 @@
   },
   "235": {
     "_id": 235,
-    "_name": "Dancing in the moonlight",
-    "_albumId": -1,
-    "_albumSongNumber": 0,
+    "_name": "Dancing In the Moonlight",
+    "_albumId": 294,
+    "_albumSongNumber": 2,
     "_artistIds": [
       194
     ],
-    "_year": 0,
+    "_year": 2005,
     "_languageId": 0,
-    "_genreId": -1,
+    "_genreId": 3,
     "_duration": "00:02:15.1080000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Dancing in the Moonlight  .mp3"
   },
@@ -3319,7 +3322,7 @@
     ],
     "_year": 2020,
     "_languageId": 0,
-    "_genreId": -1,
+    "_genreId": 18,
     "_duration": "00:03:14.5030000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Dancing in the Smoke.mp3"
   },
@@ -3389,7 +3392,7 @@
     ],
     "_year": 2016,
     "_languageId": 0,
-    "_genreId": 3,
+    "_genreId": 12,
     "_duration": "00:03:55.7350000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Dangerous Woman.mp3"
   },
@@ -3515,7 +3518,7 @@
     ],
     "_year": 1995,
     "_languageId": 0,
-    "_genreId": -1,
+    "_genreId": 82,
     "_duration": "00:04:24.1980000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Deja Vu.mp3"
   },
@@ -3525,11 +3528,12 @@
     "_albumId": 194,
     "_albumSongNumber": 9,
     "_artistIds": [
-      204
+      203,
+      71
     ],
     "_year": 2017,
-    "_languageId": 0,
-    "_genreId": 29,
+    "_languageId": 6,
+    "_genreId": 81,
     "_duration": "00:04:11.3210000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Despacito.mp3"
   },
@@ -3543,7 +3547,7 @@
     ],
     "_year": 2011,
     "_languageId": 0,
-    "_genreId": -1,
+    "_genreId": 25,
     "_duration": "00:03:18.3120000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Determinate.mp3"
   },
@@ -3967,7 +3971,7 @@
     ],
     "_year": 2010,
     "_languageId": 0,
-    "_genreId": -1,
+    "_genreId": 32,
     "_duration": "00:03:50.3160000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Don't You Wanna Stay.mp3"
   },
@@ -4009,7 +4013,7 @@
     ],
     "_year": 2019,
     "_languageId": 0,
-    "_genreId": -1,
+    "_genreId": 25,
     "_duration": "00:03:35.8660000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Dont Go Breaking My Heart.mp3"
   },
@@ -4374,7 +4378,7 @@
     ],
     "_year": 2012,
     "_languageId": 0,
-    "_genreId": 47,
+    "_genreId": 18,
     "_duration": "00:03:02.2560000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Euphoria.mp3"
   },
@@ -4486,7 +4490,7 @@
     ],
     "_year": 2007,
     "_languageId": 0,
-    "_genreId": 4,
+    "_genreId": 26,
     "_duration": "00:03:16.1040000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Everytime We Touch_.mp3"
   },
@@ -4892,7 +4896,7 @@
     ],
     "_year": 2017,
     "_languageId": 0,
-    "_genreId": 26,
+    "_genreId": 18,
     "_duration": "00:03:38.3180000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Find You.mp3"
   },
@@ -5259,7 +5263,7 @@
     ],
     "_year": 2018,
     "_languageId": 0,
-    "_genreId": 3,
+    "_genreId": 25,
     "_duration": "00:03:01.1750000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Fuego.mp3"
   },
@@ -5342,7 +5346,7 @@
       282
     ],
     "_year": 2002,
-    "_languageId": 0,
+    "_languageId": 5,
     "_genreId": 3,
     "_duration": "00:04:08.5320000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Garou - Gitan  .mp3"
@@ -5498,7 +5502,7 @@
     ],
     "_year": 2015,
     "_languageId": 0,
-    "_genreId": 52,
+    "_genreId": 26,
     "_duration": "00:03:28.5000000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Ghost Town.mp3"
   },
@@ -7653,7 +7657,7 @@
     ],
     "_year": 2010,
     "_languageId": 0,
-    "_genreId": 0,
+    "_genreId": 18,
     "_duration": "00:03:48.4120000",
     "_filePath": "D:\\Muzyka\\Sample Music\\If I Had You.mp3"
   },
@@ -7779,7 +7783,7 @@
     ],
     "_year": 2001,
     "_languageId": 0,
-    "_genreId": 60,
+    "_genreId": 3,
     "_duration": "00:04:56.1240000",
     "_filePath": "D:\\Muzyka\\Sample Music\\In My Secret Life.mp3"
   },
@@ -7807,7 +7811,7 @@
     ],
     "_year": 2000,
     "_languageId": 0,
-    "_genreId": 35,
+    "_genreId": 79,
     "_duration": "00:03:36.8950000",
     "_filePath": "D:\\Muzyka\\Sample Music\\In The End.mp3"
   },
@@ -8074,7 +8078,7 @@
     ],
     "_year": 2014,
     "_languageId": 0,
-    "_genreId": 3,
+    "_genreId": 18,
     "_duration": "00:03:53.7960000",
     "_filePath": "D:\\Muzyka\\Sample Music\\It Was Always You.mp3"
   },
@@ -8928,7 +8932,7 @@
     ],
     "_year": 2014,
     "_languageId": 0,
-    "_genreId": 0,
+    "_genreId": 5,
     "_duration": "00:04:28.9310000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Let Me Go.mp3"
   },
@@ -9744,7 +9748,7 @@
     ],
     "_year": 2010,
     "_languageId": 0,
-    "_genreId": 59,
+    "_genreId": 29,
     "_duration": "00:04:23.7000000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Love The Way Lie.mp3"
   },
@@ -10546,7 +10550,7 @@
   },
   "752": {
     "_id": 752,
-    "_name": "My Life Would Suck Without You (Main)",
+    "_name": "My Life Would Suck Without You",
     "_albumId": 503,
     "_albumSongNumber": 1,
     "_artistIds": [
@@ -10748,7 +10752,7 @@
     ],
     "_year": 2012,
     "_languageId": 0,
-    "_genreId": 0,
+    "_genreId": 18,
     "_duration": "00:04:10.3310000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Never Close Our Eyes.mp3"
   },
@@ -11375,9 +11379,9 @@
     "_artistIds": [
       140
     ],
-    "_year": 2203,
+    "_year": 2003,
     "_languageId": 0,
-    "_genreId": -1,
+    "_genreId": 79,
     "_duration": "00:03:07.5980000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Numb.mp3"
   },
@@ -11559,9 +11563,9 @@
     "_artistIds": [
       350
     ],
-    "_year": 2001,
+    "_year": 2002,
     "_languageId": 0,
-    "_genreId": -1,
+    "_genreId": 25,
     "_duration": "00:03:28.1970000",
     "_filePath": "D:\\Muzyka\\Sample Music\\One Day In Your Life.mp3"
   },
@@ -11715,7 +11719,7 @@
     ],
     "_year": 2010,
     "_languageId": 0,
-    "_genreId": 12,
+    "_genreId": 25,
     "_duration": "00:03:58.2890000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Only Girl ( In The World ).mp3"
   },
@@ -11799,7 +11803,7 @@
     ],
     "_year": 2010,
     "_languageId": 0,
-    "_genreId": -1,
+    "_genreId": 3,
     "_duration": "00:02:56.0520000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Ordinary Girl.mp3"
   },
@@ -12203,7 +12207,7 @@
       107
     ],
     "_year": 2000,
-    "_languageId": 0,
+    "_languageId": 4,
     "_genreId": 3,
     "_duration": "00:03:05.5050000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Plama Na Ścianie.mp3"
@@ -12311,10 +12315,12 @@
     "_name": "Pokemon Opening",
     "_albumId": -1,
     "_albumSongNumber": 0,
-    "_artistIds": [],
-    "_year": 0,
+    "_artistIds": [
+      128
+    ],
+    "_year": 1998,
     "_languageId": 0,
-    "_genreId": -1,
+    "_genreId": 5,
     "_duration": "00:01:01.3510000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Pokemon Opening.mp3"
   },
@@ -12625,7 +12631,7 @@
     ],
     "_year": 2017,
     "_languageId": 0,
-    "_genreId": 17,
+    "_genreId": 80,
     "_duration": "00:03:08.9740000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Reggaetón Lento.mp3"
   },
@@ -12709,7 +12715,7 @@
     ],
     "_year": 1999,
     "_languageId": 0,
-    "_genreId": 17,
+    "_genreId": 80,
     "_duration": "00:03:25.6930000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Rhythm Divine.mp3"
   },
@@ -13617,7 +13623,7 @@
     ],
     "_year": 2017,
     "_languageId": 0,
-    "_genreId": 1,
+    "_genreId": 32,
     "_duration": "00:02:50.7360000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Shes Got a Way.mp3"
   },
@@ -13744,7 +13750,7 @@
     ],
     "_year": 1991,
     "_languageId": 0,
-    "_genreId": 6,
+    "_genreId": 3,
     "_duration": "00:04:10.7730000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Simply The Best.mp3"
   },
@@ -14207,9 +14213,9 @@
       282,
       9
     ],
-    "_year": 2005,
-    "_languageId": 0,
-    "_genreId": -1,
+    "_year": 2000,
+    "_languageId": 5,
+    "_genreId": 3,
     "_duration": "00:03:17.7360000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Sous le vent.mp3"
   },
@@ -14588,7 +14594,7 @@
     ],
     "_year": 2019,
     "_languageId": 0,
-    "_genreId": -1,
+    "_genreId": 3,
     "_duration": "00:03:19.8770000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Sucker.mp3"
   },
@@ -14893,7 +14899,7 @@
       107
     ],
     "_year": 1993,
-    "_languageId": 0,
+    "_languageId": 4,
     "_genreId": 5,
     "_duration": "00:04:56.1500000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Ta Sama Chwila.mp3"
@@ -15020,7 +15026,7 @@
     ],
     "_year": 2023,
     "_languageId": 0,
-    "_genreId": 3,
+    "_genreId": 18,
     "_duration": "00:03:03.4700000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Tattoo.mp3"
   },
@@ -15035,7 +15041,7 @@
     ],
     "_year": 2020,
     "_languageId": 0,
-    "_genreId": -1,
+    "_genreId": 25,
     "_duration": "00:03:00.0720000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Tears of Gold.mp3"
   },
@@ -15383,9 +15389,9 @@
     "_artistIds": [
       216
     ],
-    "_year": 0,
-    "_languageId": 0,
-    "_genreId": -1,
+    "_year": 2020,
+    "_languageId": 3,
+    "_genreId": 49,
     "_duration": "00:04:02.0530000",
     "_filePath": "D:\\Muzyka\\Sample Music\\The Empress.mp3"
   },
@@ -16364,7 +16370,7 @@
     ],
     "_year": 2011,
     "_languageId": 0,
-    "_genreId": 3,
+    "_genreId": 0,
     "_duration": "00:04:11.1340000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Trying Not To Love You.mp3"
   },
@@ -16389,8 +16395,8 @@
       601
     ],
     "_year": 2018,
-    "_languageId": 0,
-    "_genreId": -1,
+    "_languageId": 6,
+    "_genreId": 3,
     "_duration": "00:03:01.2790000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Tu Canción.mp3"
   },
@@ -16986,7 +16992,7 @@
   },
   "1211": {
     "_id": 1211,
-    "_name": "W Stronę Słońca [ www.MEGAJUMP.pl ] (by adix6)",
+    "_name": "W Stronę Słońca",
     "_albumId": 720,
     "_albumSongNumber": 1,
     "_artistIds": [
@@ -16994,7 +17000,7 @@
     ],
     "_year": 2012,
     "_languageId": 0,
-    "_genreId": 3,
+    "_genreId": 18,
     "_duration": "00:03:08.0030000",
     "_filePath": "D:\\Muzyka\\Sample Music\\W stronę slońca.mp3"
   },
@@ -17190,7 +17196,7 @@
     ],
     "_year": 2018,
     "_languageId": 0,
-    "_genreId": 3,
+    "_genreId": 25,
     "_duration": "00:02:51.8370000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Want You Back.mp3"
   },
@@ -17568,7 +17574,7 @@
     ],
     "_year": 2010,
     "_languageId": 0,
-    "_genreId": 0,
+    "_genreId": 5,
     "_duration": "00:03:47.6300000",
     "_filePath": "D:\\Muzyka\\Sample Music\\What Do You Want From Me.mp3"
   },
@@ -18226,7 +18232,7 @@
     ],
     "_year": 2018,
     "_languageId": 0,
-    "_genreId": -1,
+    "_genreId": 3,
     "_duration": "00:03:27.9100000",
     "_filePath": "D:\\Muzyka\\Sample Music\\You Deserve Better.mp3"
   },
@@ -18394,7 +18400,7 @@
     ],
     "_year": 2018,
     "_languageId": 0,
-    "_genreId": 3,
+    "_genreId": 83,
     "_duration": "00:03:25.4850000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Youngblood.mp3"
   },
@@ -18491,7 +18497,7 @@
       167
     ],
     "_year": 2008,
-    "_languageId": 0,
+    "_languageId": 4,
     "_genreId": 3,
     "_duration": "00:03:29.8670000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Z Głębi Duszy.mp3"

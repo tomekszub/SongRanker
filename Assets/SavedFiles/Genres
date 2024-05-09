@@ -314,5 +314,25 @@
   "78": {
     "_name": "Pop-opera",
     "_id": 78
+  },
+  "79": {
+    "_name": "Nu metal",
+    "_id": 79
+  },
+  "80": {
+    "_name": "Latin pop",
+    "_id": 80
+  },
+  "81": {
+    "_name": "Reggaeton",
+    "_id": 81
+  },
+  "82": {
+    "_name": "Eurobeat",
+    "_id": 82
+  },
+  "83": {
+    "_name": "New wave",
+    "_id": 83
   }
 }
