@@ -7,6 +7,8 @@ namespace Immortus.SongRanker
 {
     public static class SongManager
     {
+        const string MUSIC_PATH = @"D:\Muzyka\Sample Music";
+
         static Dictionary<int, Song> _songs = new();
         static HashSet<string> _loadedPaths = new();
         static UniqueIDContainer<Genre> _genres = new();
@@ -36,69 +38,6 @@ namespace Immortus.SongRanker
             _genres = new();
             _albums = new();
             _artists = new();
-        }
-
-        public static (Song, string) LoadSong(string path)
-        {
-            File tagLibFile;
-
-            try
-            {
-                tagLibFile = File.Create(path);
-            }
-            catch(Exception ex)
-            {
-                return (null, ex.Message);
-            }
-
-            if(tagLibFile == null)
-                return (null, "Could not load metadata");
-
-            if(_loadedPaths.Contains(path))
-                return (null, "This song was already added.");
-
-            int id = GetNextSongID();
-
-            var album = tagLibFile.Tag.Album;
-            var albumArtists = tagLibFile.Tag.AlbumArtists;
-            string albumArtistName = albumArtists.Length > 0 ? albumArtists[0] : null;
-            int albumArtistId = _artists.GetID(new Artist(albumArtistName, -1));
-            int albumId = _albums.GetID(new(album, albumArtistId));
-
-            List<int> artistIds = new();
-            foreach( var performer in tagLibFile.Tag.Performers)
-            {
-                int artistId = albumArtistName == performer ? albumArtistId : _artists.GetID(new Artist(performer, -1));
-                if(artistId != -1)
-                    artistIds.Add(artistId);
-            }
-
-            var genres = tagLibFile.Tag.Genres;
-            string genreName = genres.Length > 0 ? genres[0].Split(';')[0] : null;
-            int genreId = _genres.GetID(new(genreName));
-
-            Song song = new(id, tagLibFile.Tag.Title, albumId, (int)tagLibFile.Tag.Track, artistIds.ToArray(), (int)tagLibFile.Tag.Year, genreId, tagLibFile.Properties.Duration, path);
-
-            tagLibFile.Dispose();
-
-            _songs.Add(id, song);
-
-            _loadedPaths.Add(song.Path);
-
-            return (song, string.Empty);
-
-            static int GetNextSongID()
-            {
-                for (int i = 0; i < int.MaxValue; i++)
-                {
-                    if (_songs.ContainsKey(i))
-                        continue;
-
-                    return i;
-                }
-
-                return -1;
-            }
         }
 
         public static void SaveTag(string path, Song data)
@@ -206,6 +145,7 @@ namespace Immortus.SongRanker
             _albums.TryGetValue(id, out Album album);
             return album;
         }
+
         public static int GetAlbumIDByNameAndAuthor(string name, int artistID, bool createIfNeeded)
         {
             foreach (var albumKVP in _albums.All)
@@ -272,16 +212,10 @@ namespace Immortus.SongRanker
                 return false;
 
             var genres = FileSaver.LoadDictionary<int, Genre>("Genres");
-            if (genres.Count == 0)
-                return false;
 
             var albums = FileSaver.LoadDictionary<int, Album>("Albums");
-            if (albums.Count == 0)
-                return false;
 
             var artists = FileSaver.LoadDictionary<int, Artist>("Artists");
-            if (artists.Count == 0)
-                return false;
 
             var languages = FileSaver.LoadDictionary<int, Language>("Language");
 
@@ -330,6 +264,94 @@ namespace Immortus.SongRanker
                     _genreToSongsLUT[genreID].Add(song.Value);
                 else
                     _genreToSongsLUT.Add(genreID, new List<Song> { song.Value });
+            }
+        }
+
+        internal static void SearchForNewMusic(Action<int, string[]> resultCallback)
+        {
+            string[] files = System.IO.Directory.GetFiles(MUSIC_PATH, "*.mp3");
+            List<string> errors = new();
+
+            int newSongs = 0;
+
+            foreach (string filePath in files)
+            {
+                if (_loadedPaths.Contains(filePath))
+                    continue;
+
+                var ret = LoadSong(filePath);
+                if (ret.Item1 == null)
+                    errors.Add($"Song at path {filePath} was not laoded due to error: \"{ret.Item2}\"");
+                else
+                    newSongs++;
+            }
+
+            resultCallback?.Invoke(newSongs, errors.ToArray());
+
+            if (newSongs > 0)
+                SaveDataToFiles();
+        }
+
+        static (Song, string) LoadSong(string path)
+        {
+            File tagLibFile;
+
+            try
+            {
+                tagLibFile = File.Create(path);
+            }
+            catch (Exception ex)
+            {
+                return (null, $"TagLibFileError: {ex.Message}");
+            }
+
+            if (tagLibFile == null)
+                return (null, "Could not load metadata");
+
+            if (_loadedPaths.Contains(path))
+                return (null, "This song was already added.");
+
+            int id = GetNextSongID();
+
+            var album = tagLibFile.Tag.Album;
+            var albumArtists = tagLibFile.Tag.AlbumArtists;
+            string albumArtistName = albumArtists.Length > 0 ? albumArtists[0] : null;
+            int albumArtistId = _artists.GetID(new Artist(albumArtistName, -1));
+            int albumId = _albums.GetID(new(album, albumArtistId));
+
+            List<int> artistIds = new();
+            foreach (var performer in tagLibFile.Tag.Performers)
+            {
+                int artistId = albumArtistName == performer ? albumArtistId : _artists.GetID(new Artist(performer, -1));
+                if (artistId != -1)
+                    artistIds.Add(artistId);
+            }
+
+            var genres = tagLibFile.Tag.Genres;
+            string genreName = genres.Length > 0 ? genres[0].Split(';')[0] : null;
+            int genreId = _genres.GetID(new(genreName));
+
+            Song song = new(id, tagLibFile.Tag.Title, albumId, (int)tagLibFile.Tag.Track, artistIds.ToArray(), (int)tagLibFile.Tag.Year, genreId, tagLibFile.Properties.Duration, path);
+
+            tagLibFile.Dispose();
+
+            _songs.Add(id, song);
+
+            _loadedPaths.Add(song.Path);
+
+            return (song, string.Empty);
+
+            static int GetNextSongID()
+            {
+                for (int i = 0; i < int.MaxValue; i++)
+                {
+                    if (_songs.ContainsKey(i))
+                        continue;
+
+                    return i;
+                }
+
+                return -1;
             }
         }
     }

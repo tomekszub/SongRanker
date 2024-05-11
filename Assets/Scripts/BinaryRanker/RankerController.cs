@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System.IO;
 using UnityEngine;
 using SM = Immortus.SongRanker.SongManager;
 
@@ -7,7 +6,7 @@ namespace Immortus.SongRanker
 {
     public class RankerController : MonoBehaviour
     {
-        [SerializeField] string _MusicPath = @"D:\Muzyka\Sample Music";
+        [SerializeField] SongLoadingResultPopup _SongLoadingResultPopup;
 
         Ranker<Song> _ranker;
 
@@ -49,22 +48,19 @@ namespace Immortus.SongRanker
 
         void Init()
         {
-            if (!SM.LoadData())
-            {
-                string[] files = Directory.GetFiles(_MusicPath, "*.mp3");
+            SM.LoadData();
 
-                foreach (string file in files)
-                {
-                    Debug.Log($"Processing {file}");
-                    var ret = SM.LoadSong(file);
-                    if (ret.Item1 == null)
-                        Debug.LogError($"{ret.Item2} is null!");
-                }
-
-                SM.SaveDataToFiles();
-            }
+            SM.SearchForNewMusic(ResultCallback);
 
             LoadRanking();
+
+            void ResultCallback(int newSongs, string[] errors)
+            {
+                if (newSongs == 0 && errors.Length == 0)
+                    return;
+
+                _SongLoadingResultPopup.Show(newSongs, errors);
+            }
         }
 
         void LoadRanking()
