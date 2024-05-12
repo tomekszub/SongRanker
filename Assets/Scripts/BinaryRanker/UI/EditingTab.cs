@@ -217,6 +217,7 @@ namespace Immortus.SongRanker
             void Save(string value)
             {
                 _song.LanguageID = SongManager.GetLanguageIDByName(value, true);
+                SongManager.RefreshLanguageLUT();
                 OnChangeDone?.Invoke();
                 RefreshUI();
                 _SimpleHintEditPopup.gameObject.SetActive(false);

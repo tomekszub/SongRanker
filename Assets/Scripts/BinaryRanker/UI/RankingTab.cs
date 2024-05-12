@@ -11,18 +11,22 @@ namespace Immortus.SongRanker
     {
         const string ARTISTS = "Artists";
         const string GENRES = "Genres";
+        const string LANGUAGE = "Language";
         const string ARTIST_SONGS_COUNT_RANKING = "ArtistSongCountRanking";
-        const string ARTIST_CUSTOM_RATING_RANKING = "ArtistCustomRatingRanking";
         const string GENRE_SONGS_COUNT_RANKING = "GenreSongCountRanking";
+        const string LANGUAGE_SONGS_COUNT_RANKING = "LanguageSongCountRanking";
+        const string ARTIST_CUSTOM_RATING_RANKING = "ArtistCustomRatingRanking";
         const string GENRE_CUSTOM_RATING_RANKING = "GenreCustomRatingRanking";
+        const string LANGUAGE_CUSTOM_RATING_RANKING = "LanguageCustomRatingRanking";
 
         [SerializeField] TextMeshProUGUI _RankingText;
         [SerializeField] RankerTab _RankerTab;
         [SerializeField] EditingTab _EditingTab;
 
         Dictionary<string, string> _cachedRankings = new();
-        List<(Artist artist, int songCount, float avgRating, float customRating)> _artistRanking;
-        List<(Genre genre, int songCount, float avgRating)> _genreRanking;
+        List<RankingObject<Artist>> _artistRanking = new();
+        List<RankingObject<Genre>> _genreRanking = new();
+        List<RankingObject<Language>> _languageRanking = new();
         bool _isRankingEstablished = false;
         HashSet<string> _rankingDirtyLists = new();
         Dictionary<string, Action> _listToRefreshFunction = new();
@@ -35,6 +39,7 @@ namespace Immortus.SongRanker
             _EditingTab.OnChangeDone += SetDirty;
             _listToRefreshFunction.Add(ARTISTS, RefreshArtistList);
             _listToRefreshFunction.Add(GENRES, RefreshGenreList);
+            _listToRefreshFunction.Add(LANGUAGE, RefreshLanguageList);
             ResetDirtyLists();
 
             void SetDirty()
@@ -48,18 +53,19 @@ namespace Immortus.SongRanker
             {
                 _rankingDirtyLists.Add(ARTISTS);
                 _rankingDirtyLists.Add(GENRES);
+                _rankingDirtyLists.Add(LANGUAGE);
             }
         }
 
-        void OnEnable()
-        {
-            RefreshCurrentListIfNeeded();
-        }
+        void OnEnable() => RefreshCurrentListIfNeeded();
 
         void RefreshCurrentListIfNeeded()
         {
             if (!_isRankingEstablished)
+            {
                 _RankerTab.EstablishRating();
+                _isRankingEstablished = true;
+            }
 
             if (_rankingDirtyLists.Contains(_currList))
                 _listToRefreshFunction[_currList].Invoke();
@@ -88,7 +94,7 @@ namespace Immortus.SongRanker
                     Debug.LogError($"Artist with id {kvp.Key} deos not exist or is null!");
                     continue;
                 }
-                _artistRanking.Add((artist, ratedSongs, ratingSum / ratedSongs, (ratingSum / ratedSongs) + ((ratedSongs - 1) * 4.5f)));
+                _artistRanking.Add(new(artist, ratedSongs, ratingSum / ratedSongs, (ratingSum / ratedSongs) + ((ratedSongs - 1) * 4.5f)));
             }
 
             _rankingDirtyLists.Remove(ARTISTS);
@@ -119,7 +125,7 @@ namespace Immortus.SongRanker
                     Debug.LogError($"Genre with id {kvp.Key} deos not exist or is null!");
                     continue;
                 }
-                _genreRanking.Add((genre, ratedSongs, ratingSum / ratedSongs));
+                _genreRanking.Add(new(genre, ratedSongs, ratingSum / ratedSongs, (ratingSum / ratedSongs) + ((ratedSongs - 1) * 4.5f)));
             }
 
             _rankingDirtyLists.Remove(GENRES);
@@ -127,112 +133,73 @@ namespace Immortus.SongRanker
             _cachedRankings.Remove(GENRE_CUSTOM_RATING_RANKING);
         }
 
-        public void ShowArtistCustomRatingRanking()
+        void RefreshLanguageList()
         {
-            _currList = ARTISTS;
+            _languageRanking = new();
+            var languagesToSongs = SongManager.LanguageToSongs;
 
-            if (_cachedRankings.TryGetValue(ARTIST_CUSTOM_RATING_RANKING, out string cachedData))
+            foreach (var kvp in languagesToSongs)
             {
-                _RankingText.text = cachedData;
-                return;
+                float ratingSum = 0;
+                int ratedSongs = 0;
+                foreach (var song in kvp.Value)
+                {
+                    if (song.Rating > 0)
+                    {
+                        ratingSum += song.Rating;
+                        ratedSongs++;
+                    }
+                }
+
+                var language = SongManager.GetLanguageByID(kvp.Key);
+                if (language == null)
+                {
+                    Debug.LogError($"Language with id {kvp.Key} deos not exist or is null!");
+                    continue;
+                }
+                _languageRanking.Add(new(language, ratedSongs, ratingSum / ratedSongs, (ratingSum / ratedSongs) + ((ratedSongs - 1) * 4.5f)));
             }
 
-            RefreshCurrentListIfNeeded();
-
-            var sortedRanking = _artistRanking.OrderByDescending(s => s.customRating);
-
-            StringBuilder sb = new();
-            int artistNameLength;
-            int songCountLength;
-            string avgRatingString;
-
-            foreach (var (artist, songCount, avgRating, customRating) in sortedRanking)
-            {
-                artistNameLength = artist.Name.Length;
-                songCountLength = songCount.ToString().Length;
-                sb.Append($"{artist.Name}");
-                for (int i = 0; i < 35 - artistNameLength; i++)
-                    sb.Append(" ");
-                sb.Append($"{songCount}");
-                for (int i = 0; i < 6 - songCountLength; i++)
-                    sb.Append(" ");
-                avgRatingString = $"{Math.Round(avgRating, 2)}";
-                sb.Append(avgRatingString);
-                for (int i = 0; i < 10 - avgRatingString.Length; i++)
-                    sb.Append(" ");
-                sb.Append($"{Math.Round(customRating, 2)}");
-                sb.AppendLine();
-            }
-
-            _cachedRankings.Add(ARTIST_CUSTOM_RATING_RANKING, sb.ToString());
-            _RankingText.text = _cachedRankings[ARTIST_CUSTOM_RATING_RANKING];
+            _rankingDirtyLists.Remove(LANGUAGE);
+            _cachedRankings.Remove(LANGUAGE_SONGS_COUNT_RANKING);
+            _cachedRankings.Remove(LANGUAGE_CUSTOM_RATING_RANKING);
         }
 
         public void ShowArtistSongCountRanking()
         {
-            _currList = ARTISTS;
+            ShowCustomRanking(ARTISTS, ARTIST_SONGS_COUNT_RANKING, ref _artistRanking, a => a.SongCount);
+        }
 
-            if (_cachedRankings.TryGetValue(ARTIST_SONGS_COUNT_RANKING, out string cachedData))
-            {
-                _RankingText.text = cachedData;
-                return;
-            }
-
-            RefreshCurrentListIfNeeded();
-
-            var sortedRanking = _artistRanking.OrderByDescending(s => s.songCount);
-
-            StringBuilder sb = new();
-            int artistNameLength;
-
-            foreach (var item in sortedRanking)
-            {
-                artistNameLength = item.artist.Name.Length;
-                sb.Append($"{item.artist.Name}");
-                for (int i = 0; i < 35 - artistNameLength; i++)
-                    sb.Append(" ");
-                sb.AppendLine($"{item.songCount}");
-            }
-
-            _cachedRankings.Add(ARTIST_SONGS_COUNT_RANKING, sb.ToString());
-            _RankingText.text = _cachedRankings[ARTIST_SONGS_COUNT_RANKING];
+        public void ShowArtistCustomRatingRanking()
+        {
+            ShowCustomRanking(ARTISTS, ARTIST_CUSTOM_RATING_RANKING, ref _artistRanking, a => a.CustomRating);
         }
 
         public void ShowGenreSongCountRanking()
         {
-            _currList = GENRES;
-
-            if (_cachedRankings.TryGetValue(GENRE_SONGS_COUNT_RANKING, out string cachedData))
-            {
-                _RankingText.text = cachedData;
-                return;
-            }
-
-            RefreshCurrentListIfNeeded();
-
-            var sortedRanking = _genreRanking.OrderByDescending(g => g.songCount);
-
-            StringBuilder sb = new();
-            int genreNameLength;
-
-            foreach (var item in sortedRanking)
-            {
-                genreNameLength = item.genre.Name.Length;
-                sb.Append($"{item.genre.Name}");
-                for (int i = 0; i < 35 - genreNameLength; i++)
-                    sb.Append(" ");
-                sb.AppendLine($"{item.songCount}");
-            }
-
-            _cachedRankings.Add(GENRE_SONGS_COUNT_RANKING, sb.ToString());
-            _RankingText.text = _cachedRankings[GENRE_SONGS_COUNT_RANKING];
+            ShowCustomRanking(GENRES, GENRE_SONGS_COUNT_RANKING, ref _genreRanking, g => g.SongCount);
         }
 
         public void ShowGenreCustomRatingRanking()
         {
-            _currList = GENRES;
+            ShowCustomRanking(GENRES, GENRE_CUSTOM_RATING_RANKING, ref _genreRanking, g => g.CustomRating);
+        }
 
-            if (_cachedRankings.TryGetValue(GENRE_CUSTOM_RATING_RANKING, out string cachedData))
+        public void ShowLanguageSongCountRanking()
+        {
+            ShowCustomRanking(LANGUAGE, LANGUAGE_SONGS_COUNT_RANKING, ref _languageRanking, g => g.SongCount);
+        }
+
+        public void ShowLanguageCustomRatingRanking()
+        {
+            ShowCustomRanking(LANGUAGE, LANGUAGE_CUSTOM_RATING_RANKING, ref _languageRanking, g => g.CustomRating);
+        }
+
+        void ShowCustomRanking<T>(string listName, string rankingKey, ref List<RankingObject<T>> ranking, Func<RankingObject<T>, double> orderFunc) where T : IRankable
+        {
+            _currList = listName;
+
+            if (_cachedRankings.TryGetValue(rankingKey, out string cachedData))
             {
                 _RankingText.text = cachedData;
                 return;
@@ -240,22 +207,51 @@ namespace Immortus.SongRanker
 
             RefreshCurrentListIfNeeded();
 
-            var sortedRanking = _genreRanking.OrderByDescending(g => g.avgRating);
+            var sortedRanking = ranking.OrderByDescending(orderFunc);
 
             StringBuilder sb = new();
-            int artistNameLength;
+
+            int nameLength;
+            int songCountLength;
+            string avgRatingString;
 
             foreach (var item in sortedRanking)
             {
-                artistNameLength = item.genre.Name.Length;
-                sb.Append($"{item.genre.Name}");
-                for (int i = 0; i < 35 - artistNameLength; i++)
+                var name = item.Value.GetDisplayName();
+                nameLength = name.Length;
+                songCountLength = item.SongCount.ToString().Length;
+                sb.Append($"{name}");
+                for (int i = 0; i < 35 - nameLength; i++)
                     sb.Append(" ");
-                sb.AppendLine($"{item.songCount}\t\t{Math.Round(item.avgRating, 2)}");
+                sb.Append($"{item.SongCount}");
+                for (int i = 0; i < 6 - songCountLength; i++)
+                    sb.Append(" ");
+                avgRatingString = $"{Math.Round(item.AvgRating, 2)}";
+                sb.Append(avgRatingString);
+                for (int i = 0; i < 10 - avgRatingString.Length; i++)
+                    sb.Append(" ");
+                sb.Append($"{Math.Round(item.CustomRating, 2)}");
+                sb.AppendLine();
             }
 
-            _cachedRankings.Add(GENRE_CUSTOM_RATING_RANKING, sb.ToString());
-            _RankingText.text = _cachedRankings[GENRE_CUSTOM_RATING_RANKING];
+            _cachedRankings.Add(rankingKey, sb.ToString());
+            _RankingText.text = _cachedRankings[rankingKey];
+        }
+    }
+
+    class RankingObject<T> where T : IRankable
+    {
+        public T Value;
+        public int SongCount;
+        public float AvgRating;
+        public float CustomRating;
+
+        public RankingObject(T value, int songCount, float avgRating, float customRating)
+        {
+            Value = value;
+            SongCount = songCount;
+            AvgRating = avgRating;
+            CustomRating = customRating;
         }
     }
 }

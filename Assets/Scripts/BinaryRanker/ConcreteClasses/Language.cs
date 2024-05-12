@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 namespace Immortus.SongRanker
 {
     [JsonObject(MemberSerialization.Fields)]
-    public class Language : UniqueIDProperty<Language>
+    public class Language : UniqueIDProperty<Language>, IRankable
     {
         string _name;
 
@@ -20,5 +20,7 @@ namespace Immortus.SongRanker
         }
 
         public override bool IsValid() => !string.IsNullOrEmpty(_name);
+
+        public string GetDisplayName() => _name;
     }
 }

@@ -19,9 +19,11 @@ namespace Immortus.SongRanker
         //LUTs
         static Dictionary<int, List<Song>> _artistToSongsLUT = new();
         static Dictionary<int, List<Song>> _genreToSongsLUT = new();
+        static Dictionary<int, List<Song>> _languageToSongsLUT = new();
 
         public static Dictionary<int, List<Song>> ArtistToSongs => _artistToSongsLUT;
         public static Dictionary<int, List<Song>> GenreToSongs => _genreToSongsLUT;
+        public static Dictionary<int, List<Song>> LanguageToSongs => _languageToSongsLUT;
 
         public static IEnumerable<string> AllGenreNames => _genres.GetAllValues().Select(g => g.Name);
 
@@ -232,6 +234,7 @@ namespace Immortus.SongRanker
 
             RefreshArtistsLUT();
             RefreshGenresLUT();
+            RefreshLanguageLUT();
 
             return true;
         }
@@ -264,6 +267,21 @@ namespace Immortus.SongRanker
                     _genreToSongsLUT[genreID].Add(song.Value);
                 else
                     _genreToSongsLUT.Add(genreID, new List<Song> { song.Value });
+            }
+        }
+
+        public static void RefreshLanguageLUT()
+        {
+            _languageToSongsLUT = new();
+
+            foreach (var song in _songs)
+            {
+                var languageID = song.Value.LanguageID;
+
+                if (_languageToSongsLUT.ContainsKey(languageID))
+                    _languageToSongsLUT[languageID].Add(song.Value);
+                else
+                    _languageToSongsLUT.Add(languageID, new List<Song> { song.Value });
             }
         }
 

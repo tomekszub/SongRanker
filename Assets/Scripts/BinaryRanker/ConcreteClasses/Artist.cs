@@ -3,7 +3,7 @@
 namespace Immortus.SongRanker
 {
     [JsonObject(MemberSerialization.Fields)]
-    public class Artist : UniqueIDProperty<Artist>
+    public class Artist : UniqueIDProperty<Artist>, IRankable
     {
         string _name;
         int _countryId;
@@ -22,5 +22,7 @@ namespace Immortus.SongRanker
         }
 
         public override bool IsValid() => !string.IsNullOrEmpty(_name);
+
+        public string GetDisplayName() => _name;
     }
 }
