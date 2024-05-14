@@ -264,6 +264,7 @@ namespace Immortus.SongRanker
                 void OnSuccess(int albumArtistID)
                 {
                     _song.AlbumID = SongManager.GetAlbumIDByNameAndAuthor(albumName, albumArtistID, true);
+                    SongManager.RefreshAlbumLUT();
                     OnChangeDone?.Invoke();
                     RefreshUI();
                     _SimpleHintEditPopup.gameObject.SetActive(false);

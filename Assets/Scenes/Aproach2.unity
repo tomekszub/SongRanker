@@ -1420,7 +1420,7 @@ GameObject:
   - component: {fileID: 94386327}
   - component: {fileID: 94386326}
   m_Layer: 5
-  m_Name: AlbumButton
+  m_Name: AlbumSongCountButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1490,7 +1490,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 94386327}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1129606998}
+        m_TargetAssemblyTypeName: Immortus.SongRanker.RankingTab, Assembly-CSharp
+        m_MethodName: ShowAlbumSongCountRanking
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &94386327
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6678,7 +6690,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Year
+  m_text: Album rating
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -12893,7 +12905,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Album
+  m_text: Album song count
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -14950,7 +14962,7 @@ GameObject:
   - component: {fileID: 1036923136}
   - component: {fileID: 1036923135}
   m_Layer: 5
-  m_Name: YearButton
+  m_Name: AlbumRatingButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15020,7 +15032,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1036923136}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1129606998}
+        m_TargetAssemblyTypeName: Immortus.SongRanker.RankingTab, Assembly-CSharp
+        m_MethodName: ShowAlbumCustomRatingRanking
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1036923136
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -12,12 +12,15 @@ namespace Immortus.SongRanker
         const string ARTISTS = "Artists";
         const string GENRES = "Genres";
         const string LANGUAGE = "Language";
+        const string ALBUM = "Album";
         const string ARTIST_SONGS_COUNT_RANKING = "ArtistSongCountRanking";
         const string GENRE_SONGS_COUNT_RANKING = "GenreSongCountRanking";
         const string LANGUAGE_SONGS_COUNT_RANKING = "LanguageSongCountRanking";
+        const string ALBUM_SONGS_COUNT_RANKING = "AlbumSongCountRanking";
         const string ARTIST_CUSTOM_RATING_RANKING = "ArtistCustomRatingRanking";
         const string GENRE_CUSTOM_RATING_RANKING = "GenreCustomRatingRanking";
         const string LANGUAGE_CUSTOM_RATING_RANKING = "LanguageCustomRatingRanking";
+        const string ALBUM_CUSTOM_RATING_RANKING = "AlbumCustomRatingRanking";
 
         [SerializeField] TextMeshProUGUI _RankingText;
         [SerializeField] RankerTab _RankerTab;
@@ -27,6 +30,7 @@ namespace Immortus.SongRanker
         List<RankingObject<Artist>> _artistRanking = new();
         List<RankingObject<Genre>> _genreRanking = new();
         List<RankingObject<Language>> _languageRanking = new();
+        List<RankingObject<Album>> _albumRanking = new();
         bool _isRankingEstablished = false;
         HashSet<string> _rankingDirtyLists = new();
         Dictionary<string, Action> _listToRefreshFunction = new();
@@ -40,6 +44,7 @@ namespace Immortus.SongRanker
             _listToRefreshFunction.Add(ARTISTS, RefreshArtistList);
             _listToRefreshFunction.Add(GENRES, RefreshGenreList);
             _listToRefreshFunction.Add(LANGUAGE, RefreshLanguageList);
+            _listToRefreshFunction.Add(ALBUM, RefreshAlbumList);
             ResetDirtyLists();
 
             void SetDirty()
@@ -54,6 +59,7 @@ namespace Immortus.SongRanker
                 _rankingDirtyLists.Add(ARTISTS);
                 _rankingDirtyLists.Add(GENRES);
                 _rankingDirtyLists.Add(LANGUAGE);
+                _rankingDirtyLists.Add(ALBUM);
             }
         }
 
@@ -165,6 +171,38 @@ namespace Immortus.SongRanker
             _cachedRankings.Remove(LANGUAGE_CUSTOM_RATING_RANKING);
         }
 
+        void RefreshAlbumList()
+        {
+            _albumRanking = new();
+            var albumToSongs = SongManager.AlbumToSongs;
+
+            foreach (var kvp in albumToSongs)
+            {
+                float ratingSum = 0;
+                int ratedSongs = 0;
+                foreach (var song in kvp.Value)
+                {
+                    if (song.Rating > 0)
+                    {
+                        ratingSum += song.Rating;
+                        ratedSongs++;
+                    }
+                }
+
+                var album = SongManager.GetAlbumByID(kvp.Key);
+                if (album == null)
+                {
+                    Debug.LogError($"Album with id {kvp.Key} deos not exist or is null!");
+                    continue;
+                }
+                _albumRanking.Add(new(album, ratedSongs, ratingSum / ratedSongs, (ratingSum / ratedSongs) + ((ratedSongs - 1) * 4.5f)));
+            }
+
+            _rankingDirtyLists.Remove(ALBUM);
+            _cachedRankings.Remove(ALBUM_SONGS_COUNT_RANKING);
+            _cachedRankings.Remove(ALBUM_CUSTOM_RATING_RANKING);
+        }
+
         public void ShowArtistSongCountRanking()
         {
             ShowCustomRanking(ARTISTS, ARTIST_SONGS_COUNT_RANKING, ref _artistRanking, a => a.SongCount);
@@ -193,6 +231,16 @@ namespace Immortus.SongRanker
         public void ShowLanguageCustomRatingRanking()
         {
             ShowCustomRanking(LANGUAGE, LANGUAGE_CUSTOM_RATING_RANKING, ref _languageRanking, g => g.CustomRating);
+        }
+
+        public void ShowAlbumSongCountRanking()
+        {
+            ShowCustomRanking(ALBUM, ALBUM_SONGS_COUNT_RANKING, ref _albumRanking, g => g.SongCount);
+        }
+
+        public void ShowAlbumCustomRatingRanking()
+        {
+            ShowCustomRanking(ALBUM, ALBUM_CUSTOM_RATING_RANKING, ref _albumRanking, g => g.CustomRating);
         }
 
         void ShowCustomRanking<T>(string listName, string rankingKey, ref List<RankingObject<T>> ranking, Func<RankingObject<T>, double> orderFunc) where T : IRankable
