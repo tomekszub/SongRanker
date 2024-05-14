@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
@@ -89,17 +90,23 @@ namespace Immortus.SongRanker
 
             void SaveTags()
             {
-                _ProgressPopup.Show();
-
-                for (int i = 0; i < _context.Count; i++)
-                {
-                    Song song = _context[i];
-                    SongManager.SaveTag(song.Path, song);
-                    _ProgressPopup.SetProgress((i + 1) / _context.Count, song.Name);
-                }
-
-                _ProgressPopup.Hide();
+                StartCoroutine(SaveTagsCoroutine());
             }
+        }
+
+        IEnumerator SaveTagsCoroutine()
+        {
+            _ProgressPopup.Show();
+
+            for (int i = 0; i < _context.Count; i++)
+            {
+                Song song = _context[i];
+                SongManager.SaveTag(song.Path, song);
+                yield return null;
+                _ProgressPopup.SetProgress((i + 1.0f) / _context.Count, song.Name);
+            }
+
+            _ProgressPopup.Hide();
         }
 
         void ChangeSong()
