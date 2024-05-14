@@ -334,5 +334,21 @@
   "83": {
     "_name": "New wave",
     "_id": 83
+  },
+  "84": {
+    "_name": "Music",
+    "_id": 84
+  },
+  "85": {
+    "_name": "pop",
+    "_id": 85
+  },
+  "86": {
+    "_name": "Gothic metal",
+    "_id": 86
+  },
+  "87": {
+    "_name": "Tropical house",
+    "_id": 87
   }
 }
