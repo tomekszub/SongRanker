@@ -29,7 +29,7 @@ public class RecommendedValuesPanel : MonoBehaviour
 
         for (int i = 0; i < _recommendedValues.Count; i++)
         {
-            if (_recommendedValues[i].Contains(sourceText, StringComparison.InvariantCultureIgnoreCase))
+            if (!string.IsNullOrEmpty(_recommendedValues[i]) && _recommendedValues[i].Contains(sourceText, StringComparison.InvariantCultureIgnoreCase))
             {
                 _RecommendedValuesText[recommendedValues].text = _recommendedValues[i];
                 recommendedValues++;

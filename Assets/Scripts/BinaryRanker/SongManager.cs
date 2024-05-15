@@ -29,11 +29,13 @@ namespace Immortus.SongRanker
 
         public static IEnumerable<string> AllGenreNames => _genres.GetAllValues().Select(g => g.Name);
 
-        public static IEnumerable<string> AllLanguageNames => _languages.GetAllValues().Select(g => g.Name);
+        public static IEnumerable<string> AllLanguageNames => _languages.GetAllValues().Select(l => l.Name);
 
         public static IEnumerable<string> AllAlbumNames => _albums.GetAllValues().Select(a => a.Name);
 
         public static IEnumerable<string> AllArtistNames => _artists.GetAllValues().Select(a => a.Name);
+
+        public static IEnumerable<string> AllSongNames => _songs.Values.Select(s => s.Name);
 
         public static void Init()
         {

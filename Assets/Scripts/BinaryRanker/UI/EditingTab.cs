@@ -32,6 +32,7 @@ namespace Immortus.SongRanker
         [SerializeField] CreateAlbumPopup _CreateAlbumPopup;
         [SerializeField] ConfirmationPopup _ConfirmationPopup;
         [SerializeField] ProgressPopup _ProgressPopup;
+        [SerializeField] SearchField _SearchField;
 
         List<Song> _context;
         Song _song;
@@ -42,6 +43,8 @@ namespace Immortus.SongRanker
         {
             if (_alreadySet)
                 return;
+
+            _SearchField.SetData(SongManager.AllSongNames.ToList(), ShowSong);
 
             _context = new List<Song>();
             _RankerController.Ranker.Ranking.ForEach(r => _context.AddRange(r));
@@ -111,6 +114,20 @@ namespace Immortus.SongRanker
             }
 
             _ProgressPopup.Hide();
+        }
+
+        void ShowSong(int index)
+        {
+            var songID = SongManager.GetAllSongs().ToList()[index].ID;
+
+            for (int i = 0; i < _context.Count; i++)
+            {
+                if (_context[i].ID == songID)
+                {
+                    _currSongIndex = i;
+                    ChangeSong();
+                }
+            }
         }
 
         void ChangeSong()
