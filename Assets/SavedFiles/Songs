@@ -3807,15 +3807,15 @@
   },
   "271": {
     "_id": 271,
-    "_name": null,
-    "_albumId": 29,
-    "_albumSongNumber": 0,
+    "_name": "Don't Go Breaking My Heart",
+    "_albumId": 795,
+    "_albumSongNumber": 19,
     "_artistIds": [
       34
     ],
-    "_year": 0,
+    "_year": 2010,
     "_languageId": 0,
-    "_genreId": -1,
+    "_genreId": 3,
     "_duration": "00:03:39.0550000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Don't Go Breaking My Heart.mp3"
   },
@@ -5706,14 +5706,14 @@
   "406": {
     "_id": 406,
     "_name": "Going Under",
-    "_albumId": 295,
-    "_albumSongNumber": 6,
+    "_albumId": 120,
+    "_albumSongNumber": 1,
     "_artistIds": [
       135
     ],
     "_year": 2004,
     "_languageId": 0,
-    "_genreId": 54,
+    "_genreId": 79,
     "_duration": "00:03:35.0830000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Going Under.mp3"
   },
@@ -7440,7 +7440,7 @@
   },
   "530": {
     "_id": 530,
-    "_name": "I'm Free Heaven Helps the Man)",
+    "_name": "I'm Free (Heaven Helps the Man)",
     "_albumId": 372,
     "_albumSongNumber": 6,
     "_artistIds": [
@@ -10197,7 +10197,7 @@
     ],
     "_year": 2010,
     "_languageId": 0,
-    "_genreId": 9,
+    "_genreId": 3,
     "_duration": "00:03:51.4710000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Mine.mp3"
   },
@@ -10349,7 +10349,7 @@
     ],
     "_year": 2023,
     "_languageId": 0,
-    "_genreId": 68,
+    "_genreId": 3,
     "_duration": "00:02:49.2810000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Montana Sky.mp3"
   },
@@ -10689,15 +10689,15 @@
   },
   "762": {
     "_id": 762,
-    "_name": null,
-    "_albumId": -1,
-    "_albumSongNumber": 0,
+    "_name": "Need You Now",
+    "_albumId": 798,
+    "_albumSongNumber": 1,
     "_artistIds": [
-      84
+      665
     ],
-    "_year": 0,
+    "_year": 2010,
     "_languageId": 0,
-    "_genreId": 1,
+    "_genreId": 32,
     "_duration": "00:03:57.2210000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Need You Now.mp3"
   },
@@ -10768,7 +10768,7 @@
     ],
     "_year": 2015,
     "_languageId": 0,
-    "_genreId": 69,
+    "_genreId": 18,
     "_duration": "00:03:33.5040000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Never Forget You.mp3"
   },
@@ -11959,7 +11959,7 @@
     ],
     "_year": 2015,
     "_languageId": 0,
-    "_genreId": 0,
+    "_genreId": 1,
     "_duration": "00:04:13.2480000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Parachute.mp3"
   },
@@ -12330,14 +12330,14 @@
   "879": {
     "_id": 879,
     "_name": "Pokolenie",
-    "_albumId": 564,
-    "_albumSongNumber": 1,
+    "_albumId": 799,
+    "_albumSongNumber": 10,
     "_artistIds": [
-      67
+      66
     ],
-    "_year": 0,
-    "_languageId": 0,
-    "_genreId": -1,
+    "_year": 2004,
+    "_languageId": 4,
+    "_genreId": 5,
     "_duration": "00:04:18.0640000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Pokolenie.mp3"
   },
@@ -13425,7 +13425,7 @@
       480,
       63
     ],
-    "_year": 2105,
+    "_year": 2015,
     "_languageId": 0,
     "_genreId": 29,
     "_duration": "00:03:57.4820000",
@@ -14007,7 +14007,7 @@
     ],
     "_year": 2021,
     "_languageId": 0,
-    "_genreId": -1,
+    "_genreId": 3,
     "_duration": "00:04:07.4160000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Solid Gold.mp3"
   },
@@ -14230,11 +14230,13 @@
     "_albumId": 634,
     "_albumSongNumber": 2,
     "_artistIds": [
-      550
+      187,
+      526,
+      666
     ],
     "_year": 2019,
     "_languageId": 0,
-    "_genreId": -1,
+    "_genreId": 80,
     "_duration": "00:03:24.1280000",
     "_filePath": "D:\\Muzyka\\Sample Music\\South of the Border.mp3"
   },
@@ -16471,8 +16473,8 @@
       107
     ],
     "_year": 1990,
-    "_languageId": 0,
-    "_genreId": 45,
+    "_languageId": 4,
+    "_genreId": 5,
     "_duration": "00:04:40.6600000",
     "_filePath": "D:\\Muzyka\\Sample Music\\U stop szklanych gór.mp3"
   },
@@ -17075,7 +17077,7 @@
     ],
     "_year": 2013,
     "_languageId": 0,
-    "_genreId": 31,
+    "_genreId": 37,
     "_duration": "00:04:11.4510000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Wake Me Up.mp3"
   },
@@ -17733,7 +17735,7 @@
     ],
     "_year": 2011,
     "_languageId": 0,
-    "_genreId": 27,
+    "_genreId": 79,
     "_duration": "00:03:40.7610000",
     "_filePath": "D:\\Muzyka\\Sample Music\\What You Want.mp3"
   },
@@ -17789,7 +17791,7 @@
     ],
     "_year": 2001,
     "_languageId": 0,
-    "_genreId": 17,
+    "_genreId": 80,
     "_duration": "00:03:15.1820000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Whenever Wherever.mp3"
   },
@@ -19598,5 +19600,565 @@
     "_genreId": -1,
     "_duration": "00:03:16.0950000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Younger.mp3"
+  },
+  "1407": {
+    "_id": 1407,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:35.2660000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Alone With You.mp3"
+  },
+  "1408": {
+    "_id": 1408,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:04.5660000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Arcadia.mp3"
+  },
+  "1409": {
+    "_id": 1409,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:13.9300000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Back to Life (80s Remix).mp3"
+  },
+  "1410": {
+    "_id": 1410,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:06:30.5720000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Belfast.mp3"
+  },
+  "1411": {
+    "_id": 1411,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:13.1210000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Body On My Mind.mp3"
+  },
+  "1412": {
+    "_id": 1412,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:56.2890000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Butterfly_Mauboy.mp3"
+  },
+  "1413": {
+    "_id": 1413,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:35.0830000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Careless.mp3"
+  },
+  "1414": {
+    "_id": 1414,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:45.3600000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Drive.mp3"
+  },
+  "1415": {
+    "_id": 1415,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:04:00.1490000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Empire.mp3"
+  },
+  "1416": {
+    "_id": 1416,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:51.2810000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\EVER YOUNG.mp3"
+  },
+  "1417": {
+    "_id": 1417,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:58.7930000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\F.U..mp3"
+  },
+  "1418": {
+    "_id": 1418,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:11.2170000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Feel the Same.mp3"
+  },
+  "1419": {
+    "_id": 1419,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:37.0130000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Freak.mp3"
+  },
+  "1420": {
+    "_id": 1420,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:01.3050000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Fångad av en stormvind.mp3"
+  },
+  "1421": {
+    "_id": 1421,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:02.1140000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Help You Fly.mp3"
+  },
+  "1422": {
+    "_id": 1422,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:31.0660000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Holiday.mp3"
+  },
+  "1423": {
+    "_id": 1423,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:28.9540000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\I Dare You.mp3"
+  },
+  "1424": {
+    "_id": 1424,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:04:43.0820000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\I Guess Thats Why They Call It The Blues.mp3"
+  },
+  "1425": {
+    "_id": 1425,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:37.3000000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\If Everyone Cared.mp3"
+  },
+  "1426": {
+    "_id": 1426,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:54.0800000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Invisible.mp3"
+  },
+  "1427": {
+    "_id": 1427,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:55.2540000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Its Not You.mp3"
+  },
+  "1428": {
+    "_id": 1428,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:13.6690000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Just Over.mp3"
+  },
+  "1429": {
+    "_id": 1429,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:27.2320000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Lili.mp3"
+  },
+  "1430": {
+    "_id": 1430,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:49.1160000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Love Somebody.mp3"
+  },
+  "1431": {
+    "_id": 1431,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:04.3570000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Maniac.mp3"
+  },
+  "1432": {
+    "_id": 1432,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:44.1080000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Midnight Sky.mp3"
+  },
+  "1433": {
+    "_id": 1433,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:20.9460000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Most Girls (Acoustic).mp3"
+  },
+  "1434": {
+    "_id": 1434,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:22.6680000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Nobodys Perfect.mp3"
+  },
+  "1435": {
+    "_id": 1435,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:35.0310000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Ocean.mp3"
+  },
+  "1436": {
+    "_id": 1436,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:36.6740000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\OK (Anxiety Anthem).mp3"
+  },
+  "1437": {
+    "_id": 1437,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:04:01.1140000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Private Dancer.mp3"
+  },
+  "1438": {
+    "_id": 1438,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:24.7280000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Queen.mp3"
+  },
+  "1439": {
+    "_id": 1439,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:03.2090000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Rearview Town.mp3"
+  },
+  "1440": {
+    "_id": 1440,
+    "_name": "Elton John - Sacrifice",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      98
+    ],
+    "_year": 2010,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:04:41.8830000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Sacrifice.mp3"
+  },
+  "1441": {
+    "_id": 1441,
+    "_name": "Keith Urban - Somebody Like You (Official Music Video)",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      122
+    ],
+    "_year": 2014,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:51.9590000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Somebody Like You.mp3"
+  },
+  "1442": {
+    "_id": 1442,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:24.6500000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Somebody_Rice.mp3"
+  },
+  "1443": {
+    "_id": 1443,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:29.6060000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Sä saat mut palasiksi.mp3"
+  },
+  "1444": {
+    "_id": 1444,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:52.7760000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Tomame.mp3"
+  },
+  "1445": {
+    "_id": 1445,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:09.9910000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Two More Lonely People.mp3"
+  },
+  "1446": {
+    "_id": 1446,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:48.3600000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\We Could Be the Same.mp3"
+  },
+  "1447": {
+    "_id": 1447,
+    "_name": "We Don't Need Another Hero (Thunderdome)",
+    "_albumId": 797,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      182
+    ],
+    "_year": 2014,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:04:15.2780000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\We Dont Need Another Hero (Thunderdome).mp3"
+  },
+  "1448": {
+    "_id": 1448,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:34.6400000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\What Were You Expecting.mp3"
+  },
+  "1449": {
+    "_id": 1449,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:04:03.2790000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Whole World Is Watching.mp3"
+  },
+  "1450": {
+    "_id": 1450,
+    "_name": "Miley Cyrus - Wrecking Ball (Official Video)",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      101
+    ],
+    "_year": 2013,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:41.3690000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Wrecking Ball.mp3"
+  },
+  "1451": {
+    "_id": 1451,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:44.2380000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Youll Always Find Your Way Back Home.mp3"
+  },
+  "1452": {
+    "_id": 1452,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:04:13.5300000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Youre My Better Half.mp3"
   }
 }
