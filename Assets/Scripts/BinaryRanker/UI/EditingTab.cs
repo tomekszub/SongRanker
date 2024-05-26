@@ -139,9 +139,7 @@ namespace Immortus.SongRanker
 
         void RefreshUI()
         {
-            var position = _currSongIndex + 1;
-
-            _RankingPositionField.text = position.ToString();
+            _RankingPositionField.text = _RankerController.GetRankingPosition(_song.ID).ToString();
 
             bool propertyIsValid = PropertiesValidator.ValidateName(_song.Name);
             _TitleField.SetContent(_song.Name, !propertyIsValid, OpenTitleEditPopup);

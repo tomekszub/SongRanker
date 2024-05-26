@@ -9,6 +9,7 @@ namespace Immortus.SongRanker
         [SerializeField] SongLoadingResultPopup _SongLoadingResultPopup;
 
         Ranker<Song> _ranker;
+        Dictionary<int, int> _songIdToRankingPosition = new();
 
         public Ranker<Song> Ranker => _ranker;
 
@@ -44,6 +45,25 @@ namespace Immortus.SongRanker
                 return;
 
             TabController.ShowSavePanel();
+        }
+
+        public void RefreshSongRankingLUT()
+        {
+            int rankingPosition = 0;
+            foreach (var rank in _ranker.Ranking)
+            {
+                rankingPosition++;
+                foreach (var song in rank)
+                {
+                    _songIdToRankingPosition[song.ID] = rankingPosition;
+                }
+            }
+        }
+
+        public int GetRankingPosition(int songID)
+        {
+            _songIdToRankingPosition.TryGetValue(songID, out int rankingPos);
+            return rankingPos;
         }
 
         void Init()

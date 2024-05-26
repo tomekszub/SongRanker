@@ -96,6 +96,9 @@ namespace Immortus.SongRanker
         {
             _options.RemoveAt(0);
             _RankerController.SaveRanking(true);
+
+            _RankerController.RefreshSongRankingLUT();
+
             RefreshUI();
             OnRankingChangedEvent?.Invoke();
         }
@@ -220,6 +223,7 @@ namespace Immortus.SongRanker
                         _options.Remove(song);
                     }
                 }
+                _RankerController.RefreshSongRankingLUT();
                 RefreshUI();
             }
             else
