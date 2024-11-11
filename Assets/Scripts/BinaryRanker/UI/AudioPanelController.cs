@@ -68,22 +68,28 @@ public class AudioPanelController : MonoBehaviour
         if (_clipLoading)
             return;
 
-        if(!_clipRefreshed)
+        if (!_clipRefreshed)
         {
             _clipLoading = true;
-            _cachedTime = time;
+
+            if(time != -1)
+                _cachedTime = time;
+            else
+                _cachedTime = _AudioSource.clip ? _AudioSource.time / _AudioSource.clip.length : 0;
+
             _AudioClipLoader.LoadSong(_path, LoadAndPlaySong);
             return;
         }
 
         OnPlayStateEnter?.Invoke();
 
-        _AudioSource.Play();
         _PlayIcon.SetActive(false);
         _PauseIcon.SetActive(true);
 
         if (time >= 0)
             _AudioSource.time = time * _AudioSource.clip.length;
+
+        _AudioSource.Play();
     }
 
     void Pause()
@@ -106,6 +112,8 @@ public class AudioPanelController : MonoBehaviour
         }
 
         SetPanelState(true);
+
+        _AudioSource.Stop();
 
         _AudioSource.clip = audioClip;
 
