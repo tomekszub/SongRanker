@@ -5009,7 +5009,7 @@
       266
     ],
     "_year": 2013,
-    "_languageId": 0,
+    "_languageId": 4,
     "_genreId": 3,
     "_duration": "00:03:41.2050000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Flirt.mp3"
@@ -5375,7 +5375,7 @@
       284
     ],
     "_year": 2015,
-    "_languageId": 0,
+    "_languageId": 1,
     "_genreId": 19,
     "_duration": "00:01:25.7200000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Gate Jieitai Kanochi nite Kaku Tatakaeri.mp3"
@@ -8609,7 +8609,7 @@
       167
     ],
     "_year": 2009,
-    "_languageId": 0,
+    "_languageId": 4,
     "_genreId": 3,
     "_duration": "00:04:26.4110000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Królestwo pocałunków.mp3"
@@ -8694,7 +8694,7 @@
     ],
     "_year": 1989,
     "_languageId": 0,
-    "_genreId": -1,
+    "_genreId": 3,
     "_duration": "00:04:13.1760000",
     "_filePath": "D:\\Muzyka\\Sample Music\\La Luna.mp3"
   },
@@ -8917,7 +8917,7 @@
       394
     ],
     "_year": 2010,
-    "_languageId": 0,
+    "_languageId": 4,
     "_genreId": 3,
     "_duration": "00:03:11.4550000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Legenda.mp3"
@@ -9951,7 +9951,7 @@
   },
   "709": {
     "_id": 709,
-    "_name": null,
+    "_name": "Mamma Mia",
     "_albumId": 59,
     "_albumSongNumber": 0,
     "_artistIds": [
@@ -14657,7 +14657,7 @@
     ],
     "_year": 1984,
     "_languageId": 0,
-    "_genreId": -1,
+    "_genreId": 5,
     "_duration": "00:03:37.1700000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Summer of 69.mp3"
   },
@@ -16041,7 +16041,7 @@
     ],
     "_year": 2015,
     "_languageId": 0,
-    "_genreId": -1,
+    "_genreId": 3,
     "_duration": "00:03:05.3300000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Time.mp3"
   },
@@ -16670,7 +16670,7 @@
     ],
     "_year": 2014,
     "_languageId": 0,
-    "_genreId": -1,
+    "_genreId": 3,
     "_duration": "00:03:07.4870000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Undo.mp3"
   },
@@ -16852,8 +16852,8 @@
       615
     ],
     "_year": 2013,
-    "_languageId": 0,
-    "_genreId": -1,
+    "_languageId": 8,
+    "_genreId": 3,
     "_duration": "00:03:41.3230000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Vazgecmem.mp3"
   },
@@ -16950,8 +16950,8 @@
       619
     ],
     "_year": 2018,
-    "_languageId": 0,
-    "_genreId": -1,
+    "_languageId": 1,
+    "_genreId": 5,
     "_duration": "00:03:50.5770000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Voracity.mp3"
   },
@@ -17287,7 +17287,7 @@
     ],
     "_year": 2011,
     "_languageId": 0,
-    "_genreId": -1,
+    "_genreId": 3,
     "_duration": "00:03:32.7100000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Warzone.mp3"
   },
@@ -17419,7 +17419,7 @@
   },
   "1241": {
     "_id": 1241,
-    "_name": null,
+    "_name": "We Are Young",
     "_albumId": 59,
     "_albumSongNumber": 0,
     "_artistIds": [
@@ -17427,7 +17427,7 @@
     ],
     "_year": 0,
     "_languageId": 0,
-    "_genreId": -1,
+    "_genreId": 3,
     "_duration": "00:04:10.8540000",
     "_filePath": "D:\\Muzyka\\Sample Music\\We Are Young.mp3"
   },
@@ -17769,7 +17769,7 @@
   },
   "1266": {
     "_id": 1266,
-    "_name": "When you're gone ft. Melanie C",
+    "_name": "When you're gone",
     "_albumId": 751,
     "_albumSongNumber": 8,
     "_artistIds": [
@@ -17914,7 +17914,7 @@
     "_albumSongNumber": 0,
     "_artistIds": [],
     "_year": 2015,
-    "_languageId": 0,
+    "_languageId": 4,
     "_genreId": -1,
     "_duration": "00:03:18.6510000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Wilcza zamieć.mp3"
@@ -18337,7 +18337,7 @@
     ],
     "_year": 1986,
     "_languageId": 0,
-    "_genreId": -1,
+    "_genreId": 3,
     "_duration": "00:04:19.2160000",
     "_filePath": "D:\\Muzyka\\Sample Music\\You Keep Me Hanging On.mp3"
   },
@@ -18532,7 +18532,7 @@
       8
     ],
     "_year": 2011,
-    "_languageId": 0,
+    "_languageId": 4,
     "_genreId": 3,
     "_duration": "00:03:47.7600000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Zostan ze mna.mp3"
@@ -18560,7 +18560,7 @@
       656
     ],
     "_year": 2010,
-    "_languageId": 0,
+    "_languageId": 4,
     "_genreId": 22,
     "_duration": "00:04:26.5410000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Śpiewająco.mp3"
@@ -18621,23 +18621,9 @@
     "_duration": "00:03:28.7970000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Adore You.mp3"
   },
-  "1327": {
-    "_id": 1327,
-    "_name": "Tamta - Agapo (Wanna Play)",
-    "_albumId": 791,
-    "_albumSongNumber": 0,
-    "_artistIds": [
-      224
-    ],
-    "_year": 2024,
-    "_languageId": 0,
-    "_genreId": 84,
-    "_duration": "00:04:02.5900000",
-    "_filePath": "D:\\Muzyka\\Sample Music\\Agapise Me.mp3"
-  },
   "1328": {
     "_id": 1328,
-    "_name": null,
+    "_name": "All of my love",
     "_albumId": -1,
     "_albumSongNumber": 0,
     "_artistIds": [],
@@ -18673,7 +18659,7 @@
   },
   "1331": {
     "_id": 1331,
-    "_name": null,
+    "_name": "Arms Around Me",
     "_albumId": -1,
     "_albumSongNumber": 0,
     "_artistIds": [],
@@ -20172,5 +20158,4007 @@
     "_genreId": -1,
     "_duration": "00:03:04.8000000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Cara mia.mp3"
+  },
+  "1454": {
+    "_id": 1454,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:10.7470000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\A Little Bit Off.mp3"
+  },
+  "1455": {
+    "_id": 1455,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:34.0660000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Adiexodo.mp3"
+  },
+  "1456": {
+    "_id": 1456,
+    "_name": "Ed Sheeran - Afterglow (Lyrics)",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      667
+    ],
+    "_year": 2020,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:06.0260000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Afterglow.mp3"
+  },
+  "1457": {
+    "_id": 1457,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:38.4220000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\An Me Dis Na Kleo.mp3"
+  },
+  "1458": {
+    "_id": 1458,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:58.8800000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Baby Doll.mp3"
+  },
+  "1459": {
+    "_id": 1459,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:57.6540000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Baby Please Dont Stop.mp3"
+  },
+  "1460": {
+    "_id": 1460,
+    "_name": "Morat, Juanes - Besos en Guerra [Letra].",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      668
+    ],
+    "_year": 2019,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:45.5690000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Besos en Guerra.mp3"
+  },
+  "1461": {
+    "_id": 1461,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:41.9950000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Bezdroza.mp3"
+  },
+  "1462": {
+    "_id": 1462,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:08.9220000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Billy Grahams Bible.mp3"
+  },
+  "1463": {
+    "_id": 1463,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:05:02.3840000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Blessed.mp3"
+  },
+  "1464": {
+    "_id": 1464,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:51.2290000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Born Again.mp3"
+  },
+  "1465": {
+    "_id": 1465,
+    "_name": "Dua Lipa - Break My Heart (Lyrics)",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      669
+    ],
+    "_year": 2020,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:41.0300000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Break My Heart.mp3"
+  },
+  "1466": {
+    "_id": 1466,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:12.9650000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Broken Heart.mp3"
+  },
+  "1467": {
+    "_id": 1467,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:06.4440000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Bulletproof.mp3"
+  },
+  "1468": {
+    "_id": 1468,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:05:37.7270000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Cold.mp3"
+  },
+  "1469": {
+    "_id": 1469,
+    "_name": "Sia - Courage To Change (from the motion picture Music)",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      163
+    ],
+    "_year": 2020,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:04:52.7590000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Courage To Change.mp3"
+  },
+  "1470": {
+    "_id": 1470,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:58.0970000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Crazy Is My Life.mp3"
+  },
+  "1471": {
+    "_id": 1471,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:14.1380000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Die By The Blade.mp3"
+  },
+  "1472": {
+    "_id": 1472,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:21.8850000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Drunk Tonight.mp3"
+  },
+  "1473": {
+    "_id": 1473,
+    "_name": "Enrique Iglesias - DUELE EL CORAZON (Lyric Video) ft. Wisin",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      79
+    ],
+    "_year": 2016,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:18.8590000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Duele El Corazon.mp3"
+  },
+  "1474": {
+    "_id": 1474,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:04:35.3620000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Dzis prawdziwych cyganow juz nie ma.mp3"
+  },
+  "1475": {
+    "_id": 1475,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:04.5660000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Elevate.mp3"
+  },
+  "1476": {
+    "_id": 1476,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:04:03.5400000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Faiths Song.mp3"
+  },
+  "1477": {
+    "_id": 1477,
+    "_name": "Eros Ramazzotti - Fino All'Estasi ft. Nicole Scherzinger",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      670
+    ],
+    "_year": 2013,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:45.7250000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Fino AllEstasi.mp3"
+  },
+  "1478": {
+    "_id": 1478,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:21.2070000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Gee.mp3"
+  },
+  "1479": {
+    "_id": 1479,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:36.7530000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Girls Are Always Right.mp3"
+  },
+  "1480": {
+    "_id": 1480,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:14.9730000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Happiness.mp3"
+  },
+  "1481": {
+    "_id": 1481,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:56.6890000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Heart And Soul.mp3"
+  },
+  "1482": {
+    "_id": 1482,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:04:08.5480000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Heartless Madness.mp3"
+  },
+  "1483": {
+    "_id": 1483,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:57.7060000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Here's to Us.mp3"
+  },
+  "1484": {
+    "_id": 1484,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:04:27.3020000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\House.mp3"
+  },
+  "1485": {
+    "_id": 1485,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:27.9620000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\I Believe in You (Piano).mp3"
+  },
+  "1486": {
+    "_id": 1486,
+    "_name": "Eros Ramazzotti, Anastacia - I Belong To You (Il Ritmo Della Passione) (Official Video)",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      670
+    ],
+    "_year": 2009,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:04:24.5110000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\I Belong To You.mp3"
+  },
+  "1487": {
+    "_id": 1487,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:29.9710000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\I Wont Give Up.mp3"
+  },
+  "1488": {
+    "_id": 1488,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:12.4430000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\I'll Be Fine.mp3"
+  },
+  "1489": {
+    "_id": 1489,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:02.1840000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Just A Little Bit.mp3"
+  },
+  "1490": {
+    "_id": 1490,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:47.5850000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Jutra Nie Bedzie.mp3"
+  },
+  "1491": {
+    "_id": 1491,
+    "_name": "Sylwia Grzeszczak feat. Sound'n'Grace - Kiedy tylko spojrzę [Official Music Video]",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      671
+    ],
+    "_year": 2015,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:24.9370000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Kiedy tylko spojrze.mp3"
+  },
+  "1492": {
+    "_id": 1492,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:04:30.8490000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\King For A Day.mp3"
+  },
+  "1493": {
+    "_id": 1493,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:59.1140000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Krol.mp3"
+  },
+  "1494": {
+    "_id": 1494,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:01.8010000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Ksiezniczka.mp3"
+  },
+  "1495": {
+    "_id": 1495,
+    "_name": "Legends Never Die (ft. Against The Current) [OFFICIAL AUDIO] | Worlds 2017 - League of Legends",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      672
+    ],
+    "_year": 2017,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:55.1930000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Legends Never Die.mp3"
+  },
+  "1496": {
+    "_id": 1496,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:34.9270000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Lighthouse.mp3"
+  },
+  "1497": {
+    "_id": 1497,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:05.5830000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Lyssna till ditt hjarta.mp3"
+  },
+  "1498": {
+    "_id": 1498,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:06.3920000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Mary Leigh.mp3"
+  },
+  "1499": {
+    "_id": 1499,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:28.6670000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Miss Calculation.mp3"
+  },
+  "1500": {
+    "_id": 1500,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:04:17.3640000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\More of You.mp3"
+  },
+  "1501": {
+    "_id": 1501,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:48.3160000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Move.mp3"
+  },
+  "1502": {
+    "_id": 1502,
+    "_name": "Nancy Mulligan - Ed Sheera [Lyric]",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      673
+    ],
+    "_year": 2017,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:54.9410000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Nancy Mulligan.mp3"
+  },
+  "1503": {
+    "_id": 1503,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:15.8600000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Nieprawda.mp3"
+  },
+  "1504": {
+    "_id": 1504,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:51.2290000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\No More Hollywood Endings.mp3"
+  },
+  "1505": {
+    "_id": 1505,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:59.7660000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Not a Pop Song.mp3"
+  },
+  "1506": {
+    "_id": 1506,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:10.4340000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Nothing But You.mp3"
+  },
+  "1507": {
+    "_id": 1507,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:57.0450000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Ona i on.mp3"
+  },
+  "1508": {
+    "_id": 1508,
+    "_name": "Bosson - One In A Million",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      674
+    ],
+    "_year": 2016,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:36.1530000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\One In A Million.mp3"
+  },
+  "1509": {
+    "_id": 1509,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:49.4030000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Pain.mp3"
+  },
+  "1510": {
+    "_id": 1510,
+    "_name": "GOLEC UORKIESTRA - PĘDZĄ KONIE  (Official Video / Remastered)",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      521
+    ],
+    "_year": 2013,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:39.2300000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Pedza Konie.mp3"
+  },
+  "1511": {
+    "_id": 1511,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:04:06.5140000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Phantom Divine (Shadow Empire).mp3"
+  },
+  "1512": {
+    "_id": 1512,
+    "_name": "Ed Sheeran - Photograph (Lyrics)",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      366
+    ],
+    "_year": 2022,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:04:17.9380000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Photograph.mp3"
+  },
+  "1513": {
+    "_id": 1513,
+    "_name": "Sylwia Grzeszczak - Pozyczony [Official Music Video]",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      671
+    ],
+    "_year": 2013,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:21.1550000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Pozyczony.mp3"
+  },
+  "1514": {
+    "_id": 1514,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:08.5040000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Prosto w serce.mp3"
+  },
+  "1515": {
+    "_id": 1515,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:34.9530000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Revenge.mp3"
+  },
+  "1516": {
+    "_id": 1516,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:49.2200000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Rewind.mp3"
+  },
+  "1517": {
+    "_id": 1517,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:04:39.1440000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Sacrimony.mp3"
+  },
+  "1518": {
+    "_id": 1518,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:05:42.4480000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Safe And Sound.mp3"
+  },
+  "1519": {
+    "_id": 1519,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:16.2250000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Sen o przyszlosci.mp3"
+  },
+  "1520": {
+    "_id": 1520,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:31.5360000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Shine_.mp3"
+  },
+  "1521": {
+    "_id": 1521,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:37.7960000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Show Me What You Got.mp3"
+  },
+  "1522": {
+    "_id": 1522,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:10.7470000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Simple.mp3"
+  },
+  "1523": {
+    "_id": 1523,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:55.5410000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Son of a Liar.mp3"
+  },
+  "1524": {
+    "_id": 1524,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:04:17.7290000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Soul Society.mp3"
+  },
+  "1525": {
+    "_id": 1525,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:00.9920000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Starving.mp3"
+  },
+  "1526": {
+    "_id": 1526,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:56.5760000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Stay for a Little While.mp3"
+  },
+  "1527": {
+    "_id": 1527,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:00.6270000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Surface.mp3"
+  },
+  "1528": {
+    "_id": 1528,
+    "_name": "Ryszard Rynkowski - Szczęśliwej drogi już czas",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      675
+    ],
+    "_year": 2015,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:05:52.0210000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Szczesliwej drogi juz czas.mp3"
+  },
+  "1529": {
+    "_id": 1529,
+    "_name": "Jesse & Joy & Luis Fonsi - Tanto (Lyric Video)",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      676
+    ],
+    "_year": 2019,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:40.8480000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Tanto.mp3"
+  },
+  "1530": {
+    "_id": 1530,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:56.3760000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\The Light In Our Soul.mp3"
+  },
+  "1531": {
+    "_id": 1531,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:54.0800000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\The Queen.mp3"
+  },
+  "1532": {
+    "_id": 1532,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:14.5030000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Told You So.mp3"
+  },
+  "1533": {
+    "_id": 1533,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:04:23.2330000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Trudno Tak.mp3"
+  },
+  "1534": {
+    "_id": 1534,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:23.4760000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Un Angelo Disteso Al Sole.mp3"
+  },
+  "1535": {
+    "_id": 1535,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:04:16.0080000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Unbroken_.mp3"
+  },
+  "1536": {
+    "_id": 1536,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:39.8300000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Vacation.mp3"
+  },
+  "1537": {
+    "_id": 1537,
+    "_name": "Ricky Martin - Vente Pa' Ca ft. Maluma (Letra/Lyrics)",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      677
+    ],
+    "_year": 2023,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:04:10.4520000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Vente Pa Ca.mp3"
+  },
+  "1538": {
+    "_id": 1538,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:01.4360000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Victorious.mp3"
+  },
+  "1539": {
+    "_id": 1539,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:52.4550000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Vivere.mp3"
+  },
+  "1540": {
+    "_id": 1540,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:04:51.0900000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Wypijmy za błedy.mp3"
+  },
+  "1541": {
+    "_id": 1541,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:40.1170000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Agnieszka juz dawno.mp3"
+  },
+  "1542": {
+    "_id": 1542,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:11.1650000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Beachin.mp3"
+  },
+  "1543": {
+    "_id": 1543,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:04:13.5560000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Bo Tutaj Jest Jak Jest.mp3"
+  },
+  "1544": {
+    "_id": 1544,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:42.2640000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Bounce Back.mp3"
+  },
+  "1545": {
+    "_id": 1545,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:48.1770000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Burnin It Down.mp3"
+  },
+  "1546": {
+    "_id": 1546,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:29.4490000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Devil Is A Loser.mp3"
+  },
+  "1547": {
+    "_id": 1547,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:48.4640000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Dirt Road Anthem.mp3"
+  },
+  "1548": {
+    "_id": 1548,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:27.9360000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Do Not Disturb.mp3"
+  },
+  "1549": {
+    "_id": 1549,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:14.8160000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Downtown.mp3"
+  },
+  "1550": {
+    "_id": 1550,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:02.6880000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\El Diablo.mp3"
+  },
+  "1551": {
+    "_id": 1551,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:30.6230000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Follow Me.mp3"
+  },
+  "1552": {
+    "_id": 1552,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:25.9800000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Gone_.mp3"
+  },
+  "1553": {
+    "_id": 1553,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:58.2540000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Got What I Got.mp3"
+  },
+  "1554": {
+    "_id": 1554,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:05:23.9550000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Heart to Heart.mp3"
+  },
+  "1555": {
+    "_id": 1555,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:42.9170000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Homecoming queen.mp3"
+  },
+  "1556": {
+    "_id": 1556,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:33.9620000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\How Ya Doin.mp3"
+  },
+  "1557": {
+    "_id": 1557,
+    "_name": "Tina Turner - I Don't Wanna Lose You (Official Music Video)",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      182
+    ],
+    "_year": 2009,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:04:16.4770000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\I Dont Wanna Lose You.mp3"
+  },
+  "1558": {
+    "_id": 1558,
+    "_name": "Gloria Gaynor - I Will Survive",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      678
+    ],
+    "_year": 2022,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:14.5030000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\I Will Survive.mp3"
+  },
+  "1559": {
+    "_id": 1559,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:12.2600000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Incomplete.mp3"
+  },
+  "1560": {
+    "_id": 1560,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:54.1760000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Inevitabile.mp3"
+  },
+  "1561": {
+    "_id": 1561,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:00.1840000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Lights and Shadows.mp3"
+  },
+  "1562": {
+    "_id": 1562,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:19.1550000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Lonely_.mp3"
+  },
+  "1563": {
+    "_id": 1563,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:40.7950000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Masterpiece.mp3"
+  },
+  "1564": {
+    "_id": 1564,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:20.3460000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Milion słów.mp3"
+  },
+  "1565": {
+    "_id": 1565,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:12.9910000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Miss Me More.mp3"
+  },
+  "1566": {
+    "_id": 1566,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:36.5180000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Między wierszami.mp3"
+  },
+  "1567": {
+    "_id": 1567,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:09:44.6580000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Musica e.mp3"
+  },
+  "1568": {
+    "_id": 1568,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:24.2060000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Mz. Hyde.mp3"
+  },
+  "1569": {
+    "_id": 1569,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:51.2290000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Mój Bóg.mp3"
+  },
+  "1570": {
+    "_id": 1570,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:54.8540000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Never Be the Same_.mp3"
+  },
+  "1571": {
+    "_id": 1571,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:04:04.6360000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Never Trust A Stranger.mp3"
+  },
+  "1572": {
+    "_id": 1572,
+    "_name": "Dua Lipa - New Rules (Lyrics)",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      679
+    ],
+    "_year": 2023,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:28.6670000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\New Rules.mp3"
+  },
+  "1573": {
+    "_id": 1573,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:26.7100000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Noise.mp3"
+  },
+  "1574": {
+    "_id": 1574,
+    "_name": "Jonas Brothers - Only Human (Official Audio)",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      144
+    ],
+    "_year": 2019,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:04.1480000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Only Human.mp3"
+  },
+  "1575": {
+    "_id": 1575,
+    "_name": "Parostatek - Krzysztof Krawczyk",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      680
+    ],
+    "_year": 2013,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:46.8550000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Parostatek.mp3"
+  },
+  "1576": {
+    "_id": 1576,
+    "_name": "Miley Cyrus - Party In The USA (Lyrics)",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      681
+    ],
+    "_year": 2023,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:24.1020000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Party In The USA.mp3"
+  },
+  "1577": {
+    "_id": 1577,
+    "_name": "Dua Lipa - Physical (Official Lyrics Video)",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      218
+    ],
+    "_year": 2020,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:14.0340000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Physical.mp3"
+  },
+  "1578": {
+    "_id": 1578,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:27.3360000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Plastic Hearts.mp3"
+  },
+  "1579": {
+    "_id": 1579,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:10.3300000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Pretty Thoughts.mp3"
+  },
+  "1580": {
+    "_id": 1580,
+    "_name": "Miley Cyrus - Prisoner (Lyrics) Feat. Dua Lipa",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      682
+    ],
+    "_year": 2020,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:49.2030000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Prisoner.mp3"
+  },
+  "1581": {
+    "_id": 1581,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:56.9490000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Raincheck.mp3"
+  },
+  "1582": {
+    "_id": 1582,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:39.1080000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Rescue Me.mp3"
+  },
+  "1583": {
+    "_id": 1583,
+    "_name": "INNA - Ruleta (feat. Erik) | Official Music Video",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      683
+    ],
+    "_year": 2017,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:14.5030000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Ruleta.mp3"
+  },
+  "1584": {
+    "_id": 1584,
+    "_name": "Jonas Brothers - S.O.S.",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      144
+    ],
+    "_year": 2013,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:35.0650000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\S O S.mp3"
+  },
+  "1585": {
+    "_id": 1585,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:05.0870000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\SET ME FREE.mp3"
+  },
+  "1586": {
+    "_id": 1586,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:16.0950000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Sexy Lady.mp3"
+  },
+  "1587": {
+    "_id": 1587,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:50.0370000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Shoot Out.mp3"
+  },
+  "1588": {
+    "_id": 1588,
+    "_name": "Stumblin' In",
+    "_albumId": 802,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      684
+    ],
+    "_year": 2022,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:58.2710000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Stumblin In.mp3"
+  },
+  "1589": {
+    "_id": 1589,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:13.5380000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Stupid Love.mp3"
+  },
+  "1590": {
+    "_id": 1590,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:10.6430000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\The Greatest_.mp3"
+  },
+  "1591": {
+    "_id": 1591,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:00.8880000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\The Ride.mp3"
+  },
+  "1592": {
+    "_id": 1592,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:47.5250000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\The Right Kind Of Wrong.mp3"
+  },
+  "1593": {
+    "_id": 1593,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:04:14.5210000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Untouched.mp3"
+  },
+  "1594": {
+    "_id": 1594,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:20.2680000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Weaponry.mp3"
+  },
+  "1595": {
+    "_id": 1595,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:18.0250000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Wild_.mp3"
+  },
+  "1596": {
+    "_id": 1596,
+    "_name": "Black - Wonderful Life (HQ)",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      685
+    ],
+    "_year": 2017,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:04:47.1510000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Wonderful Life.mp3"
+  },
+  "1597": {
+    "_id": 1597,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:53.4280000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\WTF Do I Know.mp3"
+  },
+  "1598": {
+    "_id": 1598,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:16.8770000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\You Make It Easy.mp3"
+  },
+  "1599": {
+    "_id": 1599,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:38.8390000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Za każdym razem.mp3"
+  },
+  "1600": {
+    "_id": 1600,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:38.8740000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\2step.mp3"
+  },
+  "1601": {
+    "_id": 1601,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:51.2630000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Adrenalina.mp3"
+  },
+  "1602": {
+    "_id": 1602,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:04:26.5200000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Aftermath.mp3"
+  },
+  "1603": {
+    "_id": 1603,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:30.1530000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Alfabet Świateł.mp3"
+  },
+  "1604": {
+    "_id": 1604,
+    "_name": "Lenny Kravitz - American Woman (Official Video",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      267
+    ],
+    "_year": 2013,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:04:22.3980000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\American Woman.mp3"
+  },
+  "1605": {
+    "_id": 1605,
+    "_name": "Timbaland - Apologize ft. OneRepublic",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      686
+    ],
+    "_year": 2009,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:08.7910000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Apologize.mp3"
+  },
+  "1606": {
+    "_id": 1606,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:08.0090000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\At the End of a Bar.mp3"
+  },
+  "1607": {
+    "_id": 1607,
+    "_name": "Ed Sheeran - Bad Habits (Lyrics)",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      366
+    ],
+    "_year": 2022,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:49.7420000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Bad Habits.mp3"
+  },
+  "1608": {
+    "_id": 1608,
+    "_name": "Imagine Dragons - Believer (Lyrics)",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      366
+    ],
+    "_year": 2018,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:24.4930000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Believer.mp3"
+  },
+  "1609": {
+    "_id": 1609,
+    "_name": "03 - Blue Jeans - Lana Del Rey",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      687
+    ],
+    "_year": 2016,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:30.1800000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Blue Jeans.mp3"
+  },
+  "1610": {
+    "_id": 1610,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:04:13.3470000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\BOOM!1.mp3"
+  },
+  "1611": {
+    "_id": 1611,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:45.7070000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Breakdown.mp3"
+  },
+  "1612": {
+    "_id": 1612,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:00.7310000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Breathe.mp3"
+  },
+  "1613": {
+    "_id": 1613,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:18.6250000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Będę za Tobą.mp3"
+  },
+  "1614": {
+    "_id": 1614,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:05.1130000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Cale Zycie Grasz.mp3"
+  },
+  "1615": {
+    "_id": 1615,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:35.5530000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Carry You Home.mp3"
+  },
+  "1616": {
+    "_id": 1616,
+    "_name": "Sia - Chandelier (Lyrics)",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      688
+    ],
+    "_year": 2023,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:36.5180000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Chandelier.mp3"
+  },
+  "1617": {
+    "_id": 1617,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:19.7980000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Co Z Nami Będzie.mp3"
+  },
+  "1618": {
+    "_id": 1618,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:26.5020000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Complete Mess.mp3"
+  },
+  "1619": {
+    "_id": 1619,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:58.4620000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Crazy.mp3"
+  },
+  "1620": {
+    "_id": 1620,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:20.8680000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Crystalline.mp3"
+  },
+  "1621": {
+    "_id": 1621,
+    "_name": "Dance Macabre",
+    "_albumId": 803,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      689
+    ],
+    "_year": 2022,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:39.8040000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Dance Macabre.mp3"
+  },
+  "1622": {
+    "_id": 1622,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:33.8570000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Dancing Feet.mp3"
+  },
+  "1623": {
+    "_id": 1623,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:19.1720000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Dark Hotel.mp3"
+  },
+  "1624": {
+    "_id": 1624,
+    "_name": "Imagine Dragons - Demons (Lyric Video)",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      690
+    ],
+    "_year": 2022,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:57.2880000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Demons.mp3"
+  },
+  "1625": {
+    "_id": 1625,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:55.1760000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Die Together.mp3"
+  },
+  "1626": {
+    "_id": 1626,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:33.4140000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Dobrego Dnia.mp3"
+  },
+  "1627": {
+    "_id": 1627,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:59.6880000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Dobrze Jest, Jak Jest.mp3"
+  },
+  "1628": {
+    "_id": 1628,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:54.4450000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Dulce Simfonie.mp3"
+  },
+  "1629": {
+    "_id": 1629,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:37.2740000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Elefanter (Éléphants).mp3"
+  },
+  "1630": {
+    "_id": 1630,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:00.0790000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Eternity.mp3"
+  },
+  "1631": {
+    "_id": 1631,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:04:26.4930000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Eye of the Storm.mp3"
+  },
+  "1632": {
+    "_id": 1632,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:37.3790000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Fall So Hard.mp3"
+  },
+  "1633": {
+    "_id": 1633,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:32.1620000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Fearless.mp3"
+  },
+  "1634": {
+    "_id": 1634,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:23.8410000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Fireflies.mp3"
+  },
+  "1635": {
+    "_id": 1635,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:00.0270000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Flower of Sorrow.mp3"
+  },
+  "1636": {
+    "_id": 1636,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:13.5910000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Follow Your Heart.mp3"
+  },
+  "1637": {
+    "_id": 1637,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:36.0740000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Forgive Me Friend.mp3"
+  },
+  "1638": {
+    "_id": 1638,
+    "_name": "Fortunate Son",
+    "_albumId": 804,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      691
+    ],
+    "_year": 2018,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:19.2330000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Fortunate Son.mp3"
+  },
+  "1639": {
+    "_id": 1639,
+    "_name": "Tally - Gloria",
+    "_albumId": 805,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      692
+    ],
+    "_year": 2024,
+    "_languageId": 0,
+    "_genreId": 84,
+    "_duration": "00:03:01.0560000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Gloria.mp3"
+  },
+  "1640": {
+    "_id": 1640,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:11.1650000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Głupcy.mp3"
+  },
+  "1641": {
+    "_id": 1641,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:34.5350000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Hardcore.mp3"
+  },
+  "1642": {
+    "_id": 1642,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:21.0240000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Haven’t Found You Yet.mp3"
+  },
+  "1643": {
+    "_id": 1643,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:20.4500000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Heartbeat Song.mp3"
+  },
+  "1644": {
+    "_id": 1644,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:55.4540000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Heavy Is The Crown.mp3"
+  },
+  "1645": {
+    "_id": 1645,
+    "_name": "Taio Cruz - Higher (Official UK Version) ft. Kylie Minogue",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      693
+    ],
+    "_year": 2010,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:03.8610000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Higher.mp3"
+  },
+  "1646": {
+    "_id": 1646,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:02.6620000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Hope.mp3"
+  },
+  "1647": {
+    "_id": 1647,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:59.6360000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Human.mp3"
+  },
+  "1648": {
+    "_id": 1648,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:47.0550000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Hurt.mp3"
+  },
+  "1649": {
+    "_id": 1649,
+    "_name": "I Ciebie też, bardzo (feat. Daria Zawiałow, Dawid Podsiadło & Vito Bambino)",
+    "_albumId": 806,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      694
+    ],
+    "_year": 2021,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:29.7620000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\I Ciebie też, bardzo.mp3"
+  },
+  "1650": {
+    "_id": 1650,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:50.5510000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\I Follow Rivers.mp3"
+  },
+  "1651": {
+    "_id": 1651,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:17.6860000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\I Want Love.mp3"
+  },
+  "1652": {
+    "_id": 1652,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:04:08.2090000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\If Today Was Your Last Day.mp3"
+  },
+  "1653": {
+    "_id": 1653,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:25.6670000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\If You Ever Change Your Mind.mp3"
+  },
+  "1654": {
+    "_id": 1654,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:17.7120000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Im Loving Me.mp3"
+  },
+  "1655": {
+    "_id": 1655,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:02.6880000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\In The Middle.mp3"
+  },
+  "1656": {
+    "_id": 1656,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:32.3710000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\In These Arms.mp3"
+  },
+  "1657": {
+    "_id": 1657,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:02.5050000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Innocent Love.mp3"
+  },
+  "1658": {
+    "_id": 1658,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:56.8190000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Intention.mp3"
+  },
+  "1659": {
+    "_id": 1659,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:55.6370000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Its Magical.mp3"
+  },
+  "1660": {
+    "_id": 1660,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:04:20.8330000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Jeden strzał.mp3"
+  },
+  "1661": {
+    "_id": 1661,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:04:18.1210000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Kickapoo.mp3"
+  },
+  "1662": {
+    "_id": 1662,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:43.7510000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Kiedyś odnajdziemy siebie.mp3"
+  },
+  "1663": {
+    "_id": 1663,
+    "_name": "ABBA - Knowing Me, Knowing You (Official Music Video)",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      695
+    ],
+    "_year": 2009,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:58.1150000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Knowing Me, Knowing You.mp3"
+  },
+  "1664": {
+    "_id": 1664,
+    "_name": "Grzegorz Hyży - Kochanie to ja! (Official Video)",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      696
+    ],
+    "_year": 2022,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:25.3280000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Kochanie to ja!.mp3"
+  },
+  "1665": {
+    "_id": 1665,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:35.9180000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Kokomo.mp3"
+  },
+  "1666": {
+    "_id": 1666,
+    "_name": "Perfect - Kołysanka dla nieznajomej",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      675
+    ],
+    "_year": 2015,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:35.0570000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Kołysanka dla nieznajomej.mp3"
+  },
+  "1667": {
+    "_id": 1667,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:59.5320000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Last Dance.mp3"
+  },
+  "1668": {
+    "_id": 1668,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:34.7440000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Latitude.mp3"
+  },
+  "1669": {
+    "_id": 1669,
+    "_name": "Marshmello x Jonas Brothers - Leave Before You Love Me (Lyric Video)",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      144
+    ],
+    "_year": 2021,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:34.1260000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Leave Before You Love Me.mp3"
+  },
+  "1670": {
+    "_id": 1670,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:10.1480000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Lights Go Low.mp3"
+  },
+  "1671": {
+    "_id": 1671,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:09.9390000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Lights Off.mp3"
+  },
+  "1672": {
+    "_id": 1672,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:05.2700000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Like A Lady.mp3"
+  },
+  "1673": {
+    "_id": 1673,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:02.1660000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Lonely_LIAMOO.mp3"
+  },
+  "1674": {
+    "_id": 1674,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:51.9410000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Long Stretch Of Love.mp3"
+  },
+  "1675": {
+    "_id": 1675,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:26.3970000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Lose You.mp3"
+  },
+  "1676": {
+    "_id": 1676,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:38.1610000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Lost (XXV).mp3"
+  },
+  "1677": {
+    "_id": 1677,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:38.1870000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Love (Sweet Love).mp3"
+  },
+  "1678": {
+    "_id": 1678,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:02.6880000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Love Is Beautiful.mp3"
+  },
+  "1679": {
+    "_id": 1679,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:36.0040000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Love Letter.mp3"
+  },
+  "1680": {
+    "_id": 1680,
+    "_name": "BARANOVSKI - Lubię być z nią [Official Music Video]",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      697
+    ],
+    "_year": 2020,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:57.8800000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Lubię być z nią.mp3"
+  },
+  "1681": {
+    "_id": 1681,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:03.0530000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Made of Glass.mp3"
+  },
+  "1682": {
+    "_id": 1682,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:04:16.8690000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Man In The Mirror.mp3"
+  },
+  "1683": {
+    "_id": 1683,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:05:15.7390000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Man.mp3"
+  },
+  "1684": {
+    "_id": 1684,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:42.7600000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Mata Hari.mp3"
+  },
+  "1685": {
+    "_id": 1685,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:12.7820000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Maybe You’re The Problem.mp3"
+  },
+  "1686": {
+    "_id": 1686,
+    "_name": "Meet Me In The Woods",
+    "_albumId": 807,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      698
+    ],
+    "_year": 2017,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:04:22.2940000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Meet Me In The Woods.mp3"
+  },
+  "1687": {
+    "_id": 1687,
+    "_name": "Sigala - Melody (Lyric Video)",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      699
+    ],
+    "_year": 2022,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:51.5240000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Melody.mp3"
+  },
+  "1688": {
+    "_id": 1688,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:53.1410000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Miss You.mp3"
+  },
+  "1689": {
+    "_id": 1689,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:10.4080000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Miłość Znajdzie Nas.mp3"
+  },
+  "1690": {
+    "_id": 1690,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:56.8970000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Mon Alliee.mp3"
+  },
+  "1691": {
+    "_id": 1691,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:31.7450000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\My Love Runs Deep.mp3"
+  },
+  "1692": {
+    "_id": 1692,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:14.1120000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Na zawsze i na wieczność.mp3"
+  },
+  "1693": {
+    "_id": 1693,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:29.9530000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Napad na serce.mp3"
+  },
+  "1694": {
+    "_id": 1694,
+    "_name": "Selena Gomez & The Scene - Naturally",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      12
+    ],
+    "_year": 2009,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:12.5470000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Naturally.mp3"
+  },
+  "1695": {
+    "_id": 1695,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:26.0060000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Never Gonna Rain.mp3"
+  },
+  "1696": {
+    "_id": 1696,
+    "_name": "2022 NIE SZUKAJ MNIE - LYRIC'S VIDEO - ICH TROJE PROJEKT X",
+    "_albumId": 808,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      700
+    ],
+    "_year": 2024,
+    "_languageId": 0,
+    "_genreId": 84,
+    "_duration": "00:03:53.0770000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Nie Szukaj Mnie.mp3"
+  },
+  "1697": {
+    "_id": 1697,
+    "_name": "Piotr Rubik - Niech mówią, że to nie jest miłość [Official Music Video 2005]",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      701
+    ],
+    "_year": 2021,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:51.3070000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Niech mówią, że to nie jest miłość.mp3"
+  },
+  "1698": {
+    "_id": 1698,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:58.1150000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Nieśmiertelni.mp3"
+  },
+  "1699": {
+    "_id": 1699,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:15.0770000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\No (Acoustic Version).mp3"
+  },
+  "1700": {
+    "_id": 1700,
+    "_name": "Billie Eilish - No Time To Die (Lyrics)",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      366
+    ],
+    "_year": 2020,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:04:02.4710000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\No Time To Die.mp3"
+  },
+  "1701": {
+    "_id": 1701,
+    "_name": "Robin Schulz & David Guetta - On Repeat (Official Video)",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      361
+    ],
+    "_year": 2022,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:12.4430000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\On Repeat.mp3"
+  },
+  "1702": {
+    "_id": 1702,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:27.0230000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\One Night.mp3"
+  },
+  "1703": {
+    "_id": 1703,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:35.8920000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Pada Deszcz.mp3"
+  },
+  "1704": {
+    "_id": 1704,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:56.0020000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Plan.mp3"
+  },
+  "1705": {
+    "_id": 1705,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:56.0800000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Początek.mp3"
+  },
+  "1706": {
+    "_id": 1706,
+    "_name": "Antek Smykiewicz - Pomimo Burz (Official Music Video)",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      702
+    ],
+    "_year": 2015,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:24.9630000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Pomimo Burz.mp3"
+  },
+  "1707": {
+    "_id": 1707,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:17.8420000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Pozwól Mi.mp3"
+  },
+  "1708": {
+    "_id": 1708,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:59.1660000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\PvP.mp3"
+  },
+  "1709": {
+    "_id": 1709,
+    "_name": "Boney M - Rasputin (Lyrics)",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      366
+    ],
+    "_year": 2023,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:40.9000000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Rasputin.mp3"
+  },
+  "1710": {
+    "_id": 1710,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:17.1380000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Rather Be_RatCity.mp3"
+  },
+  "1711": {
+    "_id": 1711,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:38.2220000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Really Wanna Dance With You.mp3"
+  },
+  "1712": {
+    "_id": 1712,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:27.4670000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Relax.mp3"
+  },
+  "1713": {
+    "_id": 1713,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:33.1270000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Remedy_Cassadee.mp3"
+  },
+  "1714": {
+    "_id": 1714,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:30.1530000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Remind Me.mp3"
+  },
+  "1715": {
+    "_id": 1715,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:59.8190000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\River.mp3"
+  },
+  "1716": {
+    "_id": 1716,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:39.1780000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Road Less Traveled.mp3"
+  },
+  "1717": {
+    "_id": 1717,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:55.6970000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Run To The Hills.mp3"
+  },
+  "1718": {
+    "_id": 1718,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:08.4260000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Run To You.mp3"
+  },
+  "1719": {
+    "_id": 1719,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:04:15.5910000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Russian Roulette.mp3"
+  },
+  "1720": {
+    "_id": 1720,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:24.3890000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\S.O.S.mp3"
+  },
+  "1721": {
+    "_id": 1721,
+    "_name": "Savin' Me",
+    "_albumId": 809,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      141
+    ],
+    "_year": 2017,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:37.9260000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Savin Me.mp3"
+  },
+  "1722": {
+    "_id": 1722,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:02.2960000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Sekret.mp3"
+  },
+  "1723": {
+    "_id": 1723,
+    "_name": "Self Control",
+    "_albumId": 810,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      703
+    ],
+    "_year": 2017,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:04:06.8530000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Self Control.mp3"
+  },
+  "1724": {
+    "_id": 1724,
+    "_name": "Garou - Seul (Audio)",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      282
+    ],
+    "_year": 2015,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:04:43.2390000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Seul.mp3"
+  },
+  "1725": {
+    "_id": 1725,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:45.9860000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Seven You.mp3"
+  },
+  "1726": {
+    "_id": 1726,
+    "_name": "Sting - Shape of My Heart (Lyrics)",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      704
+    ],
+    "_year": 2021,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:04:38.1790000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Shape Of My Heart.mp3"
+  },
+  "1727": {
+    "_id": 1727,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:23.8670000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\She Looks So Perfect.mp3"
+  },
+  "1728": {
+    "_id": 1728,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:32.4570000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Shining.mp3"
+  },
+  "1729": {
+    "_id": 1729,
+    "_name": "Harry Styles - Sign of the Times (Lyrics)",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      366
+    ],
+    "_year": 2019,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:05:35.2490000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Sign of the Times.mp3"
+  },
+  "1730": {
+    "_id": 1730,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:24.8590000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Sing It With Me (Guitar Acoustic).mp3"
+  },
+  "1731": {
+    "_id": 1731,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:57.6800000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Skrable.mp3"
+  },
+  "1732": {
+    "_id": 1732,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:49.5680000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Stranger You Are.mp3"
+  },
+  "1733": {
+    "_id": 1733,
+    "_name": "Måneskin - Supermodel (Lyrics)",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      705
+    ],
+    "_year": 2022,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:24.8150000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Supermodel.mp3"
+  },
+  "1734": {
+    "_id": 1734,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:04:15.1470000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Supreme.mp3"
+  },
+  "1735": {
+    "_id": 1735,
+    "_name": "Clean Bandit - Symphony (Lyrics) feat. Zara Larsson",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      366
+    ],
+    "_year": 2020,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:30.3360000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Symphony.mp3"
+  },
+  "1736": {
+    "_id": 1736,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:50.1330000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Talk Of This Town.mp3"
+  },
+  "1737": {
+    "_id": 1737,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:25.3280000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Teraz Ty.mp3"
+  },
+  "1738": {
+    "_id": 1738,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:20.7900000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\that wont save us.mp3"
+  },
+  "1739": {
+    "_id": 1739,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:49.1420000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\The Climb.mp3"
+  },
+  "1740": {
+    "_id": 1740,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:04:46.6300000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\The Power of Love.mp3"
+  },
+  "1741": {
+    "_id": 1741,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:04:35.1790000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\The Thing That Wrecks You.mp3"
+  },
+  "1742": {
+    "_id": 1742,
+    "_name": "Michael Jackson - Thriller - Thriller",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      706
+    ],
+    "_year": 2008,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:05:57.8630000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Thriller.mp3"
+  },
+  "1743": {
+    "_id": 1743,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:45.0810000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Thrive.mp3"
+  },
+  "1744": {
+    "_id": 1744,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:58.2800000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Too Late For Love.mp3"
+  },
+  "1745": {
+    "_id": 1745,
+    "_name": "Too Little Too Late",
+    "_albumId": 811,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      392
+    ],
+    "_year": 2021,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:41.8130000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Too Little Too Late.mp3"
+  },
+  "1746": {
+    "_id": 1746,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:01.4360000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Touch The Sky.mp3"
+  },
+  "1747": {
+    "_id": 1747,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:13.3560000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Trinity.mp3"
+  },
+  "1748": {
+    "_id": 1748,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:15.5210000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Trouble With A Heartbreak.mp3"
+  },
+  "1749": {
+    "_id": 1749,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:40.0910000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Tętno.mp3"
+  },
+  "1750": {
+    "_id": 1750,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:34.0400000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Underground.mp3"
+  },
+  "1751": {
+    "_id": 1751,
+    "_name": "Kelly Clarkson - Underneath the Tree (Audio)",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      94
+    ],
+    "_year": 2013,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:50.7850000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Underneath the Tree.mp3"
+  },
+  "1752": {
+    "_id": 1752,
+    "_name": "Shocking Blue - Venus (Video)",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      707
+    ],
+    "_year": 2011,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:03.7310000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Venus.mp3"
+  },
+  "1753": {
+    "_id": 1753,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:15.4420000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Violet Thing.mp3"
+  },
+  "1754": {
+    "_id": 1754,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:04.0440000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Voices.mp3"
+  },
+  "1755": {
+    "_id": 1755,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:04:25.5540000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Waiting For Superman.mp3"
+  },
+  "1756": {
+    "_id": 1756,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:28.6150000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Walk On Water_Gattuso.mp3"
+  },
+  "1757": {
+    "_id": 1757,
+    "_name": "Imagine Dragons - Walking The Wire (Official Audio)",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      690
+    ],
+    "_year": 2017,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:52.0900000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Walking The Wire.mp3"
+  },
+  "1758": {
+    "_id": 1758,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:38.9440000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Weakness.mp3"
+  },
+  "1759": {
+    "_id": 1759,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:37.2220000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Wet.mp3"
+  },
+  "1760": {
+    "_id": 1760,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:47.2640000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\What A Song Can Do.mp3"
+  },
+  "1761": {
+    "_id": 1761,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:29.9970000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\What If I Never Get Over You.mp3"
+  },
+  "1762": {
+    "_id": 1762,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:08:22.8920000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\When the Sun Goes Down.mp3"
+  },
+  "1763": {
+    "_id": 1763,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:53.1150000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\When You’re Gone.mp3"
+  },
+  "1764": {
+    "_id": 1764,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:03.6270000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Whos In Your Head.mp3"
+  },
+  "1765": {
+    "_id": 1765,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:03.6270000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Wild_9Muses.mp3"
+  },
+  "1766": {
+    "_id": 1766,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:14.3730000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Wish I Never Met You.mp3"
+  },
+  "1767": {
+    "_id": 1767,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:01.8270000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\You Look Good.mp3"
+  },
+  "1768": {
+    "_id": 1768,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:04:09.8260000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\You Oughta Know.mp3"
+  },
+  "1769": {
+    "_id": 1769,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:47.3950000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Z Ciszą Pośród Czterech Ścian.mp3"
+  },
+  "1770": {
+    "_id": 1770,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:15.2080000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Złodzieje Wyobraźni.mp3"
+  },
+  "1771": {
+    "_id": 1771,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:58.9490000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Satellites.mp3"
+  },
+  "1772": {
+    "_id": 1772,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:40.9600000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Yoidore Shirazu.mp3"
+  },
+  "1327": {
+    "_id": 1327,
+    "_name": null,
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:04:06.3570000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\The Animal in Me.mp3"
+  },
+  "1773": {
+    "_id": 1773,
+    "_name": "Spot a Fake",
+    "_albumId": 812,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      120
+    ],
+    "_year": 2024,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:47.7160000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Spot a Fake.mp3"
+  },
+  "1774": {
+    "_id": 1774,
+    "_name": "Dreamcatcher (드림캐쳐) - 'Justice' Lyrics [Color Coded_Han_Rom_Eng]",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      708
+    ],
+    "_year": 2024,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:00.1320000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Justice.mp3"
   }
 }
