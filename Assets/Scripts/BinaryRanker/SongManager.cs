@@ -369,7 +369,15 @@ namespace Immortus.SongRanker
             string genreName = genres.Length > 0 ? genres[0].Split(';')[0] : null;
             int genreId = _genres.GetID(new(genreName));
 
-            Song song = new(id, tagLibFile.Tag.Title, albumId, (int)tagLibFile.Tag.Track, artistIds.ToArray(), (int)tagLibFile.Tag.Year, genreId, tagLibFile.Properties.Duration, path);
+            var songName = tagLibFile.Tag.Title;
+            if(string.IsNullOrEmpty(songName))
+            {
+                var nameIndexStart = path.LastIndexOf('\\') + 1;
+                var nameLength = path.LastIndexOf('.') - nameIndexStart;
+                songName = path.Substring(nameIndexStart, nameLength);
+            }
+
+            Song song = new(id, songName, albumId, (int)tagLibFile.Tag.Track, artistIds.ToArray(), (int)tagLibFile.Tag.Year, genreId, tagLibFile.Properties.Duration, path);
 
             tagLibFile.Dispose();
 
