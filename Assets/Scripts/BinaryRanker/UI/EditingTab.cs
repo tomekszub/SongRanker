@@ -93,14 +93,15 @@ namespace Immortus.SongRanker
 
         public void SaveTags()
         {
-            _ConfirmationPopup.Show("Are you sure you want to save mp3 tags? This action will override existing tags!", SaveTags);
+            _ConfirmationPopup.Show("Are you sure you want to save mp3 tags for all songs? " +
+                                    "This action will override existing tags!", LaunchTagSaving);
 
-            void SaveTags()
-            {
-                StartCoroutine(SaveTagsCoroutine());
-            }
+            void LaunchTagSaving() => StartCoroutine(SaveTagsCoroutine());
         }
-
+        
+        public void SaveTag() => _ConfirmationPopup.Show("Are you sure you want to save mp3 tags for this song? " +
+                                                         "This action will override existing tags!", () => SaveTagInternal(_song));
+        
         IEnumerator SaveTagsCoroutine()
         {
             _ProgressPopup.Show();
@@ -108,7 +109,7 @@ namespace Immortus.SongRanker
             for (int i = 0; i < _context.Count; i++)
             {
                 Song song = _context[i];
-                SongManager.SaveTag(song.Path, song);
+                SaveTagInternal(song);
                 yield return null;
                 _ProgressPopup.SetProgress((i + 1.0f) / _context.Count, song.Name);
             }
@@ -116,6 +117,8 @@ namespace Immortus.SongRanker
             _ProgressPopup.Hide();
         }
 
+        void SaveTagInternal(Song song) => SongManager.SaveTag(song.Path, song);
+        
         void ShowSong(int index)
         {
             var songID = SongManager.GetAllSongs().ToList()[index].ID;
