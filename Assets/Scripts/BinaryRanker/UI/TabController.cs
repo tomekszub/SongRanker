@@ -18,6 +18,8 @@ public class TabController : MonoBehaviour
         }
 
         Instance = this;
+        
+        Application.targetFrameRate = 60;
     }
 
     // Update is called once per frame
