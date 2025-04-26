@@ -26,7 +26,7 @@ namespace Immortus.SongRanker
         [SerializeField] RankerTab _RankerTab;
         [SerializeField] EditingTab _EditingTab;
 
-        Dictionary<string, string> _cachedRankings = new();
+        Dictionary<string, string> _cachedRankingOutputs = new();
         List<RankingObject<Artist>> _artistRanking = new();
         List<RankingObject<Genre>> _genreRanking = new();
         List<RankingObject<Language>> _languageRanking = new();
@@ -40,7 +40,18 @@ namespace Immortus.SongRanker
         {
             // TODO: in no universe ranker tab should know about other tabs, move this events to some other place
             _RankerTab.OnRankingChangedEvent += SetDirty;
+            _RankerTab.OnRankingChangedEvent -= SetDirty;
+            _EditingTab.OnChangeDone -= SetDirty;
             _EditingTab.OnChangeDone += SetDirty;
+            SongManager.OnLanguageToSongChanged -= RefreshLanguageList;
+            SongManager.OnLanguageToSongChanged += RefreshLanguageList;
+            SongManager.OnArtistToSongChanged -= RefreshArtistList;
+            SongManager.OnArtistToSongChanged += RefreshArtistList;
+            SongManager.OnAlbumToSongChanged -= RefreshAlbumList;
+            SongManager.OnAlbumToSongChanged += RefreshAlbumList;
+            SongManager.OnGenreToSongChanged -= RefreshGenreList;
+            SongManager.OnGenreToSongChanged += RefreshGenreList;
+            
             _listToRefreshFunction.Add(ARTISTS, RefreshArtistList);
             _listToRefreshFunction.Add(GENRES, RefreshGenreList);
             _listToRefreshFunction.Add(LANGUAGE, RefreshLanguageList);
@@ -51,7 +62,7 @@ namespace Immortus.SongRanker
             {
                 _isRankingEstablished = false;
                 ResetDirtyLists();
-                _cachedRankings.Clear();
+                _cachedRankingOutputs.Clear();
             }
 
             void ResetDirtyLists()
@@ -104,8 +115,8 @@ namespace Immortus.SongRanker
             }
 
             _rankingDirtyLists.Remove(ARTISTS);
-            _cachedRankings.Remove(ARTIST_SONGS_COUNT_RANKING);
-            _cachedRankings.Remove(ARTIST_CUSTOM_RATING_RANKING);
+            _cachedRankingOutputs.Remove(ARTIST_SONGS_COUNT_RANKING);
+            _cachedRankingOutputs.Remove(ARTIST_CUSTOM_RATING_RANKING);
         }
 
         void RefreshGenreList()
@@ -135,8 +146,8 @@ namespace Immortus.SongRanker
             }
 
             _rankingDirtyLists.Remove(GENRES);
-            _cachedRankings.Remove(GENRE_SONGS_COUNT_RANKING);
-            _cachedRankings.Remove(GENRE_CUSTOM_RATING_RANKING);
+            _cachedRankingOutputs.Remove(GENRE_SONGS_COUNT_RANKING);
+            _cachedRankingOutputs.Remove(GENRE_CUSTOM_RATING_RANKING);
         }
 
         void RefreshLanguageList()
@@ -167,8 +178,8 @@ namespace Immortus.SongRanker
             }
 
             _rankingDirtyLists.Remove(LANGUAGE);
-            _cachedRankings.Remove(LANGUAGE_SONGS_COUNT_RANKING);
-            _cachedRankings.Remove(LANGUAGE_CUSTOM_RATING_RANKING);
+            _cachedRankingOutputs.Remove(LANGUAGE_SONGS_COUNT_RANKING);
+            _cachedRankingOutputs.Remove(LANGUAGE_CUSTOM_RATING_RANKING);
         }
 
         void RefreshAlbumList()
@@ -199,8 +210,8 @@ namespace Immortus.SongRanker
             }
 
             _rankingDirtyLists.Remove(ALBUM);
-            _cachedRankings.Remove(ALBUM_SONGS_COUNT_RANKING);
-            _cachedRankings.Remove(ALBUM_CUSTOM_RATING_RANKING);
+            _cachedRankingOutputs.Remove(ALBUM_SONGS_COUNT_RANKING);
+            _cachedRankingOutputs.Remove(ALBUM_CUSTOM_RATING_RANKING);
         }
 
         public void ShowArtistSongCountRanking()
@@ -247,7 +258,7 @@ namespace Immortus.SongRanker
         {
             _currList = listName;
 
-            if (_cachedRankings.TryGetValue(rankingKey, out string cachedData))
+            if (_cachedRankingOutputs.TryGetValue(rankingKey, out string cachedData))
             {
                 _RankingText.text = cachedData;
                 return;
@@ -282,8 +293,8 @@ namespace Immortus.SongRanker
                 sb.AppendLine();
             }
 
-            _cachedRankings.Add(rankingKey, sb.ToString());
-            _RankingText.text = _cachedRankings[rankingKey];
+            _cachedRankingOutputs.Add(rankingKey, sb.ToString());
+            _RankingText.text = _cachedRankingOutputs[rankingKey];
         }
     }
 

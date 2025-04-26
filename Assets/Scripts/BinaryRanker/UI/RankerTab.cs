@@ -21,6 +21,7 @@ namespace Immortus.SongRanker
         [SerializeField] TextMeshProUGUI _DebugText;
         [SerializeField] GameObject _RatingPanel;
         [SerializeField] GameObject _RatingHint;
+        [SerializeField] ConfirmationPopup _ConfirmationPopup;
         [Header("Compared To Element")]
         [SerializeField] TextMeshProUGUI _ComparedToElementText;
         [SerializeField] TextMeshProUGUI _ComparedToElementArtistText;
@@ -116,6 +117,21 @@ namespace Immortus.SongRanker
             _RatingPanel.SetActive(true);
         }
 
+        public void TryRemoveNewSong()
+        {
+            if(_ConfirmationPopup.gameObject.activeInHierarchy)
+                return;
+            
+            _ConfirmationPopup.Show("Are you sure you want to delete this song?", OnConfirmed, null);
+
+            void OnConfirmed()
+            {
+                SM.RemoveSong(_newSong);
+                _options.RemoveAt(0);
+                RefreshUI();
+            }
+        }
+        
         void RefreshUI()
         {
             DisplayCurrentRanking();

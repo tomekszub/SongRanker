@@ -9,6 +9,11 @@ namespace Immortus.SongRanker
     {
         const string MUSIC_PATH = @"D:\Muzyka\Sample Music";
 
+        public static event Action OnLanguageToSongChanged;
+        public static event Action OnArtistToSongChanged;
+        public static event Action OnAlbumToSongChanged;
+        public static event Action OnGenreToSongChanged;
+        
         static Dictionary<int, Song> _songs = new();
         static HashSet<string> _loadedPaths = new();
         static UniqueIDContainer<Genre> _genres = new();
@@ -44,6 +49,8 @@ namespace Immortus.SongRanker
             _genres = new();
             _albums = new();
             _artists = new();
+
+            OnLanguageToSongChanged = null;
         }
 
         public static void SaveTag(string path, Song data)
@@ -199,12 +206,10 @@ namespace Immortus.SongRanker
 
             return ret;
         }
-            
-        public static void SaveSongs() => FileSaver.SaveDictionary("Songs", _songs);
 
         public static void SaveDataToFiles()
         {
-            SaveSongs();
+            FileSaver.SaveDictionary("Songs", _songs);
             FileSaver.SaveDictionary("Genres", _genres.All);
             FileSaver.SaveDictionary("Albums", _albums.All);
             FileSaver.SaveDictionary("Artists", _artists.All);
@@ -330,6 +335,33 @@ namespace Immortus.SongRanker
                 SaveDataToFiles();
         }
 
+        public static void RemoveSong(Song song)
+        {
+            int albumArtistId = -1;
+            
+            _songs.Remove(song.ID);
+            
+            // language
+            if(TryRemoveSongWithLanguage(song))
+                OnLanguageToSongChanged?.Invoke();
+            
+            // album
+            var albumRemovalResult = TryRemoveSongWithAlbum(song);
+
+            albumArtistId = albumRemovalResult.albumArtistID;
+            
+            if(albumRemovalResult.albumsChanged)
+                OnAlbumToSongChanged?.Invoke();
+            
+            if(TryRemoveSongWithArtists(song, albumArtistId))
+                OnArtistToSongChanged?.Invoke();
+            
+            if(TryRemoveSongWithGenre(song))
+                OnGenreToSongChanged?.Invoke();
+            
+            SaveDataToFiles();
+        }
+        
         static (Song, string) LoadSong(string path)
         {
             File tagLibFile;
@@ -352,14 +384,24 @@ namespace Immortus.SongRanker
             int id = GetNextSongID();
 
             var album = tagLibFile.Tag.Album;
-            var albumArtists = tagLibFile.Tag.AlbumArtists;
-            string albumArtistName = albumArtists.Length > 0 ? albumArtists[0] : null;
-            int albumArtistId = _artists.GetID(new Artist(albumArtistName, -1));
-            int albumId = _albums.GetID(new(album, albumArtistId));
+            string albumArtistName = "";
+            int albumArtistId = -1;
+            int albumId = -1;
+            
+            if(!string.IsNullOrEmpty(album))
+            {
+                var albumArtists = tagLibFile.Tag.AlbumArtists;
+                albumArtistName = albumArtists.Length > 0 ? albumArtists[0] : null;
+                albumArtistId = _artists.GetID(new Artist(albumArtistName, -1));
+                albumId = _albums.GetID(new(album, albumArtistId));
+            }
 
             List<int> artistIds = new();
             foreach (var performer in tagLibFile.Tag.Performers)
             {
+                if(string.IsNullOrEmpty(performer))
+                    continue;
+                
                 int artistId = albumArtistName == performer ? albumArtistId : _artists.GetID(new Artist(performer, -1));
                 if (artistId != -1)
                     artistIds.Add(artistId);
@@ -399,6 +441,104 @@ namespace Immortus.SongRanker
 
                 return -1;
             }
+        }
+
+        static bool TryRemoveSongWithLanguage(Song song)
+        {
+            if(!_languageToSongsLUT.TryGetValue(song.LanguageID, out var languageSongs))
+                return false;
+            
+            if(!languageSongs.Remove(song))
+                return false;
+            
+            // if we removed song and there is no other song in that language - remove it
+            if(languageSongs.Count == 0)
+            {
+                _languageToSongsLUT.Remove(song.LanguageID);
+                _languages.RemoveItem(song.LanguageID);
+            }
+
+            return true;
+        }
+
+        static (bool albumsChanged, int albumArtistID) TryRemoveSongWithAlbum(Song song)
+        {
+            if(song.AlbumID == -1)
+                return (false, -1);
+            
+            if(!_albumToSongsLUT.TryGetValue(song.AlbumID, out var albumSongs))
+                return (false, -1);
+                
+            if(!albumSongs.Remove(song))
+                return (false, -1);
+
+            _albums.TryGetValue(song.AlbumID, out var album);
+            
+            // if we removed song and there is no other song in that album - remove it
+            if(albumSongs.Count == 0)
+            {
+                _albumToSongsLUT.Remove(song.AlbumID);
+                _albums.RemoveItem(song.AlbumID);
+            }
+            
+            return (true, album?.ArtistID ?? -1);
+        }
+
+        static bool TryRemoveSongWithArtists(Song song, int albumArtistID)
+        {
+            bool artistChange = false;
+
+            var artistIds = new HashSet<int>(song.ArtistIds);
+            if(albumArtistID != -1)
+                artistIds.Add(albumArtistID);
+            
+            foreach(var artistID in artistIds)
+            {
+                if(artistID == -1)
+                    continue;
+
+                if(!_artists.TryGetValue(artistID, out var artist))
+                    continue;
+
+                _artistToSongsLUT.TryGetValue(artistID, out var artistSongs);
+                var albumWithArtistExist = _albums.GetAllValues().Any(a => a.ArtistID == artistID);
+
+                if(artistSongs != null)
+                {
+                    if(artistSongs.Remove(song))
+                        artistChange = true;
+
+                    if(artistSongs.Count == 0)
+                    {
+                        _artistToSongsLUT.Remove(artistID);
+                        
+                        if(!albumWithArtistExist)
+                            _artists.RemoveItem(artistID);
+                    }
+                }
+                else if(!albumWithArtistExist)
+                    _artists.RemoveItem(artistID);
+            }
+            
+            return artistChange;
+        }
+        
+        static bool TryRemoveSongWithGenre(Song song)
+        {
+            if(!_genreToSongsLUT.TryGetValue(song.GenreID, out var genreSongs))
+                return false;
+            
+            if(!genreSongs.Remove(song))
+                return false;
+            
+            // if we removed song and there is no other song in that genre - remove it
+            if(genreSongs.Count == 0)
+            {
+                _genreToSongsLUT.Remove(song.GenreID);
+                _genres.RemoveItem(song.GenreID);
+            }
+
+            return true;
         }
     }
 }

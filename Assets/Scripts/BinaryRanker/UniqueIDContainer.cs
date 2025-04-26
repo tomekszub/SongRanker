@@ -40,6 +40,8 @@ public class UniqueIDContainer<T> where T : UniqueIDProperty<T>
         return id;
     }
 
+    public bool RemoveItem(int id) => _container.Remove(id);
+    
     public IEnumerable<T> GetAllValues() => _container.Values;
 
     int GetNextAvailableID()
