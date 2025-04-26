@@ -419,11 +419,6 @@
     "_artistId": 97,
     "_id": 83
   },
-  "84": {
-    "_name": "Made In England",
-    "_artistId": 98,
-    "_id": 84
-  },
   "85": {
     "_name": "Don't Smile at Me",
     "_artistId": 99,
@@ -4063,5 +4058,10 @@
     "_name": "Spot a Fake",
     "_artistId": -1,
     "_id": 812
+  },
+  "84": {
+    "_name": "Diamonds & Dancefloors",
+    "_artistId": 120,
+    "_id": 84
   }
 }

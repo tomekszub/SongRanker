@@ -1435,7 +1435,7 @@
   "102": {
     "_id": 102,
     "_name": "Believe",
-    "_albumId": 84,
+    "_albumId": 440,
     "_albumSongNumber": 1,
     "_artistIds": [
       98
@@ -5277,7 +5277,7 @@
       216
     ],
     "_year": 0,
-    "_languageId": 0,
+    "_languageId": 1,
     "_genreId": -1,
     "_duration": "00:04:50.0990000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Fukurou.mp3"
@@ -9896,7 +9896,7 @@
   "705": {
     "_id": 705,
     "_name": "Made In England",
-    "_albumId": 84,
+    "_albumId": 440,
     "_albumSongNumber": 2,
     "_artistIds": [
       98
@@ -12364,7 +12364,7 @@
       486
     ],
     "_year": 2018,
-    "_languageId": 0,
+    "_languageId": 3,
     "_genreId": 49,
     "_duration": "00:03:23.0070000",
     "_filePath": "D:\\Muzyka\\Sample Music\\POPSTARS.mp3"
@@ -12916,7 +12916,7 @@
       506
     ],
     "_year": 2019,
-    "_languageId": 0,
+    "_languageId": 5,
     "_genreId": -1,
     "_duration": "00:03:01.6970000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Roi.mp3"
@@ -17006,7 +17006,7 @@
       620
     ],
     "_year": 2012,
-    "_languageId": 0,
+    "_languageId": 4,
     "_genreId": 18,
     "_duration": "00:03:08.0030000",
     "_filePath": "D:\\Muzyka\\Sample Music\\W stronę slońca.mp3"
@@ -18652,7 +18652,7 @@
     "_albumSongNumber": 0,
     "_artistIds": [],
     "_year": 0,
-    "_languageId": 0,
+    "_languageId": 2,
     "_genreId": -1,
     "_duration": "00:03:56.8110000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Ancora un minuto di sole.mp3"
@@ -19626,8 +19626,8 @@
   "1410": {
     "_id": 1410,
     "_name": null,
-    "_albumId": -1,
-    "_albumSongNumber": 0,
+    "_albumId": 440,
+    "_albumSongNumber": 6,
     "_artistIds": [],
     "_year": 0,
     "_languageId": 0,
@@ -20273,13 +20273,15 @@
   },
   "1463": {
     "_id": 1463,
-    "_name": null,
-    "_albumId": -1,
-    "_albumSongNumber": 0,
-    "_artistIds": [],
-    "_year": 0,
+    "_name": "Blessed",
+    "_albumId": 440,
+    "_albumSongNumber": 11,
+    "_artistIds": [
+      98
+    ],
+    "_year": 1996,
     "_languageId": 0,
-    "_genreId": -1,
+    "_genreId": 3,
     "_duration": "00:05:02.3840000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Blessed.mp3"
   },
@@ -20335,13 +20337,15 @@
   },
   "1468": {
     "_id": 1468,
-    "_name": null,
-    "_albumId": -1,
-    "_albumSongNumber": 0,
-    "_artistIds": [],
-    "_year": 0,
+    "_name": "Cold",
+    "_albumId": 440,
+    "_albumSongNumber": 4,
+    "_artistIds": [
+      98
+    ],
+    "_year": 1996,
     "_languageId": 0,
-    "_genreId": -1,
+    "_genreId": 3,
     "_duration": "00:05:37.7270000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Cold.mp3"
   },
@@ -20533,13 +20537,15 @@
   },
   "1484": {
     "_id": 1484,
-    "_name": null,
-    "_albumId": -1,
-    "_albumSongNumber": 0,
-    "_artistIds": [],
-    "_year": 0,
+    "_name": "House",
+    "_albumId": 440,
+    "_albumSongNumber": 3,
+    "_artistIds": [
+      98
+    ],
+    "_year": 1996,
     "_languageId": 0,
-    "_genreId": -1,
+    "_genreId": 3,
     "_duration": "00:04:27.3020000",
     "_filePath": "D:\\Muzyka\\Sample Music\\House.mp3"
   },
@@ -20843,13 +20849,15 @@
   },
   "1509": {
     "_id": 1509,
-    "_name": null,
-    "_albumId": -1,
-    "_albumSongNumber": 0,
-    "_artistIds": [],
-    "_year": 0,
+    "_name": "Pain",
+    "_albumId": 440,
+    "_albumSongNumber": 5,
+    "_artistIds": [
+      98
+    ],
+    "_year": 1996,
     "_languageId": 0,
-    "_genreId": -1,
+    "_genreId": 3,
     "_duration": "00:03:49.4030000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Pain.mp3"
   },
@@ -21928,7 +21936,7 @@
       708
     ],
     "_year": 2024,
-    "_languageId": 0,
+    "_languageId": 3,
     "_genreId": -1,
     "_duration": "00:03:00.1320000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Justice.mp3"
@@ -22026,12 +22034,14 @@
   "1603": {
     "_id": 1603,
     "_name": "Latitude",
-    "_albumId": -1,
-    "_albumSongNumber": 0,
-    "_artistIds": [],
-    "_year": 0,
+    "_albumId": 440,
+    "_albumSongNumber": 7,
+    "_artistIds": [
+      98
+    ],
+    "_year": 1996,
     "_languageId": 0,
-    "_genreId": -1,
+    "_genreId": 3,
     "_duration": "00:03:34.7440000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Latitude.mp3"
   },
@@ -22270,12 +22280,14 @@
   "1623": {
     "_id": 1623,
     "_name": "Maybe You’re The Problem",
-    "_albumId": -1,
-    "_albumSongNumber": 0,
-    "_artistIds": [],
-    "_year": 0,
+    "_albumId": 84,
+    "_albumSongNumber": 3,
+    "_artistIds": [
+      120
+    ],
+    "_year": 2023,
     "_languageId": 0,
-    "_genreId": -1,
+    "_genreId": 3,
     "_duration": "00:03:12.7820000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Maybe You’re The Problem.mp3"
   },
@@ -23511,18 +23523,6 @@
     "_duration": "00:03:10.6430000",
     "_filePath": "D:\\Muzyka\\Sample Music\\The Greatest_.mp3"
   },
-  "1722": {
-    "_id": 1722,
-    "_name": "The Light In Our Soul",
-    "_albumId": -1,
-    "_albumSongNumber": 0,
-    "_artistIds": [],
-    "_year": 0,
-    "_languageId": 0,
-    "_genreId": -1,
-    "_duration": "00:02:56.3760000",
-    "_filePath": "D:\\Muzyka\\Sample Music\\The Light In Our Soul.mp3"
-  },
   "1723": {
     "_id": 1723,
     "_name": "The Power of Love",
@@ -24148,5 +24148,77 @@
     "_genreId": -1,
     "_duration": "00:03:15.2080000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Złodzieje Wyobraźni.mp3"
+  },
+  "1774": {
+    "_id": 1774,
+    "_name": "Radio (Dum-Dum)",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:35.9780000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Radio (Dum-Dum).mp3"
+  },
+  "1775": {
+    "_id": 1775,
+    "_name": "Lovesick Girls",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:11.5300000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Lovesick Girls.mp3"
+  },
+  "1776": {
+    "_id": 1776,
+    "_name": "The Feels",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:24.4410000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\The Feels.mp3"
+  },
+  "1777": {
+    "_id": 1777,
+    "_name": "Alcohol-Free",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:30.7010000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Alcohol-Free.mp3"
+  },
+  "1778": {
+    "_id": 1778,
+    "_name": "Go Hard",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:06:03.1940000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Go Hard.mp3"
+  },
+  "1779": {
+    "_id": 1779,
+    "_name": "The Riddle",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:51.1770000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\The Riddle.mp3"
   }
 }
