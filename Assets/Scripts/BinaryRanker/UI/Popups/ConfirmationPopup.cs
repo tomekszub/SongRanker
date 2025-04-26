@@ -11,6 +11,9 @@ public class ConfirmationPopup : MonoBehaviour
 
     public void Show(string content, Action onConfirm, Action onCancel = null)
     {
+        if(gameObject.activeInHierarchy)
+            return;
+
         gameObject.SetActive(true);
 
         _ContentText.text = content;

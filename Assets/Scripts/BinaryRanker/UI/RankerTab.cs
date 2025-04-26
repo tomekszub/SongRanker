@@ -119,10 +119,7 @@ namespace Immortus.SongRanker
 
         public void TryRemoveNewSong()
         {
-            if(_ConfirmationPopup.gameObject.activeInHierarchy)
-                return;
-            
-            _ConfirmationPopup.Show("Are you sure you want to delete this song?", OnConfirmed, null);
+            _ConfirmationPopup.Show("Are you sure you want to delete this song?<br>Note that this will not remove it from disk!", OnConfirmed, null);
 
             void OnConfirmed()
             {
