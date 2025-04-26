@@ -7,6 +7,7 @@ using UnityEngine;
 using SM = Immortus.SongRanker.SongManager;
 using PrimeTween;
 using System;
+using UnityEngine.Serialization;
 
 namespace Immortus.SongRanker
 {
@@ -16,7 +17,7 @@ namespace Immortus.SongRanker
 
         [SerializeField] RankerController _RankerController;
         [SerializeField] AudioClipLoader _AudioClipLoader;
-        [SerializeField] TextMeshProUGUI _RankingText;
+        [SerializeField] RecyclableVerticalScrollView _RankingView;
         [SerializeField] TextMeshProUGUI _DebugText;
         [SerializeField] GameObject _RatingPanel;
         [SerializeField] GameObject _RatingHint;
@@ -132,21 +133,26 @@ namespace Immortus.SongRanker
 
         void DisplayCurrentRanking()
         {
-            StringBuilder ranking = new();
+            List<string> ranking = new();
             int index = 1;
-            int rankingEntries = 0;
             foreach (var item in _ranker.Ranking)
             {
-                ranking.Append($"<color=\"yellow\">{index}.</color>");
-                foreach (var song in item)
+                var positionString = $"<color=\"yellow\">{index}.</color>";
+
+                for(var i = 0; i < item.Count; i++)
                 {
-                    ranking.AppendLine(song.Name);
-                    rankingEntries++;
+                    var song = item[i];
+                    
+                    if(i == 0)
+                        ranking.Add($"{positionString} {song.Name}");
+                    else
+                        ranking.Add(song.Name);
                 }
+
                 index++;
             }
-            _DebugText.text = $"{_ranker.Ranking.Count}/{rankingEntries}/{_options.Count}";
-            _RankingText.text = ranking.ToString();
+            _DebugText.text = $"{_ranker.Ranking.Count}/{ranking.Count}/{_options.Count}";
+            _RankingView.RefreshData(ranking);
         }
 
         bool NextElementAvailable() => _options.Count > 0;
