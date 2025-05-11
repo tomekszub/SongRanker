@@ -3,20 +3,25 @@ using UnityEngine;
 
 public class CoroutineHandler : MonoBehaviour
 {
-    static CoroutineHandler Instance;
+    static CoroutineHandler _instance;
 
     void Awake()
     {
-        if (Instance == null)
-            Instance = this;
+        if (_instance == null)
+            _instance = this;
         else
             Destroy(gameObject);
     }
 
-    public static new void StartCoroutine(IEnumerator coroutine)
+    public new static Coroutine StartCoroutine(IEnumerator coroutine)
     {
-        ((MonoBehaviour)Instance).StartCoroutine(coroutine);
+        return ((MonoBehaviour)_instance).StartCoroutine(coroutine);
     }
 
-    public static void StopAllCoroutinesNow() => Instance.StopAllCoroutines();
+    public new static void StopCoroutine(Coroutine coroutine)
+    {
+        ((MonoBehaviour)_instance).StopCoroutine(coroutine);
+    } 
+    
+    public static void StopAllCoroutinesNow() => _instance.StopAllCoroutines();
 }

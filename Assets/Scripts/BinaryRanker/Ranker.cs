@@ -21,6 +21,7 @@ namespace Immortus
         List<List<T>> _ranking;
         T _newElement;
         bool _comparingDone = true;
+        Coroutine _rankingCoroutine;
         ComparisonResult _comparisonResult;
         int _index;
         int _start;
@@ -36,6 +37,17 @@ namespace Immortus
             _ranking = ranking;
         }
 
+        public void Stop()
+        {
+            if(_comparingDone)
+                return;
+            
+            if(_rankingCoroutine != null)
+                CoroutineHandler.StopCoroutine(_rankingCoroutine);
+            
+            _comparingDone = true;
+        }
+        
         public void SetComparisonResult(ComparisonResult result)
         {
             if(_comparisonResult == ComparisonResult.None)
@@ -61,7 +73,7 @@ namespace Immortus
             _start = 0;
             _end = _ranking.Count - 1;
             SaveHistory();
-            CoroutineHandler.StartCoroutine(RankElement());
+            _rankingCoroutine = CoroutineHandler.StartCoroutine(RankElement());
             return true;
         }
 
@@ -80,11 +92,9 @@ namespace Immortus
 
         IEnumerator RankElement()
         {
-            bool keepGoing = true;
-
             CallOnCurrentlyComparedElementChanged();
 
-            while (keepGoing)
+            while (true)
             {
                 yield return new WaitUntil(() => _comparisonResult != ComparisonResult.None);
 
@@ -118,6 +128,7 @@ namespace Immortus
                 _history.Clear();
                 OnRankingChanged?.Invoke();
                 _comparingDone = true;
+                _rankingCoroutine = null;
             }
         }
 

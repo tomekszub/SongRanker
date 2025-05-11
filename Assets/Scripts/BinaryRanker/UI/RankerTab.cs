@@ -126,6 +126,7 @@ namespace Immortus.SongRanker
                 SM.RemoveSong(_newSong);
                 _options.RemoveAt(0);
                 RefreshUI();
+                _ranker.Stop();
             }
         }
         
