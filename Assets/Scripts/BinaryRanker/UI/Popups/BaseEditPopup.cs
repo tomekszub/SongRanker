@@ -3,7 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public abstract class BaseEditPopup<T> : MonoBehaviour
+public abstract class BaseEditPopup<T> : BasePopup
 {
     [SerializeField] protected Button _SaveButton;
     [SerializeField] TextMeshProUGUI _TitleText;
@@ -12,7 +12,7 @@ public abstract class BaseEditPopup<T> : MonoBehaviour
     protected T _oldValue;
     protected Func<T, bool> _validationFunction;
 
-    public virtual void SetContent(string title, T oldValue, Action<T> onSave, Func<T, bool> onValidate)
+    public virtual void Show(string title, T oldValue, Action<T> onSave, Func<T, bool> onValidate)
     {
         _TitleText.text = title;
         _oldValue = oldValue;
@@ -22,9 +22,16 @@ public abstract class BaseEditPopup<T> : MonoBehaviour
         _validationFunction = onValidate;
 
         _SaveButton.onClick.RemoveAllListeners();
-        _SaveButton.onClick.AddListener(() => onSave.Invoke(GetCurrentData()));
+        _SaveButton.onClick.AddListener(
+            () =>
+            {
+                Hide();
+                onSave.Invoke(GetCurrentData());
+            });
 
         Validate(GetCurrentData());
+        
+        Show();
     }
 
     protected abstract T GetCurrentData();

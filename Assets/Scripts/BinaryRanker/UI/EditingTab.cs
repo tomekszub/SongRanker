@@ -26,12 +26,6 @@ namespace Immortus.SongRanker
         [SerializeField] PropertyField _AlbumTrackNumberField;
         [SerializeField] PropertyField _DurationField;
         [SerializeField] PropertyField _PathField;
-        [SerializeField] SimpleHintEditPopup _SimpleHintEditPopup;
-        [SerializeField] SimpleEditPopup _SimpleEditPopup;
-        [SerializeField] MultiHintEditPopup _MultiHintEditPopup;
-        [SerializeField] CreateAlbumPopup _CreateAlbumPopup;
-        [SerializeField] ConfirmationPopup _ConfirmationPopup;
-        [SerializeField] ProgressPopup _ProgressPopup;
         [SerializeField] SearchField _SearchField;
 
         List<Song> _context;
@@ -93,28 +87,28 @@ namespace Immortus.SongRanker
 
         public void SaveTags()
         {
-            _ConfirmationPopup.Show("Are you sure you want to save mp3 tags for all songs? " +
-                                    "This action will override existing tags!", LaunchTagSaving);
+            PopupController.ShowConfirmationPopup("Are you sure you want to save mp3 tags for all songs? " +
+                                                       "This action will override existing tags!", LaunchTagSaving);
 
             void LaunchTagSaving() => StartCoroutine(SaveTagsCoroutine());
         }
         
-        public void SaveTag() => _ConfirmationPopup.Show("Are you sure you want to save mp3 tags for this song? " +
-                                                         "This action will override existing tags!", () => SaveTagInternal(_song));
+        public void SaveTag() => PopupController.ShowConfirmationPopup("Are you sure you want to save mp3 tags for this song? " +
+                                                                            "This action will override existing tags!", () => SaveTagInternal(_song));
         
         IEnumerator SaveTagsCoroutine()
         {
-            _ProgressPopup.Show();
+            PopupController.ShowProgressPopup();
 
             for (int i = 0; i < _context.Count; i++)
             {
                 Song song = _context[i];
                 SaveTagInternal(song);
                 yield return null;
-                _ProgressPopup.SetProgress((i + 1.0f) / _context.Count, song.Name);
+                PopupController.SetProgressPopupContent((i + 1.0f) / _context.Count, song.Name);
             }
 
-            _ProgressPopup.Hide();
+            PopupController.HideProgressPopup();
         }
 
         void SaveTagInternal(Song song) => SongManager.SaveTag(song.Path, song);
@@ -184,9 +178,8 @@ namespace Immortus.SongRanker
 
         void OpenGenreEditPopup()
         {
-            _SimpleHintEditPopup.gameObject.SetActive(true);
             var genre = SongManager.GetGenreByID(_song.GenreID);
-            _SimpleHintEditPopup.SetContent("Genre", genre != null ? genre.Name : TEXT_MISSING_PROPERTY, Save, null, SongManager.AllGenreNames.ToList());
+            PopupController.ShowHintEditPopup("Genre", genre != null ? genre.Name : TEXT_MISSING_PROPERTY, Save, null, SongManager.AllGenreNames.ToList());
 
             void Save(string value)
             {
@@ -195,30 +188,26 @@ namespace Immortus.SongRanker
                 SongManager.RefreshGenresLUT();
                 OnChangeDone?.Invoke();
                 RefreshUI();
-                _SimpleHintEditPopup.gameObject.SetActive(false);
             }
         }
 
         void OpenTitleEditPopup()
         {
-            _SimpleEditPopup.gameObject.SetActive(true);
             var songName = _song.Name;
-            _SimpleEditPopup.SetContent("Title", songName, Save, null);
+            PopupController.ShowSimpleEditPopup("Title", songName, Save, null);
 
             void Save(string value)
             {
                 _song.Name = value;
                 OnChangeDone?.Invoke();
                 RefreshUI();
-                _SimpleEditPopup.gameObject.SetActive(false);
             }
         }
 
         void OpenYearEditPopup()
         {
-            _SimpleEditPopup.gameObject.SetActive(true);
             var year = _song.Year.ToString();
-            _SimpleEditPopup.SetContent("Year", year, Save, Validate);
+            PopupController.ShowSimpleEditPopup("Year", year, Save, Validate);
 
             bool Validate(string value)
             {
@@ -233,15 +222,13 @@ namespace Immortus.SongRanker
                 _song.Year = int.Parse(value);
                 OnChangeDone?.Invoke();
                 RefreshUI();
-                _SimpleEditPopup.gameObject.SetActive(false);
             }
         }
 
         void OpenLanguageEditPopup()
         {
-            _SimpleHintEditPopup.gameObject.SetActive(true);
             var language = SongManager.GetLanguageByID(_song.LanguageID);
-            _SimpleHintEditPopup.SetContent("Language", language != null ? language.Name : TEXT_MISSING_PROPERTY, Save, null, SongManager.AllLanguageNames.ToList());
+            PopupController.ShowHintEditPopup("Language", language != null ? language.Name : TEXT_MISSING_PROPERTY, Save, null, SongManager.AllLanguageNames.ToList());
 
             void Save(string value)
             {
@@ -249,15 +236,13 @@ namespace Immortus.SongRanker
                 SongManager.RefreshLanguageLUT();
                 OnChangeDone?.Invoke();
                 RefreshUI();
-                _SimpleHintEditPopup.gameObject.SetActive(false);
             }
         }
 
         void OpenTrackNumberEditPopup()
         {
-            _SimpleEditPopup.gameObject.SetActive(true);
             var trackNumber = _song.AlbumSongNumber.ToString();
-            _SimpleEditPopup.SetContent("Track number", trackNumber, Save, Validate);
+            PopupController.ShowSimpleEditPopup("Track number", trackNumber, Save, Validate);
 
             bool Validate(string value)
             {
@@ -272,23 +257,18 @@ namespace Immortus.SongRanker
                 _song.AlbumSongNumber = int.Parse(value);
                 OnChangeDone?.Invoke();
                 RefreshUI();
-                _SimpleEditPopup.gameObject.SetActive(false);
             }
         }
 
         void OpenAlbumEditPopup()
         {
-            _SimpleHintEditPopup.gameObject.SetActive(true);
             var album = SongManager.GetAlbumByID(_song.AlbumID);
             var albumName = album != null ? album.Name : "";
-            _SimpleHintEditPopup.SetContent("Album", albumName, Save, null, SongManager.AllAlbumNames.ToList());
+            PopupController.ShowHintEditPopup("Album", albumName, Save, null, SongManager.AllAlbumNames.ToList());
 
             void Save(string albumName)
             {
-                var album = SongManager.GetAlbumByID(_song.AlbumID);
-                var albumArtistID = album != null ? album.ArtistID : _song.ArtistIds.Length != 0 ? _song.ArtistIds[0] : -1;
-
-                _CreateAlbumPopup.SetData(albumName, OnSuccess, OnCancel);
+                PopupController.ShowCreateAlbumPopup(albumName, OnSuccess, OnCancel);
 
                 void OnSuccess(int albumArtistID)
                 {
@@ -296,18 +276,16 @@ namespace Immortus.SongRanker
                     SongManager.RefreshAlbumLUT();
                     OnChangeDone?.Invoke();
                     RefreshUI();
-                    _SimpleHintEditPopup.gameObject.SetActive(false);
                 }
 
-                void OnCancel() => _SimpleHintEditPopup.gameObject.SetActive(false);
+                void OnCancel() => PopupController.HideHintEditPopup();
             }
         }
 
         void OpenArtistsEditPopup()
         {
-            _MultiHintEditPopup.gameObject.SetActive(true);
             List<string> artistNames = SongManager.GetArtistNamesByIDs(_song.ArtistIds).ToList();
-            _MultiHintEditPopup.SetContent("Artists", artistNames, Save, null, SongManager.AllArtistNames.ToList());
+            PopupController.ShowMultipleEditPopup("Artists", artistNames, Save, null, SongManager.AllArtistNames.ToList());
 
             void Save(List<string> values)
             {
@@ -317,7 +295,6 @@ namespace Immortus.SongRanker
                 SongManager.RefreshArtistsLUT();
                 OnChangeDone?.Invoke();
                 RefreshUI();
-                _MultiHintEditPopup.gameObject.SetActive(false);
             }
         }
     }

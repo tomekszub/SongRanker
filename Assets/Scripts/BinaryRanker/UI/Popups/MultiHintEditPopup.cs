@@ -13,7 +13,7 @@ public class MultiHintEditPopup : BaseEditPopup<List<string>>
     [SerializeField] TextMeshProUGUI _OldValueText;
     [SerializeField] Button _AddButton;
 
-    public void SetContent(string title, List<string> oldValue, Action<List<string>> onSave, Func<List<string>, bool> onValidate, List<string> recommendedValues)
+    public void Show(string title, List<string> oldValue, Action<List<string>> onSave, Func<List<string>, bool> onValidate, List<string> recommendedValues)
     {
         string oldValueJoined = string.Join(",", oldValue.ToArray());
         _OldValueText.text = oldValueJoined;
@@ -29,7 +29,7 @@ public class MultiHintEditPopup : BaseEditPopup<List<string>>
 
         _currentValue = new();
 
-        base.SetContent(title, oldValue, onSave, onValidate);
+        base.Show(title, oldValue, onSave, onValidate);
     }
 
     public void UseRecommendedValue(TextMeshProUGUI source) => _InputField.text = source.text;

@@ -3,7 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ConfirmationPopup : MonoBehaviour
+public class ConfirmationPopup : BasePopup
 {
     [SerializeField] TextMeshProUGUI _ContentText;
     [SerializeField] Button _ConfirmButton;
@@ -14,7 +14,7 @@ public class ConfirmationPopup : MonoBehaviour
         if(gameObject.activeInHierarchy)
             return;
 
-        gameObject.SetActive(true);
+        Show();
 
         _ContentText.text = content;
 

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 namespace Immortus.SongRanker
 {
-    public class CreateAlbumPopup : MonoBehaviour
+    public class CreateAlbumPopup : BasePopup
     {
         [SerializeField] RecommendedValuesPanel _RecommendedValuesPanel;
         [SerializeField] TextMeshProUGUI _AlbumNameText;
@@ -16,11 +16,11 @@ namespace Immortus.SongRanker
 
         Action<int> _onSave;
 
-        public void SetData(string name, Action<int> onSave, Action onCancel)
+        public void Show(string albumName, Action<int> onSave, Action onCancel)
         {
             _onSave = onSave;
 
-            _AlbumNameText.text = name;
+            _AlbumNameText.text = albumName;
             _InputField.onValueChanged.RemoveAllListeners();
             _InputField.onValueChanged.AddListener(InputValueChanged);
 
@@ -30,13 +30,13 @@ namespace Immortus.SongRanker
             _CancelButton.onClick.RemoveAllListeners();
             _CancelButton.onClick.AddListener(() =>
             {
-                gameObject.SetActive(false);
+                Hide();
                 onCancel?.Invoke();
             });
 
             _RecommendedValuesPanel.SetData(SongManager.AllArtistNames.ToList());
 
-            gameObject.SetActive(true);
+            Show();
         }
 
         public void UseRecommendedValue(TextMeshProUGUI source) => _InputField.text = source.text;
@@ -56,7 +56,7 @@ namespace Immortus.SongRanker
 
             _onSave?.Invoke(ids[0]);
 
-            gameObject.SetActive(false);
+            Hide();
         }
     }
 }

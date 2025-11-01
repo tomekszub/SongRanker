@@ -7,14 +7,14 @@ public class SimpleEditPopup : BaseEditPopup<string>
     [SerializeField] protected TMP_InputField _InputField;
     [SerializeField] TextMeshProUGUI _OldValueText;
 
-    public override void SetContent(string title, string oldValue, Action<string> onSave, Func<string, bool> onValidate)
+    public override void Show(string title, string oldValue, Action<string> onSave, Func<string, bool> onValidate)
     {
         _OldValueText.text = oldValue;
 
         _InputField.onValueChanged.RemoveAllListeners();
         _InputField.onValueChanged.AddListener(InputValueChanged);
 
-        base.SetContent(title, oldValue, onSave, onValidate);
+        base.Show(title, oldValue, onSave, onValidate);
 
         _InputField.ActivateInputField();
     }
