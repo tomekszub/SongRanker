@@ -1,13 +1,9 @@
 using System.Linq;
 using System.Collections.Generic;
-using System.IO;
-using System.Text;
 using TMPro;
 using UnityEngine;
 using SM = Immortus.SongRanker.SongManager;
-using PrimeTween;
 using System;
-using UnityEngine.Serialization;
 
 namespace Immortus.SongRanker
 {
@@ -31,6 +27,7 @@ namespace Immortus.SongRanker
         [SerializeField] TextMeshProUGUI _NewElementText;
         [SerializeField] TextMeshProUGUI _NewElementArtistText;
         [SerializeField] AudioPanelController _NewSongAudioPanelController;
+        [SerializeField] GameObject _RemoveCurrentSongButton;
 
         Ranker<Song> _ranker;
         List<Song> _options;
@@ -136,8 +133,12 @@ namespace Immortus.SongRanker
             SetCurrentlyComparedSongUI(null);
             _RatingPanel.SetActive(false);
 
-            if (_options.Count == 0)
+            if(_options.Count == 0)
+            {
                 _NewElementText.text = "Done";
+                _NewSongAudioPanelController.SetActive(false);
+                _RemoveCurrentSongButton.SetActive(false);
+            }
             else
             {
                 _RatingHint.SetActive(true);
