@@ -10,6 +10,7 @@ public class SimpleEditPopup : BaseEditPopup<string>
     public override void Show(string title, string oldValue, Action<string> onSave, Func<string, bool> onValidate)
     {
         _OldValueText.text = oldValue;
+        _InputField.text = "";
 
         _InputField.onValueChanged.RemoveAllListeners();
         _InputField.onValueChanged.AddListener(InputValueChanged);
