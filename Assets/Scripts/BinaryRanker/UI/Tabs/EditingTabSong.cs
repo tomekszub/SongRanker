@@ -7,12 +7,10 @@ using UnityEngine;
 
 namespace Immortus.SongRanker
 {
-    public class EditingTab : MonoBehaviour
+    public class EditingTabSong : BaseEditingTabContainer
     {
         const string TEXT_MISSING_PROPERTY = "-";
-
-        public event Action OnChangeDone;
-
+        
         [SerializeField] RankerController _RankerController;
         [Header("UI References")]
         [SerializeField] SongPlayer _Player;
@@ -46,16 +44,7 @@ namespace Immortus.SongRanker
             ChangeSong();
         }
 
-        void Update()
-        {
-            if (Input.GetKey(KeyCode.LeftControl) && Input.GetKeyDown(KeyCode.S))
-            {
-                SongManager.SaveDataToFiles();
-                TabController.ShowSavePanel();
-            }
-        }
-
-        public void Next()
+        public override void NextElement()
         {
             if (_currSongIndex >= _context.Count - 1)
                 return;
@@ -70,7 +59,7 @@ namespace Immortus.SongRanker
             ChangeSong();
         }
 
-        public void Previous()
+        public override void PreviousElement()
         {
             if (_currSongIndex <= 0)
                 return;
@@ -186,7 +175,7 @@ namespace Immortus.SongRanker
                 _song.GenreID = SongManager.GetGenreIDByName(value, true);
                 // TODO: ideally should not be here, changing genre should be inside song manager which would handle refreshing luts
                 SongManager.RefreshGenresLUT();
-                OnChangeDone?.Invoke();
+                TriggerOnChangeEvents();
                 RefreshUI();
             }
         }
@@ -199,7 +188,7 @@ namespace Immortus.SongRanker
             void Save(string value)
             {
                 _song.Name = value;
-                OnChangeDone?.Invoke();
+                TriggerOnChangeEvents();
                 RefreshUI();
             }
         }
@@ -220,7 +209,7 @@ namespace Immortus.SongRanker
             void Save(string value)
             {
                 _song.Year = int.Parse(value);
-                OnChangeDone?.Invoke();
+                TriggerOnChangeEvents();
                 RefreshUI();
             }
         }
@@ -234,7 +223,7 @@ namespace Immortus.SongRanker
             {
                 _song.LanguageID = SongManager.GetLanguageIDByName(value, true);
                 SongManager.RefreshLanguageLUT();
-                OnChangeDone?.Invoke();
+                TriggerOnChangeEvents();
                 RefreshUI();
             }
         }
@@ -255,7 +244,7 @@ namespace Immortus.SongRanker
             void Save(string value)
             {
                 _song.AlbumSongNumber = int.Parse(value);
-                OnChangeDone?.Invoke();
+                TriggerOnChangeEvents();
                 RefreshUI();
             }
         }
@@ -274,7 +263,7 @@ namespace Immortus.SongRanker
                 {
                     _song.AlbumID = SongManager.GetAlbumIDByNameAndAuthor(albumName, albumArtistID, true);
                     SongManager.RefreshAlbumLUT();
-                    OnChangeDone?.Invoke();
+                    TriggerOnChangeEvents();
                     RefreshUI();
                 }
 
@@ -293,7 +282,7 @@ namespace Immortus.SongRanker
                 _song.ArtistIds = artistIds.ToArray();
                 // TODO: ideally should not be here, changing genre should be inside song manager which would handle refreshing luts
                 SongManager.RefreshArtistsLUT();
-                OnChangeDone?.Invoke();
+                TriggerOnChangeEvents();
                 RefreshUI();
             }
         }

@@ -7,7 +7,7 @@ using System;
 
 namespace Immortus.SongRanker
 {
-    public class RankingTab : MonoBehaviour
+    public class RankingTab : BaseTab
     {
         const string ARTISTS = "Artists";
         const string GENRES = "Genres";

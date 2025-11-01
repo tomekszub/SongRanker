@@ -1,3 +1,4 @@
+using System;
 using PrimeTween;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,9 +7,11 @@ public class TabController : MonoBehaviour
 {
     public static TabController Instance;
 
-    [SerializeField] List<GameObject> _Tabs;
+    [SerializeField] List<TabData> _Tabs;
     [SerializeField] RectTransform _SavePanel;
 
+    int _maxTabsSetToKeyboardShortcuts;
+    
     void Awake()
     {
         if(Instance != null)
@@ -20,17 +23,23 @@ public class TabController : MonoBehaviour
         Instance = this;
         
         Application.targetFrameRate = 60;
+        
+        // tabs count or 12 (F12 is max)
+        _maxTabsSetToKeyboardShortcuts = Math.Min(_Tabs.Count, 12);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyUp(KeyCode.F1))
-            EnableTab(0);
-        else if (Input.GetKeyUp(KeyCode.F2))
-            EnableTab(1);
-        else if (Input.GetKeyUp(KeyCode.F3))
-            EnableTab(2);
+        for(int i = 0; i < _maxTabsSetToKeyboardShortcuts; i++)
+        {
+            // F1 => Keycode enum value - 282
+            if(Input.GetKeyUp((KeyCode)(i + 282)) == false)
+                continue;
+
+            EnableTab(i);
+            break;
+        }
     }
 
     public static void ShowSavePanel()
@@ -44,8 +53,26 @@ public class TabController : MonoBehaviour
     void EnableTab(int index)
     {
         DeactivateAllTabs();
-        _Tabs[index].SetActive(true);
+        _Tabs[index].Activate();
     }
 
-    void DeactivateAllTabs() => _Tabs.ForEach(tab => tab.SetActive(false));
+    void DeactivateAllTabs() => _Tabs.ForEach(tab => tab.Deactivate());
+
+    [Serializable]
+    public class TabData
+    {
+        [SerializeField] BaseTab _Tab;
+        [SerializeField] int _OptionalArgument;
+
+        public void Activate() => _Tab.Activate(_OptionalArgument);
+        
+        public void Deactivate() => _Tab.Deactivate();
+    }
+}
+
+public abstract class BaseTab : MonoBehaviour
+{
+    public virtual void Activate(int arg) => gameObject.SetActive(true);
+    
+    public virtual void Deactivate() => gameObject.SetActive(false);
 }

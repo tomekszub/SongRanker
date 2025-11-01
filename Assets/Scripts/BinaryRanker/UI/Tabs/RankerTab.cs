@@ -7,7 +7,7 @@ using System;
 
 namespace Immortus.SongRanker
 {
-    public class RankerTab : MonoBehaviour
+    public class RankerTab : BaseTab
     {
         public event Action OnRankingChangedEvent;
 
@@ -37,7 +37,6 @@ namespace Immortus.SongRanker
 
         void Start()
         {
-
             Init();
 
             _ranker.OnRankingChanged -= OnRankingChanged;
