@@ -23637,13 +23637,13 @@
     "_id": 1732,
     "_name": "Too Little Too Late",
     "_albumId": 811,
-    "_albumSongNumber": 0,
+    "_albumSongNumber": 3,
     "_artistIds": [
       392
     ],
     "_year": 2021,
     "_languageId": 0,
-    "_genreId": -1,
+    "_genreId": 3,
     "_duration": "00:03:41.8130000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Too Little Too Late.mp3"
   },
@@ -23881,68 +23881,6 @@
     "_duration": "00:03:28.6150000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Walk On Water_Gattuso.mp3"
   },
-  "1752": {
-    "_id": 1752,
-    "_name": "Imagine Dragons - Walking The Wire (Official Audio)",
-    "_albumId": -1,
-    "_albumSongNumber": 0,
-    "_artistIds": [
-      690
-    ],
-    "_year": 2017,
-    "_languageId": 0,
-    "_genreId": -1,
-    "_duration": "00:03:52.0900000",
-    "_filePath": "D:\\Muzyka\\Sample Music\\Walking The Wire.mp3"
-  },
-  "1753": {
-    "_id": 1753,
-    "_name": "Weakness",
-    "_albumId": -1,
-    "_albumSongNumber": 0,
-    "_artistIds": [],
-    "_year": 0,
-    "_languageId": 0,
-    "_genreId": -1,
-    "_duration": "00:03:38.9440000",
-    "_filePath": "D:\\Muzyka\\Sample Music\\Weakness.mp3"
-  },
-  "1754": {
-    "_id": 1754,
-    "_name": "Weaponry",
-    "_albumId": -1,
-    "_albumSongNumber": 0,
-    "_artistIds": [],
-    "_year": 0,
-    "_languageId": 0,
-    "_genreId": -1,
-    "_duration": "00:03:20.2680000",
-    "_filePath": "D:\\Muzyka\\Sample Music\\Weaponry.mp3"
-  },
-  "1755": {
-    "_id": 1755,
-    "_name": "Wet",
-    "_albumId": -1,
-    "_albumSongNumber": 0,
-    "_artistIds": [],
-    "_year": 0,
-    "_languageId": 0,
-    "_genreId": -1,
-    "_duration": "00:03:37.2220000",
-    "_filePath": "D:\\Muzyka\\Sample Music\\Wet.mp3"
-  },
-  "1756": {
-    "_id": 1756,
-    "_name": "What A Song Can Do",
-    "_albumId": -1,
-    "_albumSongNumber": 0,
-    "_artistIds": [],
-    "_year": 0,
-    "_languageId": 0,
-    "_genreId": -1,
-    "_duration": "00:03:47.2640000",
-    "_filePath": "D:\\Muzyka\\Sample Music\\What A Song Can Do.mp3"
-  },
   "1757": {
     "_id": 1757,
     "_name": "What If I Never Get Over You",
@@ -24005,13 +23943,15 @@
   },
   "1762": {
     "_id": 1762,
-    "_name": "Wild_9Muses",
-    "_albumId": -1,
-    "_albumSongNumber": 0,
-    "_artistIds": [],
-    "_year": 0,
-    "_languageId": 0,
-    "_genreId": -1,
+    "_name": "Wild",
+    "_albumId": 813,
+    "_albumSongNumber": 2,
+    "_artistIds": [
+      292
+    ],
+    "_year": 2013,
+    "_languageId": 3,
+    "_genreId": 49,
     "_duration": "00:03:03.6270000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Wild_9Muses.mp3"
   },
@@ -24027,20 +23967,6 @@
     "_duration": "00:03:14.3730000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Wish I Never Met You.mp3"
   },
-  "1764": {
-    "_id": 1764,
-    "_name": "Black - Wonderful Life (HQ)",
-    "_albumId": -1,
-    "_albumSongNumber": 0,
-    "_artistIds": [
-      685
-    ],
-    "_year": 2017,
-    "_languageId": 0,
-    "_genreId": -1,
-    "_duration": "00:04:47.1510000",
-    "_filePath": "D:\\Muzyka\\Sample Music\\Wonderful Life.mp3"
-  },
   "1765": {
     "_id": 1765,
     "_name": "WTF Do I Know",
@@ -24052,18 +23978,6 @@
     "_genreId": -1,
     "_duration": "00:02:53.4280000",
     "_filePath": "D:\\Muzyka\\Sample Music\\WTF Do I Know.mp3"
-  },
-  "1766": {
-    "_id": 1766,
-    "_name": "Wypijmy za błedy",
-    "_albumId": -1,
-    "_albumSongNumber": 0,
-    "_artistIds": [],
-    "_year": 0,
-    "_languageId": 0,
-    "_genreId": -1,
-    "_duration": "00:04:51.0900000",
-    "_filePath": "D:\\Muzyka\\Sample Music\\Wypijmy za błedy.mp3"
   },
   "1767": {
     "_id": 1767,
@@ -24100,18 +24014,6 @@
     "_genreId": -1,
     "_duration": "00:03:16.8770000",
     "_filePath": "D:\\Muzyka\\Sample Music\\You Make It Easy.mp3"
-  },
-  "1770": {
-    "_id": 1770,
-    "_name": "You Oughta Know",
-    "_albumId": -1,
-    "_albumSongNumber": 0,
-    "_artistIds": [],
-    "_year": 0,
-    "_languageId": 0,
-    "_genreId": -1,
-    "_duration": "00:04:09.8260000",
-    "_filePath": "D:\\Muzyka\\Sample Music\\You Oughta Know.mp3"
   },
   "1771": {
     "_id": 1771,
@@ -24188,24 +24090,28 @@
   "1777": {
     "_id": 1777,
     "_name": "Alcohol-Free",
-    "_albumId": -1,
-    "_albumSongNumber": 0,
-    "_artistIds": [],
-    "_year": 0,
-    "_languageId": 0,
-    "_genreId": -1,
+    "_albumId": 818,
+    "_albumSongNumber": 1,
+    "_artistIds": [
+      710
+    ],
+    "_year": 2021,
+    "_languageId": 3,
+    "_genreId": 49,
     "_duration": "00:03:30.7010000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Alcohol-Free.mp3"
   },
   "1778": {
     "_id": 1778,
     "_name": "Go Hard",
-    "_albumId": -1,
-    "_albumSongNumber": 0,
-    "_artistIds": [],
-    "_year": 0,
-    "_languageId": 0,
-    "_genreId": -1,
+    "_albumId": 817,
+    "_albumSongNumber": 8,
+    "_artistIds": [
+      710
+    ],
+    "_year": 2020,
+    "_languageId": 3,
+    "_genreId": 49,
     "_duration": "00:06:03.1940000",
     "_filePath": "D:\\Muzyka\\Sample Music\\Go Hard.mp3"
   },
@@ -24220,5 +24126,455 @@
     "_genreId": -1,
     "_duration": "00:03:51.1770000",
     "_filePath": "D:\\Muzyka\\Sample Music\\The Riddle.mp3"
+  },
+  "1722": {
+    "_id": 1722,
+    "_name": "Weaponry",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:20.2680000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Weaponry.mp3"
+  },
+  "1752": {
+    "_id": 1752,
+    "_name": "Wet",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:37.2220000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Wet.mp3"
+  },
+  "1753": {
+    "_id": 1753,
+    "_name": "What A Song Can Do",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:47.2640000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\What A Song Can Do.mp3"
+  },
+  "1754": {
+    "_id": 1754,
+    "_name": "Bad Idea",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:16.5120000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Bad Idea.mp3"
+  },
+  "1755": {
+    "_id": 1755,
+    "_name": "Daj mi znać",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:29.6920000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Daj mi znać.mp3"
+  },
+  "1756": {
+    "_id": 1756,
+    "_name": "Dance In The Game",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:27.2060000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Dance In The Game.mp3"
+  },
+  "1764": {
+    "_id": 1764,
+    "_name": "Falling Apart_Ulrikke",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:00.8360000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Falling Apart_Ulrikke.mp3"
+  },
+  "1780": {
+    "_id": 1780,
+    "_name": "Nezznalek - Hey Boomer (Domowe video)",
+    "_albumId": 814,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      685
+    ],
+    "_year": 2025,
+    "_languageId": 0,
+    "_genreId": 84,
+    "_duration": "00:03:13.0450000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Hey Boomer.mp3"
+  },
+  "1781": {
+    "_id": 1781,
+    "_name": "I Feel It in the Wind",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:33.7440000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\I Feel It in the Wind.mp3"
+  },
+  "1782": {
+    "_id": 1782,
+    "_name": "MONUMENT",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:08.8560000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\MONUMENT.mp3"
+  },
+  "1783": {
+    "_id": 1783,
+    "_name": "O nich, O Tobie",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:27.4750000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\O nich, O Tobie.mp3"
+  },
+  "1784": {
+    "_id": 1784,
+    "_name": "Remedy_Elina",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:00.6010000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Remedy_Elina.mp3"
+  },
+  "1785": {
+    "_id": 1785,
+    "_name": "San Quentin",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:31.5360000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\San Quentin.mp3"
+  },
+  "1786": {
+    "_id": 1786,
+    "_name": "Ania Karwan - Swobodnie (Official Video)",
+    "_albumId": 815,
+    "_albumSongNumber": 0,
+    "_artistIds": [
+      709
+    ],
+    "_year": 2025,
+    "_languageId": 0,
+    "_genreId": 84,
+    "_duration": "00:03:05.0510000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Swobodnie.mp3"
+  },
+  "1787": {
+    "_id": 1787,
+    "_name": "UNBREAKABLE",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:07.3440000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\UNBREAKABLE.mp3"
+  },
+  "1788": {
+    "_id": 1788,
+    "_name": "VENUS_Keiino",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:12.6520000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\VENUS_Keiino.mp3"
+  },
+  "1789": {
+    "_id": 1789,
+    "_name": "Wicked Game_",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:02:29.7970000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Wicked Game_.mp3"
+  },
+  "1766": {
+    "_id": 1766,
+    "_name": "Chiquitita",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:05:19.8600000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Chiquitita.mp3"
+  },
+  "1770": {
+    "_id": 1770,
+    "_name": "Forever Alone",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:14.1380000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Forever Alone.mp3"
+  },
+  "1790": {
+    "_id": 1790,
+    "_name": "Heat Waves",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:58.5580000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Heat Waves.mp3"
+  },
+  "1791": {
+    "_id": 1791,
+    "_name": "High-Speed Kissing",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:08.4520000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\High-Speed Kissing.mp3"
+  },
+  "1792": {
+    "_id": 1792,
+    "_name": "Those Days",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:35.2660000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Those Days.mp3"
+  },
+  "1793": {
+    "_id": 1793,
+    "_name": "Will She Fight",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:26.2150000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Will She Fight.mp3"
+  },
+  "1794": {
+    "_id": 1794,
+    "_name": "MARS",
+    "_albumId": 816,
+    "_albumSongNumber": 4,
+    "_artistIds": [
+      710
+    ],
+    "_year": 2025,
+    "_languageId": 0,
+    "_genreId": 49,
+    "_duration": "00:02:21.1630000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\MARS.mp3"
+  },
+  "1795": {
+    "_id": 1795,
+    "_name": "Anything You Say",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:04.8270000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Anything You Say.mp3"
+  },
+  "1796": {
+    "_id": 1796,
+    "_name": "I Found Her",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:08.5620000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\I Found Her.mp3"
+  },
+  "1797": {
+    "_id": 1797,
+    "_name": "I Just Called To Say I Love You",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:04:29.4000000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\I Just Called To Say I Love You.mp3"
+  },
+  "1798": {
+    "_id": 1798,
+    "_name": "Jak Zapomnieć",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:25.7980000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Jak Zapomnieć.mp3"
+  },
+  "1799": {
+    "_id": 1799,
+    "_name": "Melodies Of Hope",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:02.0100000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Melodies Of Hope.mp3"
+  },
+  "1800": {
+    "_id": 1800,
+    "_name": "Ordinary World",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:20.2940000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Ordinary World.mp3"
+  },
+  "1801": {
+    "_id": 1801,
+    "_name": "Pieprz i Sol",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:04:08.6520000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Pieprz i Sol.mp3"
+  },
+  "1802": {
+    "_id": 1802,
+    "_name": "Prowadź mnie",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:04:11.0260000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Prowadź mnie.mp3"
+  },
+  "1803": {
+    "_id": 1803,
+    "_name": "Skinny Little Missy",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:37.6080000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Skinny Little Missy.mp3"
+  },
+  "1804": {
+    "_id": 1804,
+    "_name": "Standing In The Dark",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:04:02.0640000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Standing In The Dark.mp3"
+  },
+  "1805": {
+    "_id": 1805,
+    "_name": "Steel Still Rusts",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:04:27.8500000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Steel Still Rusts.mp3"
+  },
+  "1806": {
+    "_id": 1806,
+    "_name": "Tidal Wave",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:32.9760000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Tidal Wave.mp3"
+  },
+  "1807": {
+    "_id": 1807,
+    "_name": "Weightless",
+    "_albumId": -1,
+    "_albumSongNumber": 0,
+    "_artistIds": [],
+    "_year": 0,
+    "_languageId": 0,
+    "_genreId": -1,
+    "_duration": "00:03:14.2690000",
+    "_filePath": "D:\\Muzyka\\Sample Music\\Weightless.mp3"
   }
 }
