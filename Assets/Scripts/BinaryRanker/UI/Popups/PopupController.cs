@@ -15,6 +15,7 @@ namespace Immortus.SongRanker
         [SerializeField] CreateAlbumPopup _CreateAlbumPopup;
         [SerializeField] ConfirmationPopup _ConfirmationPopup;
         [SerializeField] ProgressPopup _ProgressPopup;
+        [SerializeField] SongLoadingResultPopup _SongLoadingResultPopup;
 
         public void Awake()
         {
@@ -27,6 +28,11 @@ namespace Immortus.SongRanker
             Instance = this;
         }
 
+        public static void ShowSongLoadingResult(int newSongs, string[] errors)
+        {
+            Instance?._SongLoadingResultPopup.Show(newSongs, errors);
+        }
+        
         public static void ShowConfirmationPopup(string message, Action onConfirm, Action onCancel = null)
         {
             Instance?._ConfirmationPopup.Show(message, onConfirm, onCancel);

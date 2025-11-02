@@ -6,8 +6,6 @@ namespace Immortus.SongRanker
 {
     public class RankerController : MonoBehaviour
     {
-        [SerializeField] SongLoadingResultPopup _SongLoadingResultPopup;
-
         Ranker<Song> _ranker;
         Dictionary<int, int> _songIdToRankingPosition = new();
 
@@ -72,18 +70,18 @@ namespace Immortus.SongRanker
 
             SM.SearchForNewMusic(ResultCallback);
 
-            LoadRanking();
+            SetupRanker();
 
             void ResultCallback(int newSongs, string[] errors)
             {
                 if (newSongs == 0 && errors.Length == 0)
                     return;
 
-                _SongLoadingResultPopup.Show(newSongs, errors);
+                PopupController.ShowSongLoadingResult(newSongs, errors);
             }
         }
 
-        void LoadRanking()
+        void SetupRanker()
         {
             var loadedData = FileSaver.LoadCollection<List<int>>("Ranking");
 
