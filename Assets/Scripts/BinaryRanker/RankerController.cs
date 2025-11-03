@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using SM = Immortus.SongRanker.SongManager;
@@ -6,10 +7,14 @@ namespace Immortus.SongRanker
 {
     public class RankerController : MonoBehaviour
     {
+        public event Action OnRankingChangedEvent;
+        
         Ranker<Song> _ranker;
+        RankingsController _rankingsController;
         Dictionary<int, int> _songIdToRankingPosition = new();
 
         public Ranker<Song> Ranker => _ranker;
+        public RankingsController RankingsController => _rankingsController;
 
         // Start is called before the first frame update
         void Awake()
@@ -17,32 +22,17 @@ namespace Immortus.SongRanker
             SM.Init();
 
             Init();
+
+            _rankingsController = new(_ranker);
+            
+            _ranker.OnRankingChanged -= OnRankingChanged;
+            _ranker.OnRankingChanged += OnRankingChanged;
         }
 
         void Update()
         {
             if (Input.GetKey(KeyCode.LeftControl) && Input.GetKeyDown(KeyCode.S))
                 SaveRanking();
-        }
-
-        public void SaveRanking(bool autoSave = false)
-        {
-            List<List<int>> save = new();
-
-            foreach (var rank in _ranker.Ranking)
-            {
-                var ids = new List<int>();
-                foreach (var song in rank)
-                    ids.Add(song.ID);
-                save.Add(ids);
-            }
-
-            FileSaver.SaveCollection(autoSave ? "Ranking_auto" : "Ranking", save);
-
-            if (autoSave)
-                return;
-
-            TabController.ShowSavePanel();
         }
 
         public void RefreshSongRankingLUT()
@@ -63,7 +53,7 @@ namespace Immortus.SongRanker
             _songIdToRankingPosition.TryGetValue(songID, out int rankingPos);
             return rankingPos;
         }
-
+        
         void Init()
         {
             SM.LoadData();
@@ -79,6 +69,33 @@ namespace Immortus.SongRanker
 
                 PopupController.ShowSongLoadingResult(newSongs, errors);
             }
+        }
+
+        void SaveRanking(bool autoSave = false)
+        {
+            List<List<int>> save = new();
+
+            foreach (var rank in _ranker.Ranking)
+            {
+                var ids = new List<int>();
+                foreach (var song in rank)
+                    ids.Add(song.ID);
+                save.Add(ids);
+            }
+
+            FileSaver.SaveCollection(autoSave ? "Ranking_auto" : "Ranking", save);
+
+            if (autoSave)
+                return;
+
+            TabController.ShowSavePanel();
+        }
+        
+        void OnRankingChanged()
+        {
+            SaveRanking(true);
+            RefreshSongRankingLUT();
+            OnRankingChangedEvent?.Invoke();
         }
 
         void SetupRanker()

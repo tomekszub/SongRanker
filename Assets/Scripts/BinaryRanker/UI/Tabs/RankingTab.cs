@@ -4,15 +4,12 @@ using UnityEngine;
 using TMPro;
 using System.Text;
 using System;
+using static Immortus.SongRanker.RankingsController;
 
 namespace Immortus.SongRanker
 {
     public class RankingTab : BaseTab
     {
-        const string ARTISTS = "Artists";
-        const string GENRES = "Genres";
-        const string LANGUAGE = "Language";
-        const string ALBUM = "Album";
         const string ARTIST_SONGS_COUNT_RANKING = "ArtistSongCountRanking";
         const string GENRE_SONGS_COUNT_RANKING = "GenreSongCountRanking";
         const string LANGUAGE_SONGS_COUNT_RANKING = "LanguageSongCountRanking";
@@ -22,249 +19,125 @@ namespace Immortus.SongRanker
         const string LANGUAGE_CUSTOM_RATING_RANKING = "LanguageCustomRatingRanking";
         const string ALBUM_CUSTOM_RATING_RANKING = "AlbumCustomRatingRanking";
 
+        static readonly Dictionary<RankingType, List<string>> CACHED_RANKINGS_LUT = new()
+        {
+            {
+                RankingType.Artist,
+                new()
+                {
+                    ARTIST_SONGS_COUNT_RANKING,
+                    ARTIST_CUSTOM_RATING_RANKING
+                }
+            },
+            {
+                RankingType.Genre,
+                new ()
+                {
+                    GENRE_SONGS_COUNT_RANKING,
+                    GENRE_CUSTOM_RATING_RANKING
+                }
+            },
+            {
+                RankingType.Language,
+                new()
+                {
+                    LANGUAGE_SONGS_COUNT_RANKING,
+                    LANGUAGE_CUSTOM_RATING_RANKING
+                }
+            },
+            {
+                RankingType.Album,
+                new()
+                {
+                    ALBUM_SONGS_COUNT_RANKING,
+                    ALBUM_CUSTOM_RATING_RANKING
+                }
+            }
+        };
+
         [SerializeField] TextMeshProUGUI _RankingText;
-        [SerializeField] RankerTab _RankerTab;
+        [SerializeField] RankerController _RankerController;
         [SerializeField] EditingTab _EditingTab;
-
+        
         Dictionary<string, string> _cachedRankingOutputs = new();
-        List<RankingObject<Artist>> _artistRanking = new();
-        List<RankingObject<Genre>> _genreRanking = new();
-        List<RankingObject<Language>> _languageRanking = new();
-        List<RankingObject<Album>> _albumRanking = new();
-        bool _isRankingEstablished = false;
-        HashSet<string> _rankingDirtyLists = new();
-        Dictionary<string, Action> _listToRefreshFunction = new();
-        string _currList = ARTISTS;
+        RankingsController _rankingsController;
+        RankingType _currRankingType = RankingType.Artist;
 
-        void Awake()
+        void Start()
         {
-            // TODO: in no universe ranker tab should know about other tabs, move this events to some other place
-            _RankerTab.OnRankingChangedEvent += SetDirty;
-            _RankerTab.OnRankingChangedEvent -= SetDirty;
-            _EditingTab.OnChangeDone -= SetDirty;
-            _EditingTab.OnChangeDone += SetDirty;
-            SongManager.OnLanguageToSongChanged -= RefreshLanguageList;
-            SongManager.OnLanguageToSongChanged += RefreshLanguageList;
-            SongManager.OnArtistToSongChanged -= RefreshArtistList;
-            SongManager.OnArtistToSongChanged += RefreshArtistList;
-            SongManager.OnAlbumToSongChanged -= RefreshAlbumList;
-            SongManager.OnAlbumToSongChanged += RefreshAlbumList;
-            SongManager.OnGenreToSongChanged -= RefreshGenreList;
-            SongManager.OnGenreToSongChanged += RefreshGenreList;
+            _rankingsController = _RankerController.RankingsController;
+            _rankingsController.OnRankingChangedForType -= OnRankingChangedForType;
+            _rankingsController.OnRankingChangedForType += OnRankingChangedForType;
             
-            _listToRefreshFunction.Add(ARTISTS, RefreshArtistList);
-            _listToRefreshFunction.Add(GENRES, RefreshGenreList);
-            _listToRefreshFunction.Add(LANGUAGE, RefreshLanguageList);
-            _listToRefreshFunction.Add(ALBUM, RefreshAlbumList);
-            ResetDirtyLists();
-
-            void SetDirty()
-            {
-                _isRankingEstablished = false;
-                ResetDirtyLists();
-                _cachedRankingOutputs.Clear();
-            }
-
-            void ResetDirtyLists()
-            {
-                _rankingDirtyLists.Add(ARTISTS);
-                _rankingDirtyLists.Add(GENRES);
-                _rankingDirtyLists.Add(LANGUAGE);
-                _rankingDirtyLists.Add(ALBUM);
-            }
+            EnsureCurrentRankingFreshness();
         }
 
-        void OnEnable() => RefreshCurrentListIfNeeded();
-
-        void RefreshCurrentListIfNeeded()
-        {
-            if (!_isRankingEstablished)
-            {
-                _RankerTab.EstablishRating();
-                _isRankingEstablished = true;
-            }
-
-            if (_rankingDirtyLists.Contains(_currList))
-                _listToRefreshFunction[_currList].Invoke();
-        }
-
-        void RefreshArtistList()
-        {
-            _artistRanking = new();
-            var artistToSongs = SongManager.ArtistToSongs;
-
-            foreach (var kvp in artistToSongs)
-            {
-                float ratingSum = 0;
-                int ratedSongs = 0;
-                foreach (var song in kvp.Value) 
-                {
-                    if (song.Rating > 0)
-                    {
-                        ratingSum += song.Rating;
-                        ratedSongs++;
-                    }
-                }
-                var artist = SongManager.GetArtistByID(kvp.Key);
-                if (artist == null)
-                {
-                    Debug.LogError($"Artist with id {kvp.Key} deos not exist or is null!");
-                    continue;
-                }
-                _artistRanking.Add(new(artist, ratedSongs, ratingSum / ratedSongs, (ratingSum / ratedSongs) + ((ratedSongs - 1) * 4.5f)));
-            }
-
-            _rankingDirtyLists.Remove(ARTISTS);
-            _cachedRankingOutputs.Remove(ARTIST_SONGS_COUNT_RANKING);
-            _cachedRankingOutputs.Remove(ARTIST_CUSTOM_RATING_RANKING);
-        }
-
-        void RefreshGenreList()
-        {
-            _genreRanking = new();
-            var genresToSongs = SongManager.GenreToSongs;
-
-            foreach (var kvp in genresToSongs)
-            {
-                float ratingSum = 0;
-                int ratedSongs = 0;
-                foreach (var song in kvp.Value)
-                {
-                    if (song.Rating > 0)
-                    {
-                        ratingSum += song.Rating;
-                        ratedSongs++;
-                    }
-                }
-                var genre = SongManager.GetGenreByID(kvp.Key);
-                if (genre == null)
-                {
-                    Debug.LogError($"Genre with id {kvp.Key} deos not exist or is null!");
-                    continue;
-                }
-                _genreRanking.Add(new(genre, ratedSongs, ratingSum / ratedSongs, (ratingSum / ratedSongs) + ((ratedSongs - 1) * 4.5f)));
-            }
-
-            _rankingDirtyLists.Remove(GENRES);
-            _cachedRankingOutputs.Remove(GENRE_SONGS_COUNT_RANKING);
-            _cachedRankingOutputs.Remove(GENRE_CUSTOM_RATING_RANKING);
-        }
-
-        void RefreshLanguageList()
-        {
-            _languageRanking = new();
-            var languagesToSongs = SongManager.LanguageToSongs;
-
-            foreach (var kvp in languagesToSongs)
-            {
-                float ratingSum = 0;
-                int ratedSongs = 0;
-                foreach (var song in kvp.Value)
-                {
-                    if (song.Rating > 0)
-                    {
-                        ratingSum += song.Rating;
-                        ratedSongs++;
-                    }
-                }
-
-                var language = SongManager.GetLanguageByID(kvp.Key);
-                if (language == null)
-                {
-                    Debug.LogError($"Language with id {kvp.Key} deos not exist or is null!");
-                    continue;
-                }
-                _languageRanking.Add(new(language, ratedSongs, ratingSum / ratedSongs, (ratingSum / ratedSongs) + ((ratedSongs - 1) * 4.5f)));
-            }
-
-            _rankingDirtyLists.Remove(LANGUAGE);
-            _cachedRankingOutputs.Remove(LANGUAGE_SONGS_COUNT_RANKING);
-            _cachedRankingOutputs.Remove(LANGUAGE_CUSTOM_RATING_RANKING);
-        }
-
-        void RefreshAlbumList()
-        {
-            _albumRanking = new();
-            var albumToSongs = SongManager.AlbumToSongs;
-
-            foreach (var kvp in albumToSongs)
-            {
-                float ratingSum = 0;
-                int ratedSongs = 0;
-                foreach (var song in kvp.Value)
-                {
-                    if (song.Rating > 0)
-                    {
-                        ratingSum += song.Rating;
-                        ratedSongs++;
-                    }
-                }
-
-                var album = SongManager.GetAlbumByID(kvp.Key);
-                if (album == null)
-                {
-                    Debug.LogError($"Album with id {kvp.Key} deos not exist or is null!");
-                    continue;
-                }
-                _albumRanking.Add(new(album, ratedSongs, ratingSum / ratedSongs, (ratingSum / ratedSongs) + ((ratedSongs - 1) * 4.5f)));
-            }
-
-            _rankingDirtyLists.Remove(ALBUM);
-            _cachedRankingOutputs.Remove(ALBUM_SONGS_COUNT_RANKING);
-            _cachedRankingOutputs.Remove(ALBUM_CUSTOM_RATING_RANKING);
-        }
+        void OnEnable() => EnsureCurrentRankingFreshness();
 
         public void ShowArtistSongCountRanking()
         {
-            ShowCustomRanking(ARTISTS, ARTIST_SONGS_COUNT_RANKING, ref _artistRanking, a => a.SongCount);
+            ShowCustomRanking(RankingType.Artist, ARTIST_SONGS_COUNT_RANKING, a => a.SongCount);
         }
 
         public void ShowArtistCustomRatingRanking()
         {
-            ShowCustomRanking(ARTISTS, ARTIST_CUSTOM_RATING_RANKING, ref _artistRanking, a => a.CustomRating);
+            ShowCustomRanking(RankingType.Artist, ARTIST_CUSTOM_RATING_RANKING, a => a.CustomRating);
         }
 
         public void ShowGenreSongCountRanking()
         {
-            ShowCustomRanking(GENRES, GENRE_SONGS_COUNT_RANKING, ref _genreRanking, g => g.SongCount);
+            ShowCustomRanking(RankingType.Genre, GENRE_SONGS_COUNT_RANKING, g => g.SongCount);
         }
 
         public void ShowGenreCustomRatingRanking()
         {
-            ShowCustomRanking(GENRES, GENRE_CUSTOM_RATING_RANKING, ref _genreRanking, g => g.CustomRating);
+            ShowCustomRanking(RankingType.Genre, GENRE_CUSTOM_RATING_RANKING, g => g.CustomRating);
         }
 
         public void ShowLanguageSongCountRanking()
         {
-            ShowCustomRanking(LANGUAGE, LANGUAGE_SONGS_COUNT_RANKING, ref _languageRanking, g => g.SongCount);
+            ShowCustomRanking(RankingType.Language, LANGUAGE_SONGS_COUNT_RANKING, g => g.SongCount);
         }
 
         public void ShowLanguageCustomRatingRanking()
         {
-            ShowCustomRanking(LANGUAGE, LANGUAGE_CUSTOM_RATING_RANKING, ref _languageRanking, g => g.CustomRating);
+            ShowCustomRanking(RankingType.Language, LANGUAGE_CUSTOM_RATING_RANKING, g => g.CustomRating);
         }
 
         public void ShowAlbumSongCountRanking()
         {
-            ShowCustomRanking(ALBUM, ALBUM_SONGS_COUNT_RANKING, ref _albumRanking, g => g.SongCount);
+            ShowCustomRanking(RankingType.Album, ALBUM_SONGS_COUNT_RANKING, g => g.SongCount);
         }
 
         public void ShowAlbumCustomRatingRanking()
         {
-            ShowCustomRanking(ALBUM, ALBUM_CUSTOM_RATING_RANKING, ref _albumRanking, g => g.CustomRating);
+            ShowCustomRanking(RankingType.Album, ALBUM_CUSTOM_RATING_RANKING, g => g.CustomRating);
         }
 
-        void ShowCustomRanking<T>(string listName, string rankingKey, ref List<RankingObject<T>> ranking, Func<RankingObject<T>, double> orderFunc) where T : IRankable
+        void EnsureCurrentRankingFreshness() => _rankingsController?.Refresh(_currRankingType);
+
+        void OnRankingChangedForType(RankingType type)
         {
-            _currList = listName;
+            if(CACHED_RANKINGS_LUT.TryGetValue(type, out var list))
+                list.ForEach(rankingName => _cachedRankingOutputs.Remove(rankingName));
+        }
+        
+        void ShowCustomRanking(RankingType type, string rankingKey, Func<IRankingObject<IRankable>, double> orderFunc)
+        {
+            _currRankingType = type;
+            
+            EnsureCurrentRankingFreshness();
 
             if (_cachedRankingOutputs.TryGetValue(rankingKey, out string cachedData))
             {
                 _RankingText.text = cachedData;
+                Debug.Log($"[RankingTab] Custom ranking taken from cache. Type {type}, Key {rankingKey}");
                 return;
             }
 
-            RefreshCurrentListIfNeeded();
+            Debug.Log($"[RankingTab] Updating cache with new ranking. Type {type}, Key {rankingKey}");
+            
+            var ranking = _rankingsController.GetCurrentRanking(_currRankingType);
 
             var sortedRanking = ranking.OrderByDescending(orderFunc);
 
@@ -273,13 +146,14 @@ namespace Immortus.SongRanker
             int nameLength;
             int songCountLength;
             string avgRatingString;
+            int rankingPlace = 1;
 
             foreach (var item in sortedRanking)
             {
-                var name = item.Value.GetDisplayName();
-                nameLength = name.Length;
+                var displayName = item.Value.GetDisplayName();
+                nameLength = displayName.Length;
                 songCountLength = item.SongCount.ToString().Length;
-                sb.Append($"{name}");
+                sb.Append($"<b>{rankingPlace}.</b> {displayName}");
                 for (int i = 0; i < 35 - nameLength; i++)
                     sb.Append(" ");
                 sb.Append($"{item.SongCount}");
@@ -291,6 +165,7 @@ namespace Immortus.SongRanker
                     sb.Append(" ");
                 sb.Append($"{Math.Round(item.CustomRating, 2)}");
                 sb.AppendLine();
+                rankingPlace++;
             }
 
             _cachedRankingOutputs.Add(rankingKey, sb.ToString());
@@ -298,12 +173,20 @@ namespace Immortus.SongRanker
         }
     }
 
-    class RankingObject<T> where T : IRankable
+    public interface IRankingObject<out T> where T : IRankable
     {
-        public T Value;
-        public int SongCount;
-        public float AvgRating;
-        public float CustomRating;
+        public T Value { get; }
+        public int SongCount { get; }
+        public float AvgRating { get; }
+        public float CustomRating { get; }
+    }
+    
+    public class RankingObject<T> : IRankingObject<T> where T : IRankable
+    {
+        public T Value { get; }
+        public int SongCount { get; }
+        public float AvgRating { get; }
+        public float CustomRating { get; }
 
         public RankingObject(T value, int songCount, float avgRating, float customRating)
         {

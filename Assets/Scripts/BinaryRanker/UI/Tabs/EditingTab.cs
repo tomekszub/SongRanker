@@ -7,7 +7,7 @@ namespace Immortus.SongRanker
 {
     public class EditingTab : BaseTab
     {
-        public event Action OnChangeDone;
+        public static event Action OnChangeDone;
 
         [SerializeField] List<BaseEditingTabContainer> _TabContainers;
         [SerializeField] Button _NextElementButton;

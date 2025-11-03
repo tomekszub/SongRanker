@@ -9,8 +9,6 @@ namespace Immortus.SongRanker
 {
     public class RankerTab : BaseTab
     {
-        public event Action OnRankingChangedEvent;
-
         [SerializeField] RankerController _RankerController;
         [SerializeField] AudioClipLoader _AudioClipLoader;
         [SerializeField] RecyclableVerticalScrollView _RankingView;
@@ -39,8 +37,8 @@ namespace Immortus.SongRanker
         {
             Init();
 
-            _ranker.OnRankingChanged -= OnRankingChanged;
-            _ranker.OnRankingChanged += OnRankingChanged;
+            _RankerController.OnRankingChangedEvent -= OnRankingChangedEvent;
+            _RankerController.OnRankingChangedEvent += OnRankingChangedEvent;
             _ranker.OnCurrentlyComapredElementChanged -= OnCurrentlyComparedSongChanged;
             _ranker.OnCurrentlyComapredElementChanged += OnCurrentlyComparedSongChanged;
 
@@ -65,23 +63,6 @@ namespace Immortus.SongRanker
 
         public void OnChoiceButtonClicked(int choiceIndex) => SetChoice((ComparisonResult)choiceIndex);
 
-        public void EstablishRating()
-        {
-            var ranking = _ranker.Ranking;
-            float interval = 100.0f / ranking.Count;
-            interval -= interval / 10;
-
-            int i = 0;
-
-            foreach (var songs in ranking)
-            {
-                float rating = 100.0f - (i * interval);
-                foreach(var song in songs)
-                    song.Rating = rating;
-                i++;
-            }
-        }
-
         void SetChoice(ComparisonResult result) => _ranker.SetComparisonResult(result);
 
         bool LeftOptionChosen() => Input.GetKeyUp(KeyCode.LeftArrow);
@@ -90,15 +71,10 @@ namespace Immortus.SongRanker
 
         bool MiddleOptionChosen() => Input.GetKeyUp(KeyCode.UpArrow);
 
-        void OnRankingChanged()
+        void OnRankingChangedEvent()
         {
             _options.RemoveAt(0);
-            _RankerController.SaveRanking(true);
-
-            _RankerController.RefreshSongRankingLUT();
-
             RefreshUI();
-            OnRankingChangedEvent?.Invoke();
         }
 
         public void NextOption()
