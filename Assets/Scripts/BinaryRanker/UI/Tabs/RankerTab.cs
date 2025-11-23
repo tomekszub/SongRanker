@@ -123,23 +123,23 @@ namespace Immortus.SongRanker
 
         void DisplayCurrentRanking()
         {
-            List<string> ranking = new();
-            int index = 1;
+            List<IRecyclableData> ranking = new();
+            int rankingPosition = 1;
             foreach (var item in _ranker.Ranking)
             {
-                var positionString = $"<color=\"yellow\">{index}.</color>";
+                var positionString = $"<color=\"yellow\">{rankingPosition}.</color>";
 
                 for(var i = 0; i < item.Count; i++)
                 {
                     var song = item[i];
                     
                     if(i == 0)
-                        ranking.Add($"{positionString} {song.Name}");
+                        ranking.Add(new SimpleStringRecyclableData($"{positionString} {song.Name}"));
                     else
-                        ranking.Add(song.Name);
+                        ranking.Add(new SimpleStringRecyclableData(song.Name));
                 }
 
-                index++;
+                rankingPosition++;
             }
             _DebugText.text = $"{_ranker.Ranking.Count}/{ranking.Count}/{_options.Count}";
             _RankingView.RefreshData(ranking);
@@ -230,6 +230,16 @@ namespace Immortus.SongRanker
 
             _NewSongAudioPanelController.Init(_ComparedToSongAudioPanelController);
             _ComparedToSongAudioPanelController.Init(_NewSongAudioPanelController);
+        }
+
+        public class SimpleStringRecyclableData : IRecyclableData
+        {
+            public string Content { get; }
+
+            public SimpleStringRecyclableData(string content)
+            {
+                Content = content;
+            }
         }
     }
 }

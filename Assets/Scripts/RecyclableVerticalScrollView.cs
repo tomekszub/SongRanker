@@ -5,22 +5,22 @@ using System.Collections.Generic;
 
 public class RecyclableVerticalScrollView : MonoBehaviour
 {
-    [SerializeField] private ScrollRect scrollRect;         // The ScrollRect component
-    [SerializeField] private GameObject itemPrefab;         // Prefab for a single UI item
-    [SerializeField] private Transform contentContainer;    // The container holding items
-    [SerializeField] private int visibleItemCount = 20;     // Number of visible items
+    [SerializeField] ScrollRect scrollRect;         // The ScrollRect component
+    [SerializeField] GameObject itemPrefab;         // Prefab for a single UI item
+    [SerializeField] Transform contentContainer;    // The container holding items
+    [SerializeField] int visibleItemCount = 20;     // Number of visible items
     
-    private List<GameObject> _items = new List<GameObject>(); // Pool of UI items
-    private List<string> _dataList = new List<string>();     // Your data source (500 items)
-    private int _topIndex = 0;                               // Index of the topmost visible item
-    private int _totalItemCount;                             // Total items in the list
+    List<IRecyclableDataHolder> _items = new(); // Pool of UI items
+    List<IRecyclableData> _dataList = new();     // Your data source (500 items)
+    int _topIndex = 0;                               // Index of the topmost visible item
+    int _totalItemCount;                             // Total items in the list
 
-    private bool _initialized;
-    private float _itemHeight;
-    private float _scrollContentHeight;
-    private VerticalLayoutGroup verticalLayoutGroup;
+    bool _initialized;
+    float _itemHeight;
+    float _scrollContentHeight;
+    VerticalLayoutGroup verticalLayoutGroup;
 
-    public void RefreshData(List<string> data)
+    public void RefreshData(List<IRecyclableData> data)
     {
         _dataList = data;
         _totalItemCount = _dataList.Count;
@@ -31,7 +31,7 @@ public class RecyclableVerticalScrollView : MonoBehaviour
             UpdateTotalItemCount();
     }
 
-    public void Init()
+    void Init()
     {
         // Get the height of a single item
         RectTransform itemRect = itemPrefab.GetComponent<RectTransform>();
@@ -47,8 +47,10 @@ public class RecyclableVerticalScrollView : MonoBehaviour
         for(int i = 0; i < visibleItemCount; i++)
         {
             GameObject item = Instantiate(itemPrefab, contentContainer);
-            _items.Add(item);
-            UpdateItem(item, i); // Set initial data
+            var recyclableDataHolder = item.GetComponent<IRecyclableDataHolder>();
+            
+            _items.Add(recyclableDataHolder);
+            UpdateItem(recyclableDataHolder, i); // Set initial data
         }
 
         scrollRect.onValueChanged.AddListener(OnScroll);
@@ -60,20 +62,20 @@ public class RecyclableVerticalScrollView : MonoBehaviour
         _initialized = true;
     }
 
-    private void DisableLayoutGroup()
+    void DisableLayoutGroup()
     {
         if(verticalLayoutGroup != null)
             verticalLayoutGroup.enabled = false;
     }
     
-    private void OnScroll(Vector2 scrollPosition)
+    void OnScroll(Vector2 scrollPosition)
     {
         // Calculate the index of the topmost visible item based on the scroll position
         float contentPositionY = contentContainer.GetComponent<RectTransform>().anchoredPosition.y;
         int newTopIndex = Mathf.FloorToInt(contentPositionY / _itemHeight);
 
         // Clamp the index to stay within bounds
-        newTopIndex = Mathf.Clamp(newTopIndex, 0, _totalItemCount - visibleItemCount);
+        newTopIndex = Mathf.Clamp(newTopIndex, 0, Math.Max(0, _totalItemCount - visibleItemCount));
 
         // Check if the new top index is significantly different from the current one
         if (newTopIndex != _topIndex)
@@ -84,7 +86,7 @@ public class RecyclableVerticalScrollView : MonoBehaviour
         }
     }
     
-    private void RefreshVisibleItems()
+    void RefreshVisibleItems()
     {
         for (int i = 0; i < _items.Count; i++)
         {
@@ -96,16 +98,15 @@ public class RecyclableVerticalScrollView : MonoBehaviour
                 UpdateItem(_items[i], dataIndex);
 
                 // Position the item correctly
-                RectTransform rect = _items[i].GetComponent<RectTransform>();
-                rect.anchoredPosition = new Vector2(0, -dataIndex * _itemHeight);
+                _items[i].RectTransform.anchoredPosition = new Vector2(0, -dataIndex * _itemHeight);
 
                 // Ensure the item is active
-                _items[i].SetActive(true);
+                _items[i].GameObject.SetActive(true);
             }
             else
             {
                 // Hide items that are out of range
-                _items[i].SetActive(false);
+                _items[i].GameObject.SetActive(false);
             }
         }
         
@@ -114,12 +115,12 @@ public class RecyclableVerticalScrollView : MonoBehaviour
         {
             for (int i = _totalItemCount; i < _items.Count; i++)
             {
-                _items[i].SetActive(false);
+                _items[i].GameObject.SetActive(false);
             }
         }
     }
     
-    public void UpdateTotalItemCount()
+    void UpdateTotalItemCount()
     {
         // Update the content container size
         UpdateContentSize();
@@ -136,7 +137,7 @@ public class RecyclableVerticalScrollView : MonoBehaviour
         RefreshVisibleItems();
     }
     
-    private void ClampScrollPosition()
+    void ClampScrollPosition()
     {
         float maxScrollY = Mathf.Max(0, (_totalItemCount - visibleItemCount) * _itemHeight);
         RectTransform contentRect = contentContainer.GetComponent<RectTransform>();
@@ -147,19 +148,27 @@ public class RecyclableVerticalScrollView : MonoBehaviour
         contentRect.anchoredPosition = currentPos;
     }
     
-    private void UpdateContentSize()
+    void UpdateContentSize()
     {
         float newHeight = Mathf.Max(_itemHeight * _totalItemCount, _itemHeight * visibleItemCount);
         contentContainer.GetComponent<RectTransform>().sizeDelta = new Vector2(0, newHeight);
     }
     
-    private void UpdateItem(GameObject item, int dataIndex)
+    void UpdateItem(IRecyclableDataHolder item, int dataIndex)
     {
-        if (dataIndex < 0 || dataIndex >= _totalItemCount) return;
+        if (dataIndex < 0 || dataIndex >= _totalItemCount) 
+            return;
 
         // Update the content of the UI element based on data
-        var text = item.GetComponentInChildren<TMPro.TextMeshProUGUI>();
-        text.text = _dataList[dataIndex];
+        item.FeedData(_dataList[dataIndex]);
     }
 }
 
+public interface IRecyclableData{}
+
+public interface IRecyclableDataHolder
+{
+    public GameObject GameObject { get; }
+    public RectTransform RectTransform { get; }
+    public void FeedData(IRecyclableData data);
+}

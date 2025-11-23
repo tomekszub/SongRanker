@@ -144,8 +144,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7639838554749738673}
+  - component: {fileID: 6757335220700954103}
   m_Layer: 5
-  m_Name: TestPrefab
+  m_Name: SimpleRecyclableEntry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -172,3 +173,16 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 450, y: 50}
   m_Pivot: {x: 0, y: 1}
+--- !u!114 &6757335220700954103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8967903078291794123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02166b8924e9ed74788764f5864a7777, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Text: {fileID: 2722552352138818605}

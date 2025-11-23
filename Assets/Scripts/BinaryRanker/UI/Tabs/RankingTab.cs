@@ -54,12 +54,12 @@ namespace Immortus.SongRanker
                 }
             }
         };
-
-        [SerializeField] TextMeshProUGUI _RankingText;
+        
+        [SerializeField] RecyclableVerticalScrollView _RankingView;
         [SerializeField] RankerController _RankerController;
         [SerializeField] EditingTab _EditingTab;
         
-        Dictionary<string, string> _cachedRankingOutputs = new();
+        Dictionary<string, List<IRecyclableData>> _cachedRankingOutputs = new();
         RankingsController _rankingsController;
         RankingType _currRankingType = RankingType.Artist;
 
@@ -128,9 +128,9 @@ namespace Immortus.SongRanker
             
             EnsureCurrentRankingFreshness();
 
-            if (_cachedRankingOutputs.TryGetValue(rankingKey, out string cachedData))
+            if (_cachedRankingOutputs.TryGetValue(rankingKey, out var cachedData))
             {
-                _RankingText.text = cachedData;
+                _RankingView.RefreshData(cachedData);
                 Debug.Log($"[RankingTab] Custom ranking taken from cache. Type {type}, Key {rankingKey}");
                 return;
             }
@@ -141,35 +141,19 @@ namespace Immortus.SongRanker
 
             var sortedRanking = ranking.OrderByDescending(orderFunc);
 
-            StringBuilder sb = new();
-
-            int nameLength;
-            int songCountLength;
-            string avgRatingString;
+            List<IRecyclableData> outputRanking = new();
+            
             int rankingPlace = 1;
 
             foreach (var item in sortedRanking)
             {
-                var displayName = item.Value.GetDisplayName();
-                nameLength = displayName.Length;
-                songCountLength = item.SongCount.ToString().Length;
-                sb.Append($"<b>{rankingPlace}.</b> {displayName}");
-                for (int i = 0; i < 35 - nameLength; i++)
-                    sb.Append(" ");
-                sb.Append($"{item.SongCount}");
-                for (int i = 0; i < 6 - songCountLength; i++)
-                    sb.Append(" ");
-                avgRatingString = $"{Math.Round(item.AvgRating, 2)}";
-                sb.Append(avgRatingString);
-                for (int i = 0; i < 10 - avgRatingString.Length; i++)
-                    sb.Append(" ");
-                sb.Append($"{Math.Round(item.CustomRating, 2)}");
-                sb.AppendLine();
+                outputRanking.Add(new RankingObjectData($"{rankingPlace}. {item.Value.GetDisplayName()}", item.SongCount.ToString(),
+                    item.AvgRating.ToString("F2"), item.CustomRating.ToString("F2")));
                 rankingPlace++;
             }
 
-            _cachedRankingOutputs.Add(rankingKey, sb.ToString());
-            _RankingText.text = _cachedRankingOutputs[rankingKey];
+            _cachedRankingOutputs.Add(rankingKey, outputRanking);
+            _RankingView.RefreshData(outputRanking);
         }
     }
 
@@ -191,6 +175,22 @@ namespace Immortus.SongRanker
         public RankingObject(T value, int songCount, float avgRating, float customRating)
         {
             Value = value;
+            SongCount = songCount;
+            AvgRating = avgRating;
+            CustomRating = customRating;
+        }
+    }
+
+    public class RankingObjectData : IRecyclableData
+    {
+        public string Name { get; }
+        public string SongCount { get; }
+        public string AvgRating { get; }
+        public string CustomRating { get; }
+
+        public RankingObjectData(string name, string songCount, string avgRating, string customRating)
+        {
+            Name = name;
             SongCount = songCount;
             AvgRating = avgRating;
             CustomRating = customRating;
