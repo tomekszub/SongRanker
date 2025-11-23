@@ -8,6 +8,7 @@ namespace Immortus.SongRanker
         string _name;
         int _countryId;
 
+        public int ID => _id;
         public string Name => _name;
 
         public Artist(string name, int countryId)
@@ -15,10 +16,13 @@ namespace Immortus.SongRanker
             _name = name;
             _countryId = countryId;
         }
-
+        
         public override bool IsEqual(Artist property)
         {
-            return _name == property._name && _countryId == property._countryId;
+            if(property._id != -1 && _id == property._id)
+                return true;
+            
+            return _name == property._name && (property._countryId == -1 || _countryId == property._countryId);
         }
 
         public override bool IsValid() => !string.IsNullOrEmpty(_name);

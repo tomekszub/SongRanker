@@ -104,6 +104,7 @@ namespace Immortus.SongRanker
         }
 
         public static IEnumerable<Song> GetAllSongs() => _songs.Values;
+        public static IEnumerable<Artist> GetAllArtists() => _artists.GetAllValues();
 
         public static Song GetSongWithID(int id)
         {

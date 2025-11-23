@@ -1,6 +1,6 @@
 public abstract class UniqueIDProperty<Tself>
 {
-    protected int _id;
+    protected int _id = -1;
 
     public int SetId(int id) => _id = id;
 

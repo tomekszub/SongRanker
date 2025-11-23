@@ -72,7 +72,7 @@ public class TabController : MonoBehaviour
 
 public abstract class BaseTab : MonoBehaviour
 {
-    public virtual void Activate(int arg) => gameObject.SetActive(true);
+    public virtual void Activate(int newIndex) => gameObject.SetActive(true);
     
     public virtual void Deactivate() => gameObject.SetActive(false);
 }

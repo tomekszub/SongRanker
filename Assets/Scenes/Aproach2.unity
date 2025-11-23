@@ -534,7 +534,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 29.65
+  m_fontSize: 29.9
   m_fontSizeBase: 17
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1685,7 +1685,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eb83b2d4f68b204084177e0ebb11162, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _RankerController: {fileID: 909578028}
   _Player: {fileID: 1593723741}
   _RankingPositionField: {fileID: 1454655481}
   _TitleField: {fileID: 77945668}
@@ -1697,7 +1696,6 @@ MonoBehaviour:
   _AlbumTrackNumberField: {fileID: 1364939626}
   _DurationField: {fileID: 1685728019}
   _PathField: {fileID: 1315048141}
-  _SearchField: {fileID: 1077676679}
 --- !u!1 &84641541
 GameObject:
   m_ObjectHideFlags: 0
@@ -5733,7 +5731,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &332775009
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7809,7 +7807,7 @@ GameObject:
   - component: {fileID: 438723939}
   - component: {fileID: 438723940}
   m_Layer: 5
-  m_Name: AlbumEditingContent
+  m_Name: ArtistEditingContent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7849,9 +7847,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 438723938}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4fb08e1057ef60645bddb2ba7df70e04, type: 3}
+  m_Script: {fileID: 11500000, guid: eac3cfd5fe2ed694f81e1c21c87338b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _RankingPositionField: {fileID: 1487971795}
+  _TitleField: {fileID: 332775010}
 --- !u!1 &442013729
 GameObject:
   m_ObjectHideFlags: 0
@@ -9843,7 +9843,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Love the way you lie
+  m_text: Twice
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -20149,7 +20149,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1248275855
 RectTransform:
   m_ObjectHideFlags: 0
@@ -24941,6 +24941,8 @@ MonoBehaviour:
   - {fileID: 438723940}
   _NextElementButton: {fileID: 2123528431}
   _PrevElementButton: {fileID: 1754608368}
+  _SearchField: {fileID: 1077676679}
+  _RankerController: {fileID: 909578028}
 --- !u!1 &1588724405
 GameObject:
   m_ObjectHideFlags: 0
@@ -25919,7 +25921,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0.2}
-  m_AnchoredPosition: {x: -10, y: 5}
+  m_AnchoredPosition: {x: -10, y: 5.000061}
   m_SizeDelta: {x: 200, y: -10}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1633051434
@@ -33147,7 +33149,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5156211765924268932, guid: fe4f3f60fe5a9c9498d5eed8abec7a4c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 96.30082
+      value: 97.46242
       objectReference: {fileID: 0}
     - target: {fileID: 5156211766511546195, guid: fe4f3f60fe5a9c9498d5eed8abec7a4c, type: 3}
       propertyPath: m_Name

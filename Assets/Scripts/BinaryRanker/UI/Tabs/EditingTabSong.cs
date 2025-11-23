@@ -7,11 +7,12 @@ using UnityEngine;
 
 namespace Immortus.SongRanker
 {
-    public class EditingTabSong : BaseEditingTabContainer
+    public class EditingTabSong : ContextBaseEditingTabContainer<Song>
     {
         const string TEXT_MISSING_PROPERTY = "-";
+        const string SAVE_TAG_DESC = "Are you sure you want to save mp3 tags for this song? This action will override existing tags!";
+        const string SAVE_ALL_TAGS_DESC = "Are you sure you want to save mp3 tags for all songs? This action will override existing tags!";
         
-        [SerializeField] RankerController _RankerController;
         [Header("UI References")]
         [SerializeField] SongPlayer _Player;
         [SerializeField] TextMeshProUGUI _RankingPositionField;
@@ -24,66 +25,38 @@ namespace Immortus.SongRanker
         [SerializeField] PropertyField _AlbumTrackNumberField;
         [SerializeField] PropertyField _DurationField;
         [SerializeField] PropertyField _PathField;
-        [SerializeField] SearchField _SearchField;
 
-        List<Song> _context;
-        Song _song;
-        int _currSongIndex;
-        bool _alreadySet;
-
-        void Start()
+        public override void Init(RankerController rankerController, Action onChangeDone)
         {
-            if (_alreadySet)
-                return;
-
-            _SearchField.SetData(SongManager.AllSongNames.ToList(), ShowSong);
-
-            _context = new List<Song>();
-            _RankerController.Ranker.Ranking.ForEach(r => _context.AddRange(r));
-            _currSongIndex = 0;
-            ChangeSong();
+            base.Init(rankerController, onChangeDone);
+            
+            _rankerController.Ranker.Ranking.ForEach(r => _context.AddRange(r));
         }
 
-        public override void NextElement()
+        public override List<string> GetSearchData() => SongManager.AllSongNames.ToList();
+
+        public override void ShowDataWithIndex(int index)
         {
-            if (_currSongIndex >= _context.Count - 1)
-                return;
+            var songID = SongManager.GetAllSongs().ToList()[index].ID;
 
-            if (Input.GetKey(KeyCode.LeftControl))
-                _currSongIndex = Mathf.Min(_currSongIndex + 5, _context.Count - 1);
-            else if (Input.GetKey(KeyCode.LeftShift))
-                _currSongIndex = Mathf.Min(_currSongIndex + 25, _context.Count - 1);
-            else
-                _currSongIndex++;
-
-            ChangeSong();
+            for (int i = 0; i < _context.Count; i++)
+            {
+                if (_context[i].ID == songID)
+                {
+                    _currIndex = i;
+                    OnItemChanged();
+                }
+            }
         }
-
-        public override void PreviousElement()
-        {
-            if (_currSongIndex <= 0)
-                return;
-
-            if (Input.GetKey(KeyCode.LeftControl))
-                _currSongIndex = Mathf.Max(_currSongIndex - 5, 0);
-            else if (Input.GetKey(KeyCode.LeftShift))
-                _currSongIndex = Mathf.Min(_currSongIndex - 25, _context.Count - 1);
-            else
-                _currSongIndex--;
-
-            ChangeSong();
-        }
-
+        
         public void SaveTags()
         {
-            PopupController.ShowConfirmationPopup("Are you sure you want to save mp3 tags for all songs? " +
-                                                       "This action will override existing tags!", LaunchTagSaving);
+            PopupController.ShowConfirmationPopup(SAVE_ALL_TAGS_DESC, LaunchTagSaving);
 
             void LaunchTagSaving() => StartCoroutine(SaveTagsCoroutine());
         }
         
-        public void SaveTag() => PopupController.ShowConfirmationPopup("Are you sure you want to save mp3 tags for this song? " +
-                                                                            "This action will override existing tags!", () => SaveTagInternal(_song));
+        public void SaveTag() => PopupController.ShowConfirmationPopup(SAVE_TAG_DESC, () => SaveTagInternal(_currentElement));
         
         IEnumerator SaveTagsCoroutine()
         {
@@ -101,53 +74,38 @@ namespace Immortus.SongRanker
         }
 
         void SaveTagInternal(Song song) => SongManager.SaveTag(song.Path, song);
-        
-        void ShowSong(int index)
-        {
-            var songID = SongManager.GetAllSongs().ToList()[index].ID;
 
-            for (int i = 0; i < _context.Count; i++)
-            {
-                if (_context[i].ID == songID)
-                {
-                    _currSongIndex = i;
-                    ChangeSong();
-                }
-            }
+        protected override void OnItemChanged()
+        {
+            base.OnItemChanged();
+            _Player.Init(_currentElement);
         }
 
-        void ChangeSong()
+        protected override void Refresh()
         {
-            _song = _context[_currSongIndex];
-            RefreshUI();
-            _Player.Init(_song);
-        }
+            _RankingPositionField.text = _rankerController.GetRankingPosition(_currentElement.ID).ToString();
 
-        void RefreshUI()
-        {
-            _RankingPositionField.text = _RankerController.GetRankingPosition(_song.ID).ToString();
+            bool propertyIsValid = PropertiesValidator.ValidateName(_currentElement.Name);
+            _TitleField.SetContent(_currentElement.Name, !propertyIsValid, OpenTitleEditPopup);
 
-            bool propertyIsValid = PropertiesValidator.ValidateName(_song.Name);
-            _TitleField.SetContent(_song.Name, !propertyIsValid, OpenTitleEditPopup);
-
-            var artists = SongManager.GetArtistNamesByIDs(_song.ArtistIds);
+            var artists = SongManager.GetArtistNamesByIDs(_currentElement.ArtistIds);
             propertyIsValid = PropertiesValidator.ValidateArtists(artists);
             _ArtistsField.SetContent(string.Join(", ", artists), !propertyIsValid, OpenArtistsEditPopup);
 
-            var genre = SongManager.GetGenreByID(_song.GenreID);
+            var genre = SongManager.GetGenreByID(_currentElement.GenreID);
             propertyIsValid = PropertiesValidator.ValidateGenre(genre);
             _GenreField.SetContent(!propertyIsValid ? TEXT_MISSING_PROPERTY : genre.Name, !propertyIsValid, OpenGenreEditPopup);
 
-            propertyIsValid = PropertiesValidator.ValidateYear(_song.Year);
-            _YearField.SetContent(!propertyIsValid ? TEXT_MISSING_PROPERTY : _song.Year.ToString(), !propertyIsValid, OpenYearEditPopup);
+            propertyIsValid = PropertiesValidator.ValidateYear(_currentElement.Year);
+            _YearField.SetContent(!propertyIsValid ? TEXT_MISSING_PROPERTY : _currentElement.Year.ToString(), !propertyIsValid, OpenYearEditPopup);
 
-            var language = SongManager.GetLanguageByID(_song.LanguageID);
+            var language = SongManager.GetLanguageByID(_currentElement.LanguageID);
             propertyIsValid = PropertiesValidator.ValidateLanguage(language);
             _LanguageField.SetContent(!propertyIsValid ? TEXT_MISSING_PROPERTY : language.Name, !propertyIsValid, OpenLanguageEditPopup);
 
-            var album = SongManager.GetAlbumByID(_song.AlbumID);
+            var album = SongManager.GetAlbumByID(_currentElement.AlbumID);
             propertyIsValid = PropertiesValidator.ValidateAlbum(album);
-            var trackNumber = _song.AlbumSongNumber;
+            var trackNumber = _currentElement.AlbumSongNumber;
             if (album != null)
             {
                 _AlbumNameField.SetContent(album.Name, !propertyIsValid, OpenAlbumEditPopup);
@@ -161,41 +119,41 @@ namespace Immortus.SongRanker
                 _AlbumTrackNumberField.SetContent(!propertyIsValid ? TEXT_MISSING_PROPERTY : trackNumber.ToString(), propertyIsValid, OpenTrackNumberEditPopup);
             }
 
-            _DurationField.SetContent(_song.Duration.ToString("mm':'ss"));
-            _PathField.SetContent(_song.Path.ToString());
+            _DurationField.SetContent(_currentElement.Duration.ToString("mm':'ss"));
+            _PathField.SetContent(_currentElement.Path.ToString());
         }
 
         void OpenGenreEditPopup()
         {
-            var genre = SongManager.GetGenreByID(_song.GenreID);
+            var genre = SongManager.GetGenreByID(_currentElement.GenreID);
             PopupController.ShowHintEditPopup("Genre", genre != null ? genre.Name : TEXT_MISSING_PROPERTY, Save, null, SongManager.AllGenreNames.ToList());
 
             void Save(string value)
             {
-                _song.GenreID = SongManager.GetGenreIDByName(value, true);
+                _currentElement.GenreID = SongManager.GetGenreIDByName(value, true);
                 // TODO: ideally should not be here, changing genre should be inside song manager which would handle refreshing luts
                 SongManager.RefreshGenresLUT();
                 TriggerOnChangeEvents();
-                RefreshUI();
+                Refresh();
             }
         }
 
         void OpenTitleEditPopup()
         {
-            var songName = _song.Name;
+            var songName = _currentElement.Name;
             PopupController.ShowSimpleEditPopup("Title", songName, Save, null);
 
             void Save(string value)
             {
-                _song.Name = value;
+                _currentElement.Name = value;
                 TriggerOnChangeEvents();
-                RefreshUI();
+                Refresh();
             }
         }
 
         void OpenYearEditPopup()
         {
-            var year = _song.Year.ToString();
+            var year = _currentElement.Year.ToString();
             PopupController.ShowSimpleEditPopup("Year", year, Save, Validate);
 
             bool Validate(string value)
@@ -208,29 +166,29 @@ namespace Immortus.SongRanker
 
             void Save(string value)
             {
-                _song.Year = int.Parse(value);
+                _currentElement.Year = int.Parse(value);
                 TriggerOnChangeEvents();
-                RefreshUI();
+                Refresh();
             }
         }
 
         void OpenLanguageEditPopup()
         {
-            var language = SongManager.GetLanguageByID(_song.LanguageID);
+            var language = SongManager.GetLanguageByID(_currentElement.LanguageID);
             PopupController.ShowHintEditPopup("Language", language != null ? language.Name : TEXT_MISSING_PROPERTY, Save, null, SongManager.AllLanguageNames.ToList());
 
             void Save(string value)
             {
-                _song.LanguageID = SongManager.GetLanguageIDByName(value, true);
+                _currentElement.LanguageID = SongManager.GetLanguageIDByName(value, true);
                 SongManager.RefreshLanguageLUT();
                 TriggerOnChangeEvents();
-                RefreshUI();
+                Refresh();
             }
         }
 
         void OpenTrackNumberEditPopup()
         {
-            var trackNumber = _song.AlbumSongNumber.ToString();
+            var trackNumber = _currentElement.AlbumSongNumber.ToString();
             PopupController.ShowSimpleEditPopup("Track number", trackNumber, Save, Validate);
 
             bool Validate(string value)
@@ -243,17 +201,17 @@ namespace Immortus.SongRanker
 
             void Save(string value)
             {
-                _song.AlbumSongNumber = int.Parse(value);
+                _currentElement.AlbumSongNumber = int.Parse(value);
                 TriggerOnChangeEvents();
-                RefreshUI();
+                Refresh();
             }
         }
 
         void OpenAlbumEditPopup()
         {
-            var album = SongManager.GetAlbumByID(_song.AlbumID);
-            var albumName = album != null ? album.Name : "";
-            PopupController.ShowHintEditPopup("Album", albumName, Save, null, SongManager.AllAlbumNames.ToList());
+            var album = SongManager.GetAlbumByID(_currentElement.AlbumID);
+            var originalAlbumName = album != null ? album.Name : "";
+            PopupController.ShowHintEditPopup("Album", originalAlbumName, Save, null, SongManager.AllAlbumNames.ToList());
 
             void Save(string albumName)
             {
@@ -261,10 +219,10 @@ namespace Immortus.SongRanker
 
                 void OnSuccess(int albumArtistID)
                 {
-                    _song.AlbumID = SongManager.GetAlbumIDByNameAndAuthor(albumName, albumArtistID, true);
+                    _currentElement.AlbumID = SongManager.GetAlbumIDByNameAndAuthor(albumName, albumArtistID, true);
                     SongManager.RefreshAlbumLUT();
                     TriggerOnChangeEvents();
-                    RefreshUI();
+                    Refresh();
                 }
 
                 void OnCancel() => PopupController.HideHintEditPopup();
@@ -273,17 +231,17 @@ namespace Immortus.SongRanker
 
         void OpenArtistsEditPopup()
         {
-            List<string> artistNames = SongManager.GetArtistNamesByIDs(_song.ArtistIds).ToList();
+            List<string> artistNames = SongManager.GetArtistNamesByIDs(_currentElement.ArtistIds).ToList();
             PopupController.ShowMultipleEditPopup("Artists", artistNames, Save, null, SongManager.AllArtistNames.ToList());
 
             void Save(List<string> values)
             {
                 var artistIds = SongManager.GetArtistIDsByNames(values);
-                _song.ArtistIds = artistIds.ToArray();
+                _currentElement.ArtistIds = artistIds.ToArray();
                 // TODO: ideally should not be here, changing genre should be inside song manager which would handle refreshing luts
                 SongManager.RefreshArtistsLUT();
                 TriggerOnChangeEvents();
-                RefreshUI();
+                Refresh();
             }
         }
     }

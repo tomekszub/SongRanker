@@ -20,6 +20,7 @@ namespace Immortus.SongRanker
         {
             _recommendedValues = data;
             _onResult = onResult;
+            _InputField.SetTextWithoutNotify(string.Empty);
         }
 
         public void Refresh(string sourceText)
