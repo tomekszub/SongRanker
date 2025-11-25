@@ -11,7 +11,7 @@ public class SimpleStringRecyclableDataHolder : MonoBehaviour, IRecyclableDataHo
     
     public void FeedData(IRecyclableData data)
     {
-        if(data is not RankerTab.SimpleStringRecyclableData simpleStringRecyclableData)
+        if(data is not SimpleStringRecyclableData simpleStringRecyclableData)
         {
             Debug.LogError("Type mismatch. Require RankerTab.SimpleStringRecyclableData");
             return;

@@ -16,10 +16,11 @@ public class PropertyField : MonoBehaviour
         _ContentText.text = text;
 
         _EditButton.gameObject.SetActive(onEdit != null);
-        if (_EditButton != null)
-        {
-            _EditButton.onClick.RemoveAllListeners();
-            _EditButton.onClick.AddListener(() => onEdit.Invoke());
-        }
+
+        if(onEdit == null) 
+            return;
+
+        _EditButton.onClick.RemoveAllListeners();
+        _EditButton.onClick.AddListener(onEdit.Invoke);
     }
 }

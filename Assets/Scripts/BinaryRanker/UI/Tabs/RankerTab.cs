@@ -232,14 +232,14 @@ namespace Immortus.SongRanker
             _ComparedToSongAudioPanelController.Init(_NewSongAudioPanelController);
         }
 
-        public class SimpleStringRecyclableData : IRecyclableData
-        {
-            public string Content { get; }
+    }
+    public class SimpleStringRecyclableData : IRecyclableData
+    {
+        public string Content { get; }
 
-            public SimpleStringRecyclableData(string content)
-            {
-                Content = content;
-            }
+        public SimpleStringRecyclableData(string content)
+        {
+            Content = content;
         }
     }
 }

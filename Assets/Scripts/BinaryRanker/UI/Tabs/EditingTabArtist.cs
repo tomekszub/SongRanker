@@ -11,6 +11,10 @@ namespace Immortus.SongRanker
     {
         [SerializeField] TextMeshProUGUI _RankingPositionField;
         [SerializeField] PropertyField _TitleField;
+        [SerializeField] PropertyField _SongsCountField;
+        [SerializeField] PropertyField _SongsAverageField;
+        [SerializeField] PropertyField _SongsCustomRankingField;
+        [SerializeField] RecyclableVerticalScrollView _SongsView;
         
         public override void Init(RankerController rankerController, Action onChangeDone)
         {
@@ -35,6 +39,31 @@ namespace Immortus.SongRanker
 
             bool propertyIsValid = PropertiesValidator.ValidateName(_currentElement.Name);
             _TitleField.SetContent(_currentElement.Name, !propertyIsValid, () => Debug.LogError("EDIT"));
+            
+            var rankingsObject = _rankerController.RankingsController.GetArtistRanking(_currentElement);
+            
+            _SongsCountField.SetContent(rankingsObject.SongCount.ToString());
+            _SongsAverageField.SetContent(rankingsObject.AvgRating.ToString("F2"));
+            _SongsCustomRankingField.SetContent(rankingsObject.CustomRating.ToString("F2"));
+
+            List<IRecyclableData> recyclableDatas = new();
+
+            if(SongManager.ArtistToSongs.TryGetValue(_currentElement.ID, out var songs))
+            {
+                List<(int, Song)> songTuples = new();
+                foreach(var song in songs)
+                    songTuples.Add((_rankerController.GetRankingPosition(song.ID), song));
+                
+                foreach(var songTuple in songTuples.OrderByDescending(st => st.Item1))
+                {
+                    if(songTuple.Item1 == 0)
+                        recyclableDatas.Add(new SimpleStringRecyclableData($"{songTuple.Item2.Name}"));
+                    else
+                        recyclableDatas.Insert(0, new SimpleStringRecyclableData($"{songTuple.Item1}. {songTuple.Item2.Name}"));
+                }
+            }
+
+            _SongsView.RefreshData(recyclableDatas);
         }
 
         public override void ShowDataWithIndex(int index)

@@ -96,6 +96,13 @@ namespace Immortus.SongRanker
             
             return Enumerable.Empty<IRankingObject<IRankable>>();
         }
+
+        public IRankingObject<IRankable> GetArtistRanking(Artist artist)
+        {
+            Refresh(RankingType.Artist);
+            
+            return _artistRanking.Find(x => x.Value.Equals(artist));
+        }
         
         public void Refresh(RankingType type)
         {
